@@ -44,15 +44,15 @@ input[type=radio] {
 
 /*xor*/
 
-#n1:checked ~ #n2:checked ~ .view .n1 {
+#z1:checked ~ #n2:checked ~ .view .z1 {
     background-color: red;
 }
 
-#n1:checked ~ .view .n1_ {
+#z1:checked ~ .view .z1_ {
     background-color: red;
 }
 
-#n2:checked ~ .view .n2_ {
+#z2:checked ~ .view .z2_ {
     background-color: red;
 }
 
