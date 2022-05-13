@@ -1,0 +1,698 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Arial";
+    src: url("./references/fonts/arial/arial-black.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Royal Kingdom";
+    src: url("./references/fonts/royal-kingdom-font/AnyConv.com__RoyalKingdom1-BWdrd.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Black Chancery";
+    src: url("./references/fonts/blackchancery/AnyConv.com__BLKCHCRY.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Princess Lulu";
+    src: url("./references/fonts/princess-lulu-font/AnyConv.com__PrincessLulu-lxBe.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;  
+}
+
+    .title_wrapper {
+        width: 1200px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(207, 244, 244);        
+        border-radius: 30px 30px 0px 0px;              
+    }
+
+        .cloud_one {      
+            width: 300px;
+            height: 300px;         
+            background-image: url('./references/1_dino_pics/cloud.svg');            
+            box-sizing: border-box;
+            display: flex;   
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;       
+        }
+
+            .name {
+                width: 178px;
+                height: 80px;             
+                font-size: 30px;
+                font-family: 'Royal Kingdom';
+                letter-spacing: 4px;
+                color: #303030;                                                           
+            }
+
+            .name::first-letter {
+                font-size: 80px;
+                font-family: 'Black Chancery';
+                color: red;
+            }
+
+        .cloud_two {      
+            width: 200px;
+            height: 200px;         
+            background-image: url('./references/1_dino_pics/cloud.svg');            
+            box-sizing: border-box;
+            display: inline-flex;           
+        }
+
+        .cloud_three {
+            width: 150px;
+            height: 150px;         
+            background-image: url('./references/1_dino_pics/cloud.svg');            
+            box-sizing: border-box;
+            display: inline-flex;  
+        }
+
+        .bird {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/1_dino_pics/pics_obstacles/bird.svg');
+            animation-name: bird_anim;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            transform: translate(800px, 100px); 
+            animation-timing-function: linear;           
+        }
+
+        @keyframes bird_anim {
+            0% {
+                transform: translate(800px, 100px);
+            }
+            20% {
+                transform: translate(300px, -60px);
+            }
+            40% {
+                transform: translate(0px, 0px);
+            }
+            60% {
+                transform: translate(-100px, -80px);
+            }
+            80% {
+                transform: translate(-800px, 150px);
+            }
+            100% {
+                transform: translate(-1200px, 100px);
+            }
+        }
+ 
+    .main_wrapper {
+        width: 1200px;
+        height: 600px; 
+        display: flex;
+        justify-content: center;
+        background-color: #303030;     
+    }          
+
+
+
+input[type=checkbox] {
+    /*appearance: none;*/
+}
+
+/*input[type=radio] {
+    display: none;
+}*/
+
+/*radio*/
+
+input[type="radio"] {
+    border: 0px;
+    width: 50px;
+    height: 3em;    
+}
+
+/*input[type='radio'] {    
+    transform: scale(1.2);
+}*/
+
+.slides_logic {
+    width: 1200px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0px 0px 0px;    
+}
+
+/* or */
+
+#l1:checked ~ .view .l1 {
+    background-color: red;    
+}
+
+#l2:checked ~ .view .l1 {
+    background-color: red;
+}
+
+#l1:checked ~ .view .l1_ {
+    background-color: red;
+}
+
+#l2:checked ~ .view .l2 {
+    background-color: red;
+}
+
+/* and */
+
+#r1:checked ~ #r2:checked ~ .view .r1 {
+    background-color: red;
+}
+
+#r1:checked ~ .view .r1_ {
+    background-color: red;
+}
+
+#r2:checked ~ .view .r2_ {
+    background-color: red;
+}
+
+/*xor*/
+
+#z1:checked ~ #n2:checked ~ .view .z1 {
+    background-color: red;
+}
+
+#z1:checked ~ .view .z1_ {
+    background-color: red;
+}
+
+#z2:checked ~ .view .z2_ {
+    background-color: red;
+}
+
+#s1:checked ~ .view .sv1 {
+    background-color: red;
+}
+
+#s2:checked ~ .view .sv2 {
+    background-color: red;
+}
+
+#s3:checked ~ .view .sv3 {
+    background-color: red;
+}
+
+#s4:checked ~ .view .sv4 {
+    background-color: red;
+}
+
+#s1:checked ~ .view .sl1 {
+    background-color: red;
+}
+
+#s4:checked ~ .view .sl4 {
+    background-color: red;
+}
+
+.sa {
+    display: none;
+}
+
+#s1:checked ~ .view .sa2 {
+    display: block;
+}
+
+#s2:checked ~ .view .sa3 {
+    display: block;
+}
+
+#s3:checked ~ .view .sa4 {
+    display: block;
+}
+
+#s4:checked ~ .view .sa1 {
+    display: block;
+}
+
+.sd {
+    display: block;
+}
+
+#s1:checked ~ .view .sd4 {
+    display: block;
+}
+
+#s2:checked ~ .view .sd1 {
+    display: block;
+}
+
+#s3:checked ~ .view .sd2 {
+    display: block;
+}
+
+#s4:checked ~ .view .sd3 {
+    display: block;
+}
+
+.arrow_container {
+    position: relative;
+    width: 20px;
+}
+
+.pagination {
+    display: flex;
+}
+
+#c1:checked ~ .view .one {
+    display: none;
+}
+
+/*@keyframes anim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: sale(0);
+    }
+}
+
+.one_wrapper {
+    position: relative;
+    display: flex;
+    width: max-content;
+    border: 1px solid;
+}
+
+.one_view {
+    width: 100px;
+    height: 100px;
+}
+
+#c1:checked ~ .view .one_wrapper {
+    transform: scale(0);
+    background-color: #f00;
+    animation: anim_first 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*dino game*/
+
+.first_game_dino {
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(207, 244, 244);
+    border-radius: 0px 0px 30px 30px;    
+    overflow: hidden;        
+}
+
+    .dino_game_items {
+        width: 1200px;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        align-items: space-between;                         
+    }
+
+        .obstacle_wrapper { 
+            width: 1200px;               
+            height: 120px;
+            display: flex;            
+            align-items: flex-end;            
+            overflow: hidden;                                                                           
+        }  
+
+            .obstacle_course {
+                width: 2000px;
+                --obs_width: 120px;
+                position: relative;
+                /*left: calc(0px - var(--obs_width));
+                width: calc(100% + var(--obs_width));*/
+                display: flex;            
+                justify-content: space-between;
+                align-items: flex-end;                                 
+                transform: translate(100%);
+                /*transition: linear 1s;*/                                   
+            }
+
+                .obstacle_one {
+                    width: var(--obs_width);
+                    height: var(--obs_width);
+                    transition-duration: 1s;                    
+                    transform: translate(-100%);
+                    flex-shrink: 0;
+                    background-image: url('./references/1_dino_pics/pics_obstacles/cacti.svg');
+                    animation: obstacle_one_anim 1s;
+                    animation-iteration-count: 1;
+                    transition-timing-function: linear;                     
+                }
+
+                @keyframes obstacle_one_anim {
+                    0% {
+                        transform: translate(100%);
+                    }
+                    100% {
+                        transform: translate(0%);
+                    }
+                }
+
+                .obstacle_two {
+                    width: var(--obs_width);
+                    height: var(--obs_width);
+                    transition-duration: 5s;                    
+                    transform: translate(-100%);
+                    flex-shrink: 0;
+                    background-image: url('./references/1_dino_pics/pics_obstacles/bonfire.svg');
+                    animation: obstacle_two_anim 10s;
+                    animation-iteration-count: 1;
+                    transition-timing-function: linear;                     
+                }
+
+                @keyframes obstacle_two_anim {
+                    0% {
+                        transform: translate(100%);
+                    }
+                    100% {
+                        transform: translate(0%);
+                    }
+                }
+
+                .obstacle_three {
+                    width: var(--obs_width);
+                    height: var(--obs_width);
+                    transition-duration: 5s;
+                    transition-timing-function: linear;
+                    transform: translate(-100%);
+                    animation-delay: 10s;
+                    flex-shrink: 0;
+                    background-image: url('./references/1_dino_pics/pics_obstacles/dinosaur_purple_stegosaurus.svg');
+                    animation: obstacle_three_anim 10s;
+                    animation-iteration-count: 1;
+                    transition-timing-function: linear;                     
+                }
+
+                @keyframes obstacle_three_anim {
+                    0% {
+                        transform: translate(100%);
+                    }
+                    100% {
+                        transform: translate(0%);
+                    }
+                }
+
+                .obstacle_four {
+                    width: var(--obs_width);
+                    height: var(--obs_width);
+                    transition-duration: 5s;
+                    transition-timing-function: linear;
+                    transform: translate(-100%);
+                    animation-delay: 15s;
+                    flex-shrink: 0;
+                    background-image: url('./references/1_dino_pics/pics_obstacles/dinosaur_in_egg.svg');
+                    animation: obstacle_four_anim 10s;
+                    animation-iteration-count: 1;
+                    transition-timing-function: linear;                     
+                }
+
+                @keyframes obstacle_four_anim {
+                    0% {
+                        transform: translate(100%);
+                    }
+                    100% {
+                        transform: translate(0%);
+                    }
+                }
+
+                .obstacle_five {
+                    width: var(--obs_width);
+                    height: var(--obs_width);
+                    transition-duration: 5s;
+                    transition-timing-function: linear;
+                    transform: translate(-100%);
+                    animation-delay: 20s;
+                    flex-shrink: 0;
+                    background-image: url('./references/1_dino_pics/pics_obstacles/dinosaur_tyrannosaurus-rex.svg');
+                    animation: obstacle_five_anim 10s;
+                    animation-iteration-count: 1;
+                    transition-timing-function: linear;                     
+                }
+
+                @keyframes obstacle_five_anim {
+                    0% {
+                        transform: translate(100%);
+                    }
+                    100% {
+                        transform: translate(0%);
+                    }
+                }
+
+                .obstacle_six {
+                    width: var(--obs_width);
+                    height: var(--obs_width);
+                    transition-duration: 5s;
+                    transition-timing-function: linear;
+                    transform: translate(-100%);
+                    animation-delay: 25s;
+                    flex-shrink: 0;
+                    background-image: url('./references/1_dino_pics/pics_obstacles/ancient_man.svg');
+                    animation: obstacle_six_anim 10s;
+                    animation-iteration-count: 1;
+                    transition-timing-function: linear;                    
+                }
+
+                @keyframes obstacle_six_anim {
+                    0% {
+                        transform: translate(100%);
+                    }
+                    100% {
+                        transform: translate(0%);
+                    }
+                }
+
+                .obstacle_seven {
+                    width: var(--obs_width);
+                    height: var(--obs_width);
+                    transition-duration: 5s;
+                    transition-timing-function: linear;
+                    transform: translate(-100%);
+                    animation-delay: 30s;
+                    flex-shrink: 0;
+                    background-image: url('./references/1_dino_pics/pics_obstacles/rock-art.svg');
+                    animation: obstacle_seven_anim 10s;
+                    animation-iteration-count: 1;
+                    transition-timing-function: linear;                     
+                }   
+                
+                @keyframes obstacle_seven_anim {
+                    0% {
+                        transform: translate(100%);
+                    }
+                    100% {
+                        transform: translate(0%);
+                    }
+                }            
+
+            @keyframes player_anim {
+                0% {
+                    transform: translate(0px, 0px);
+                }
+                50% {
+                    transform: translate(0px, 200px);
+                }
+                100% {
+                    transform: translate(0px, 0px);
+                }
+            }
+
+            @keyframes player_anim1 {
+                0% {
+                    transform: translate(0px, 0px);
+                }
+                50% {
+                    transform: translate(0px, -200px);
+                }
+                100% {
+                    transform: translate(0px, 0px);
+                }
+            }
+
+            .player {                
+                position: relative;
+                /*animation: player_anim1 2s;
+                animation-iteration-count: 1;
+                animation-timing-function: linear;*/
+            }
+
+            #jumping:not(:checked) ~ #jumping1:checked ~ .view .player {
+                animation: player_anim1 2s;
+                animation-iteration-count: 1;
+                animation-timing-function: linear;
+            }
+
+            #jumping:checked ~ #jumping1:not(:checked) ~ .view .player {
+                animation: player_anim1 2s;
+                animation-iteration-count: 1;
+                animation-timing-function: linear;
+            }   
+
+                .dino_pic {                    
+                    height: 120px;
+                    width: 120px;
+                    background-image: url('./references/1_dino_pics/dino.svg');
+                    cursor: pointer;
+                }
+
+                .button_click {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;    
+                    top: 0;
+                    left: 0;
+                }
+
+                .obstacle_click {
+                    transform: translate(calc(100% + 2px));
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;                
+                }
+
+            .jump_button_placement {
+                position: relative;
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;                             
+            }
+
+                .jump_button {
+                    width: 150px;
+                    height: 50px;
+                    cursor: pointer;
+                    background-color: #f15a24;
+                    font-size: 30px;
+                    font-family: 'Arial';
+                    color: #fff;
+                    border-radius: 10px;
+                    border-color: #98c79c;
+                    transition: background-color 0.5s; 
+                    transition: border-color 0.5s;  
+                    border-width: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+
+                .dino_footprint {
+                    width: 30px;
+                    height: 40px;
+                    display: inline-block;
+                    background-image: url('./references/1_dino_pics/pics_obstacles/dino_footprint.svg');
+                    margin: 0px 0px 0px 7px;                    
+                }
+
+                    .jump_button:hover {
+                        background-color: #98c79c;
+                        border-color: #f15a24;  
+                        cursor: pointer;                      
+                    }                    
+
+                    /* ground */
+
+                    .wavy {
+                        position: relative;
+                        width: 1200px;
+                        height: 50px;                        
+                        background: #333;                        
+                        background-color: rgb(207, 244, 244);
+                        overflow: hidden;
+                        box-sizing: content-box;
+                        display: inline-flex;
+                        margin: 0px 0px 50px 0px;
+                    }
+
+                    .wavy::before {
+                        content: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';                        
+                        position: absolute;
+                        top: -50;                        
+                        left: 0;
+                        font-size: 4em;
+                        color: transparent;
+                        text-decoration-style: wavy;
+                        text-decoration-color: #303030;
+                        text-decoration-line: underline;
+                        animation: anim_wavy 2s linear infinite;                        
+                    }
+
+                    @keyframes anim_wavy {
+                        0% {
+                            transform: translateX(0px);
+                        }
+                        100% {
+                            transform: translateX(-100px);
+                        }
+                    }
+
+.boom {
+    z-index: 1;
+    width: 1300px;
+    height: 1300px;
+    position: absolute;
+    top: -180px;
+    left: 10px;
+    display: none;
+}
+
+.creator_wrapper {
+    width: 1200px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;     
+}
+
+.creator {
+    font-family: 'Princess Lulu';
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0px 0px 0px;
+}
+
+
+
+
