@@ -31,6 +31,7 @@
     font-style: normal;
 }
 
+
 .wrapper {
     width: 100%;
     height: 100vh;
@@ -333,41 +334,41 @@
                     background-image: url('./references/2_firefly_pics/branch.svg');
                     box-sizing: border-box;
                     display: inline-flex;
-                    animation: branch_anim 20s infinite, branch_coloring_anim 20s infinite;
+                    animation: branch_anim 20s infinite;
                     /*animation-duration: 20s;
                     animation-iteration-count: infinite;*/
                     transform-origin: bottom center;
                     margin: 0px 0px 0px 50px;                   
-                }               
+                }          
 
                 @keyframes branch_anim {
                     0% {
                         transform: rotate3d(0, 1, 0, 0deg);
-                        background-image: url('./references/2_firefly_pics/branch.svg');                                        
+                        background-image: url('./references/2_firefly_pics/branch_purple_solid.svg');                        
                     }
                     15% {
-                                                                        
+                        background-image: url('./references/2_firefly_pics/branch_red_solid.svg');                        
                     }
                     30% {
-                                                 
+                        background-image: url('./references/2_firefly_pics/branch_orange_solid.svg');
                     }
                     45% {
-                                          
+                        background-image: url('./references/2_firefly_pics/branch_yellow_solid.svg');
                     }
                     60% {
                         transform: rotate3d(0, 1, 0, 150deg);
-                        background-image: url('./references/2_firefly_pics/branch_yellow_without_gradient.svg');                         
+                        background-image: url('./references/2_firefly_pics/branch_green_solid.svg');
                     }
                     75% {
-                                                
+                        background-image: url('./references/2_firefly_pics/branch_blue_solid.svg');
                     }
                     90% {
-                                                 
+                        background-image: url('./references/2_firefly_pics/branch_navy_blue_solid.svg');
                     }
                     100% {
                         transform: rotate3d(0, 1, 0, 360deg);
-                        background-image: url('./references/2_firefly_pics/branch.svg');                  
-                    }
+                        background-image: url('./references/2_firefly_pics/branch_purple_solid.svg');
+                    }                    
                 }
 
                 .jar {

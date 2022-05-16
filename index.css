@@ -1,0 +1,3608 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Arial";
+    src: url("./references/fonts/arial/arial-black.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Royal Kingdom";
+    src: url("./references/fonts/royal-kingdom-font/AnyConv.com__RoyalKingdom1-BWdrd.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Black Chancery";
+    src: url("./references/fonts/blackchancery/AnyConv.com__BLKCHCRY.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Princess Lulu";
+    src: url("./references/fonts/princess-lulu-font/AnyConv.com__PrincessLulu-lxBe.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Blackadder";
+    src: url("./references/fonts/blackadder-itc/blackadder.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --width: 100vw;
+}
+
+input[type="radio"] {
+    border: 0px;
+    width: 50px;
+    height: 3em;
+    /*display: none;*/   
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;  
+}
+
+.games {
+    width: 1200px;
+    height: 900px;               
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.for_move {    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*gap: calc((var(--width) - 1200px) / 2);*/          
+}
+
+/*move*/
+
+#game_one:checked ~ .pagination_logic .slide_one {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(0);
+}
+
+#game_two:checked ~ .pagination_logic .slide_two {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-100%);
+}
+
+#game_three:checked ~ .pagination_logic .slide_three {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-200%);
+}
+
+#game_four:checked ~ .pagination_logic .slide_four {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-300%);
+}
+
+#game_five:checked ~ .pagination_logic .slide_five {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-400%);
+}
+
+#game_six:checked ~ .pagination_logic .slide_six {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-500%);
+}
+
+#game_seven:checked ~ .pagination_logic .slide_seven {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-600%);
+}
+
+
+/*dino*/
+
+    .title_wrapper {
+        width: 1200px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(207, 244, 244);        
+        border-radius: 30px 30px 0px 0px;              
+    }
+
+        .cloud_one {      
+            width: 300px;
+            height: 300px;         
+            background-image: url('./references/1_dino_pics/cloud.svg');            
+            box-sizing: border-box;
+            display: flex;   
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;       
+        }
+
+            .name {
+                width: 178px;
+                height: 80px;             
+                font-size: 30px;
+                font-family: 'Royal Kingdom';
+                letter-spacing: 4px;
+                color: #303030;                                                           
+            }
+
+            .name::first-letter {
+                font-size: 80px;
+                font-family: 'Black Chancery';
+                color: red;
+            }
+
+        .cloud_two {      
+            width: 200px;
+            height: 200px;         
+            background-image: url('./references/1_dino_pics/cloud.svg');            
+            box-sizing: border-box;
+            display: inline-flex;           
+        }
+
+        .cloud_three {
+            width: 150px;
+            height: 150px;         
+            background-image: url('./references/1_dino_pics/cloud.svg');            
+            box-sizing: border-box;
+            display: inline-flex;  
+        }
+
+        .bird {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/1_dino_pics/pics_obstacles/bird.svg');
+            animation-name: bird_anim;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            transform: translate(800px, 100px); 
+            animation-timing-function: linear;           
+        }
+
+        @keyframes bird_anim {
+            0% {
+                transform: translate(800px, 100px);
+            }
+            20% {
+                transform: translate(300px, -60px);
+            }
+            40% {
+                transform: translate(0px, 0px);
+            }
+            60% {
+                transform: translate(-100px, -80px);
+            }
+            80% {
+                transform: translate(-800px, 150px);
+            }
+            100% {
+                transform: translate(-1200px, 100px);
+            }
+        }
+ 
+    .main_wrapper {
+        width: 1200px;
+        height: 600px; 
+        display: flex;
+        justify-content: center;
+        background-color: #303030;     
+    }          
+
+
+
+input[type=checkbox] {
+    appearance: none;
+}
+
+/*input[type=radio] {
+    display: none;
+}*/
+
+/*radio*/
+
+
+/*input[type='radio'] {    
+    transform: scale(1.2);
+}*/
+
+.slides_logic {
+    width: 1200px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0px 0px 0px;    
+}
+
+/* or */
+
+#l1:checked ~ .view .l1 {
+    background-color: red;    
+}
+
+#l2:checked ~ .view .l1 {
+    background-color: red;
+}
+
+#l1:checked ~ .view .l1_ {
+    background-color: red;
+}
+
+#l2:checked ~ .view .l2 {
+    background-color: red;
+}
+
+/* and */
+
+#r1:checked ~ #r2:checked ~ .view .r1 {
+    background-color: red;
+}
+
+#r1:checked ~ .view .r1_ {
+    background-color: red;
+}
+
+#r2:checked ~ .view .r2_ {
+    background-color: red;
+}
+
+/*xor*/
+
+#z1:checked ~ #n2:checked ~ .view .z1 {
+    background-color: red;
+}
+
+#z1:checked ~ .view .z1_ {
+    background-color: red;
+}
+
+#z2:checked ~ .view .z2_ {
+    background-color: red;
+}
+
+#s1:checked ~ .view .sv1 {
+    background-color: red;
+}
+
+#s2:checked ~ .view .sv2 {
+    background-color: red;
+}
+
+#s3:checked ~ .view .sv3 {
+    background-color: red;
+}
+
+#s4:checked ~ .view .sv4 {
+    background-color: red;
+}
+
+#s1:checked ~ .view .sl1 {
+    background-color: red;
+}
+
+#s4:checked ~ .view .sl4 {
+    background-color: red;
+}
+
+.sa {
+    display: none;
+}
+
+#s1:checked ~ .view .sa2 {
+    display: block;
+}
+
+#s2:checked ~ .view .sa3 {
+    display: block;
+}
+
+#s3:checked ~ .view .sa4 {
+    display: block;
+}
+
+#s4:checked ~ .view .sa1 {
+    display: block;
+}
+
+.sd {
+    display: block;
+}
+
+#s1:checked ~ .view .sd4 {
+    display: block;
+}
+
+#s2:checked ~ .view .sd1 {
+    display: block;
+}
+
+#s3:checked ~ .view .sd2 {
+    display: block;
+}
+
+#s4:checked ~ .view .sd3 {
+    display: block;
+}
+
+.arrow_container {
+    position: relative;
+    width: 20px;
+}
+
+.pagination {
+    display: flex;
+}
+
+#c1:checked ~ .view .one {
+    display: none;
+}
+
+/*@keyframes anim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: sale(0);
+    }
+}
+
+.one_wrapper {
+    position: relative;
+    display: flex;
+    width: max-content;
+    border: 1px solid;
+}
+
+.one_view {
+    width: 100px;
+    height: 100px;
+}
+
+#c1:checked ~ .view .one_wrapper {
+    transform: scale(0);
+    background-color: #f00;
+    animation: anim_first 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*dino game*/
+
+.slide_one {
+    width: 1200px;
+    height: 900px;
+}
+
+.first_game_dino {
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(207, 244, 244);
+    border-radius: 0px 0px 30px 30px;    
+    overflow: hidden;        
+}
+
+    .dino_game_items {
+        width: 1200px;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        align-items: space-between;                         
+    }
+
+        .obstacle_wrapper { 
+            width: 1200px;               
+            height: 120px;
+            display: flex;            
+            align-items: flex-end;            
+            overflow: hidden;                                                                              
+        }  
+
+                .obstacle_course {
+                width: 3000px;
+                --obs_width: 120px;
+                --obs_length: calc(100px + 100px + 400px + 100px + 600px);
+                position: relative;
+                left: calc(0px - var(--obs_length));
+                width: calc(100% + var(--obs_length));
+                display: flex;            
+                justify-content: space-between;                                                 
+                transform: translate(100%);
+                transition: linear 5s;
+                /*animation-name: obstacles_anim; 
+                animation-duration: 10s;
+                animation-timing-function: linear;
+                animation-iteration-count: 1; */                                    
+            }
+
+            /*@keyframes obstacles_anim {
+                0% {
+                    transform: translate(100%);
+                }
+                100% {
+                    transform: translate(-100%);
+                }
+            }*/
+
+                .obstacle_one {
+                    width: var(--obs_width);
+                    height: var(--obs_width);                                        
+                    transform: translate(-100%);
+                    flex-shrink: 0;
+                    background-image: url('./references/1_dino_pics/pics_obstacles/cacti.svg');
+                    margin: 0px 300px 0px 0px;                                      
+                }
+
+                .obstacle_two {
+                    width: var(--obs_width);
+                    height: var(--obs_width);                                       
+                    transform: translate(-100%);
+                    flex-shrink: 0;
+                    background-image: url('./references/1_dino_pics/pics_obstacles/bonfire.svg');
+                    margin: 0px 300px 0px 0px;                                          
+                }
+                
+
+                .obstacle_three {
+                    width: var(--obs_width);
+                    height: var(--obs_width);                    
+                    transform: translate(-100%);                    
+                    flex-shrink: 0;
+                    background-image: url('./references/1_dino_pics/pics_obstacles/dinosaur_purple_stegosaurus.svg');
+                    margin: 0px 300px 0px 0px;                                        
+                }               
+
+                .obstacle_four {
+                    width: var(--obs_width);
+                    height: var(--obs_width);                    
+                    transform: translate(-100%);                   
+                    flex-shrink: 0;
+                    background-image: url('./references/1_dino_pics/pics_obstacles/dinosaur_in_egg.svg');
+                    margin: 0px 300px 0px 0px;                                          
+                }
+
+                .obstacle_five {
+                    width: var(--obs_width);
+                    height: var(--obs_width);                    
+                    transform: translate(-100%);                    
+                    flex-shrink: 0;
+                    background-image: url('./references/1_dino_pics/pics_obstacles/dinosaur_tyrannosaurus-rex.svg');
+                    margin: 0px 300px 0px 0px;                                           
+                }
+
+                .obstacle_six {
+                    width: var(--obs_width);
+                    height: var(--obs_width);                    
+                    transform: translate(-100%);                    
+                    flex-shrink: 0;
+                    background-image: url('./references/1_dino_pics/pics_obstacles/ancient_man.svg'); 
+                    margin: 0px 300px 0px 0px;                                       
+                }
+
+                .obstacle_seven {
+                    width: var(--obs_width);
+                    height: var(--obs_width);                    
+                    transform: translate(-100%);
+                    flex-shrink: 0;
+                    background-image: url('./references/1_dino_pics/pics_obstacles/rock-art.svg');
+                    margin: 0px 300px 0px 0px;                                        
+                }   
+                
+                /*@keyframes obstacle_seven_anim {
+                    0% {
+                        transform: translate(100%);
+                    }
+                    100% {
+                        transform: translate(0%);
+                    }
+                }*/          
+
+            @keyframes player_anim {
+                0% {
+                    transform: translate(0px, 0px);
+                }
+                50% {
+                    transform: translate(0px, 200px);
+                }
+                100% {
+                    transform: translate(0px, 0px);
+                }
+            }
+
+            @keyframes player_anim1 {
+                0% {
+                    transform: translate(0px, 0px);
+                }
+                50% {
+                    transform: translate(0px, -200px);
+                }
+                100% {
+                    transform: translate(0px, 0px);
+                }
+            }
+
+            .player {                
+                position: relative;
+                /*animation: player_anim1 2s;
+                animation-iteration-count: 1;
+                animation-timing-function: linear;*/
+            }
+
+            #jumping:not(:checked) ~ #jumping1:checked ~ .view .player {
+                animation: player_anim1 2s;
+                animation-iteration-count: 1;
+                animation-timing-function: linear;
+            }
+
+            #jumping:checked ~ #jumping1:not(:checked) ~ .view .player {
+                animation: player_anim1 2s;
+                animation-iteration-count: 1;
+                animation-timing-function: linear;
+            }   
+
+                .dino_pic {                    
+                    height: 120px;
+                    width: 120px;
+                    background-image: url('./references/1_dino_pics/dino.svg');
+                    cursor: pointer;
+                }
+
+                .button_click {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;    
+                    top: 0;
+                    left: 0;
+                }
+
+                .obstacle_click {
+                    transform: translate(calc(100% + 2px));
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;                
+                }
+
+            .jump_button_placement {
+                position: relative;
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;                             
+            }
+
+                .jump_button {
+                    width: 150px;
+                    height: 50px;
+                    cursor: pointer;
+                    background-color: #f15a24;
+                    font-size: 30px;
+                    font-family: 'Arial';
+                    color: #fff;
+                    border-radius: 10px;
+                    border-color: #98c79c;
+                    transition: background-color 0.5s; 
+                    transition: border-color 0.5s;  
+                    border-width: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+
+                .dino_footprint {
+                    width: 30px;
+                    height: 40px;
+                    display: inline-block;
+                    background-image: url('./references/1_dino_pics/pics_obstacles/dino_footprint.svg');
+                    margin: 0px 0px 0px 7px;                    
+                }
+
+                    .jump_button:hover {
+                        background-color: #98c79c;
+                        border-color: #f15a24;  
+                        cursor: pointer;                      
+                    }                    
+
+                    /* ground */
+
+                    .wavy {
+                        position: relative;
+                        width: 1200px;
+                        height: 50px;                        
+                        background: #333;                        
+                        background-color: rgb(207, 244, 244);
+                        overflow: hidden;
+                        box-sizing: content-box;
+                        display: inline-flex;
+                        margin: 0px 0px 50px 0px;
+                    }
+
+                    .wavy::before {
+                        content: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';                        
+                        position: absolute;
+                        top: -50;                        
+                        left: 0;
+                        font-size: 4em;
+                        color: transparent;
+                        text-decoration-style: wavy;
+                        text-decoration-color: #303030;
+                        text-decoration-line: underline;
+                        animation: anim_wavy 2s linear infinite;                        
+                    }
+
+                    @keyframes anim_wavy {
+                        0% {
+                            transform: translateX(0px);
+                        }
+                        100% {
+                            transform: translateX(-100px);
+                        }
+                    }
+
+
+/*fireflies*/
+
+.slide_two {
+    width: 1200px;
+    height: 900px;
+}
+
+    .title_2_wrapper {
+        width: 1200px;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #334c4c;        
+        border-radius: 30px 30px 0px 0px;              
+    }
+
+        .star_two {
+            width: 15px;
+            height: 15px;
+            background-image: url('./references/2_firefly_pics/star.svg');
+            margin: 30px 0px 0px 50px;
+            opacity: 1;
+            animation-name: star_two_anim;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes star_two_anim {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .star_four {
+            width: 8px;
+            height: 8px;
+            background-image: url('./references/2_firefly_pics/star.svg');
+            margin: 160px 0px 0px 0px;
+            opacity: 0.4;
+            animation-name: star_four_anim;
+            animation-delay: 0.5s;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes star_four_anim {
+            0% {
+                opacity: 0.4;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            100% {
+                opacity: 0.4;
+            }
+        }
+
+        .cloud_1 {      
+            width: 300px;
+            height: 300px;         
+            background-image: url('./references/2_firefly_pics/cloud_night.svg');            
+            box-sizing: border-box;
+            display: flex;   
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;       
+        }
+
+            .name_second_game {
+                width: 230px;
+                height: 80px;             
+                font-size: 30px;
+                font-family: 'Royal Kingdom';
+                letter-spacing: 4px;
+                color: #303030;                                                           
+            }
+
+            .name_second_game::first-letter {
+                font-size: 80px;
+                font-family: 'Black Chancery';
+                color: red;
+            }
+
+        .cloud_2 {      
+            width: 200px;
+            height: 200px;         
+            background-image: url('./references/2_firefly_pics/cloud_night.svg');            
+            box-sizing: border-box;
+            display: inline-flex;
+            opacity: 0.5;           
+        }
+
+        .cloud_3 {
+            width: 150px;
+            height: 150px;         
+            background-image: url('./references/2_firefly_pics/cloud_night.svg');            
+            box-sizing: border-box;
+            display: inline-flex;
+            opacity: 0.8;  
+        }
+
+        .star_five {
+            width: 11px;
+            height: 11px;
+            background-image: url('./references/2_firefly_pics/star.svg');
+            margin: 60px 0px 0px 0px;
+            opacity: 0.7;
+            animation-name: star_five_anim;
+            animation-delay: 0.1s;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }        
+
+        @keyframes star_five_anim {
+            0% {
+                opacity: 0.7;
+            }
+            25% {
+                opacity: 0.1;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            75% {
+                opacity: 0.2;
+            }
+            100% {
+                opacity: 0.7;
+            }            
+        }
+
+
+        .star_six {
+            width: 11px;
+            height: 11px;
+            background-image: url('./references/2_firefly_pics/star.svg');
+            margin: 80px 0px 0px 0px;
+            opacity: 0.4;
+            animation-name: star_six_anim;            
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }               
+
+        @keyframes star_six_anim {
+            0% {
+                opacity: 0.4;
+            }
+            25% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 0.1;
+            }
+            75% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 0.4;
+            }            
+        }
+
+        .star_seven {
+            width: 6px;
+            height: 6px;
+            background-image: url('./references/2_firefly_pics/star.svg');
+            margin: 50px 0px 0px 0px;
+            opacity: 0.6;
+            animation-name: star_seven_anim;            
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes star_seven_anim {
+            0% {
+                opacity: 0.6;
+            }
+            25% {
+                opacity: 0.1;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            75% {
+                opacity: 0.2;
+            }
+            100% {
+                opacity: 0.6;
+            }            
+        }
+
+        .star_one {
+            width: 10px;
+            height: 10px;
+            background-image: url('./references/2_firefly_pics/star.svg');
+            margin: 10px 0px 0px 0px;
+            opacity: 0.8;
+            animation-name: star_one_anim;            
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes star_one_anim {
+            0% {
+                opacity: 0.8;
+            }           
+            50% {
+                opacity: 0.2;
+            }           
+            100% {
+                opacity: 0.8;
+            }            
+        }
+        
+        .star_three {
+            width: 20px;
+            height: 20px;
+            background-image: url('./references/2_firefly_pics/star.svg');
+            margin: 100px 10px 0px 0px;
+            opacity: 0.5;
+            animation-name: star_five_anim;            
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.05s;
+        }
+
+        @keyframes star_three_anim {
+            0% {
+                opacity: 0.5;
+            }
+            25% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.2;
+            }
+            75% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 0.5;
+            }            
+        }
+
+        .main_second_wrapper {
+            width: 1200px;
+            height: 600px; 
+            display: flex;
+            justify-content: center;
+            background-color: #303030;    
+        }
+    
+        .second_game_firefly {
+            width: 1200px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #334c4c;
+            border-radius: 0px 0px 30px 30px;    
+            overflow: hidden;        
+        }
+
+        .fireflies_jar_wrapper {
+            width: 1200px;
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .branch_jar {
+            min-width: 300px;
+            height: 500px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+            .branch_jar_wrapper {
+                width: 300px;
+                height: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: space-between;
+            }
+
+                .branch {
+                    width: 200px;
+                    height: 200px;
+                    background-image: url('./references/2_firefly_pics/branch.svg');
+                    box-sizing: border-box;
+                    display: inline-flex;
+                    animation: branch_anim 20s infinite, branch_coloring_anim 20s infinite;
+                    /*animation-duration: 20s;
+                    animation-iteration-count: infinite;*/
+                    transform-origin: bottom center;
+                    margin: 0px 0px 0px 50px;                   
+                }               
+
+                @keyframes branch_anim {
+                    0% {
+                        transform: rotate3d(0, 1, 0, 0deg);
+                        background-image: url('./references/2_firefly_pics/branch_purple_solid.svg');                        
+                    }
+                    15% {
+                        background-image: url('./references/2_firefly_pics/branch_red_solid.svg');                        
+                    }
+                    30% {
+                        background-image: url('./references/2_firefly_pics/branch_orange_solid.svg');
+                    }
+                    45% {
+                        background-image: url('./references/2_firefly_pics/branch_yellow_solid.svg');
+                    }
+                    60% {
+                        transform: rotate3d(0, 1, 0, 150deg);
+                        background-image: url('./references/2_firefly_pics/branch_green_solid.svg');
+                    }
+                    75% {
+                        background-image: url('./references/2_firefly_pics/branch_blue_solid.svg');
+                    }
+                    90% {
+                        background-image: url('./references/2_firefly_pics/branch_navy_blue_solid.svg');
+                    }
+                    100% {
+                        transform: rotate3d(0, 1, 0, 360deg);
+                        background-image: url('./references/2_firefly_pics/branch_purple_solid.svg');
+                    }                    
+                }
+
+                .jar {
+                    width: 300px;
+                    height: 300px;
+                    background-image: url('./references/2_firefly_pics/jar1.svg');
+                    box-sizing: border-box;
+                    display: inline-flex;
+                    animation-name: jar_anim;
+                    animation-duration: 20s;
+                    animation-iteration-count: infinite;
+                    transform-origin: bottom center;                    
+                }
+
+                @keyframes jar_anim {
+                    0% {
+                        background-image: url('./references/2_firefly_pics/jar_purple.svg');                        
+                    }
+                    15% {
+                        background-image: url('./references/2_firefly_pics/jar_red.svg');                        
+                    }
+                    30% {
+                        background-image: url('./references/2_firefly_pics/jar_orange.svg');
+                    }
+                    45% {
+                        background-image: url('./references/2_firefly_pics/jar_yellow.svg');
+                    }
+                    60% {
+                        background-image: url('./references/2_firefly_pics/jar_green.svg');
+                    }
+                    75% {
+                        background-image: url('./references/2_firefly_pics/jar_blue.svg');
+                    }
+                    90% {
+                        background-image: url('./references/2_firefly_pics/jar_navy_blue.svg');
+                    }
+                    100% {
+                        background-image: url('./references/2_firefly_pics/jar_purple.svg');
+                    }                    
+                }
+
+            .fireflies {
+                width: 800px;
+                height: 500px; 
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;                                                                              
+            }
+
+            .firefly_one {
+                width: 100px;
+                height: 100px;
+                background-image: url('./references/2_firefly_pics/firefly_without_light.svg'); 
+                margin: 50px 10px 20px 30px;                
+                animation-delay: -2s !important;
+                transform: scale(0.9);
+                animation-name: move_anim;
+                animation-duration: 10s;  
+                cursor: url('./references/2_firefly_pics/magic_wand_2.png'), 24 24, auto;                                                            
+            }            
+
+            .firefly_one:hover {
+                background-image: url('./references/2_firefly_pics/firefly_red.svg');                
+                transition: 0.5s;
+                cursor: url('./references/2_firefly_pics/magic_wand_2.png'), 24 24, auto;                    
+            }
+
+            .firefly_two {
+                width: 100px;
+                height: 100px;
+                background-image: url('./references/2_firefly_pics/firefly_without_light.svg');
+                margin: 0px 80px 30px 20px;                
+                animation-delay: -1s !important;
+                transform: scale(0.8);
+                animation-name: move_anim;
+                animation-duration: 10s; 
+                cursor: url('./references/2_firefly_pics/magic_wand.png');                
+            }
+
+            .firefly_two:hover {
+                background-image: url('./references/2_firefly_pics/firefly_orange.svg');                
+                transition: 0.5s;                
+                cursor: url('./references/2_firefly_pics/magic_wand.png');
+            }
+
+            .firefly_three {
+                width: 100px;
+                height: 100px;
+                background-image: url('./references/2_firefly_pics/firefly_without_light.svg'); 
+                margin: 10px 30px 100px 60px;                
+                animation-delay: -3s !important;
+                transform: scale(1.2);
+                animation-name: move_anim;
+                animation-duration: 10s;
+                cursor: url('./references/2_firefly_pics/magic_wand.png');                 
+            }
+
+            .firefly_three:hover {
+                background-image: url('./references/2_firefly_pics/firefly_yellow.svg');
+                transition: 0.5s;                
+                cursor: url('./references/2_firefly_pics/magic_wand.png');
+            }
+
+            .firefly_four {
+                width: 100px;
+                height: 100px;
+                background-image: url('./references/2_firefly_pics/firefly_without_light.svg');
+                margin: 100px 50px 0px 50px;                
+                animation-delay: -6s !important;
+                transform: scale(0.7);
+                animation-name: move_anim;
+                animation-duration: 10s;                   
+            }
+
+            .firefly_four:hover {
+                background-image: url('./references/2_firefly_pics/firefly_green.svg');                
+                transition: 0.5s;
+                cursor: url('./references/2_firefly_pics/magic_wand.png');
+            }
+
+            .firefly_five {
+                width: 100px;
+                height: 100px;
+                background-image: url('./references/2_firefly_pics/firefly_without_light.svg'); 
+                margin: 100px 50px 0px 50px;                 
+                animation-delay: -4s !important;
+                transform: scale(1.1);
+                animation-name: move_anim;
+                animation-duration: 10s; 
+                cursor: url('./references/2_firefly_pics/magic_wand.png');               
+            }
+            
+            .firefly_five:hover {
+                background-image: url('./references/2_firefly_pics/firefly_blue.svg');                
+                transition: 0.5s;
+                cursor: url('./references/2_firefly_pics/magic_wand.png');                
+            }
+
+            .firefly_six {
+                width: 100px;
+                height: 100px;
+                background-image: url('./references/2_firefly_pics/firefly_without_light.svg');
+                box-sizing: border-box;
+                display: inline-flex;                
+                animation-delay: -6s !important;
+                transform: scale(0.5);
+                animation-name: move_anim;
+                animation-duration: 10s;
+                cursor: url('./references/2_firefly_pics/magic_wand.png'); 
+            }
+
+            .firefly_six:hover {
+                background-image: url('./references/2_firefly_pics/firefly_navy_blue.svg');                
+                transition: 0.5s;
+                cursor: url('./references/2_firefly_pics/magic_wand.png'); 
+            }
+
+            .firefly_seven {
+                width: 100px;
+                height: 100px;
+                background-image: url('./references/2_firefly_pics/firefly_without_light.svg');
+                box-sizing: border-box;
+                display: inline-flex;                
+                animation-delay: -1s !important;
+                transform: scale(0.6);
+                animation-name: move_anim;
+                animation-duration: 10s;  
+                cursor: url('./references/2_firefly_pics/magic_wand.png');
+            }
+
+            .firefly_seven:hover {
+                background-image: url('./references/2_firefly_pics/firefly_purple.svg');                
+                transition: 0.5s;
+                cursor: url('./references/2_firefly_pics/magic_wand.png');                 
+            }
+
+            @keyframes move_anim {
+                0% {
+                    transform: translate(60vw, 6vh);
+                }
+                20% {
+                    transform: translate(20vw, 10vh);
+                }
+                40% {
+                    transform: translate(0vw, 1vh);
+                }
+                60% {
+                    transform: translate(40vw, 12vh);
+                }
+                80% {
+                    transform: translate(30vw, 2vh);
+                }
+                100% {
+                    top: 30%;
+                    left: 20%;
+                }
+            }
+
+body {
+    counter-reset: flying;
+}
+
+.input_circle ~ .firefly {
+    opacity: 0;
+    transition: 0.3s cubic-bezier(0, .43, 1, 0);
+    animation: move_anim 10s infinite alternate;
+}
+
+.input_circle:checked {
+    counter-increment: flying;
+}
+
+.input_circle1:not(:checked) ~ .firefly_one,
+.input_circle2:not(:checked) ~ .firefly_two,
+.input_circle3:not(:checked) ~ .firefly_three,
+.input_circle4:not(:checked) ~ .firefly_four,
+.input_circle5:not(:checked) ~ .firefly_five,
+.input_circle6:not(:checked) ~ .firefly_six,
+.input_circle7:not(:checked) ~ .firefly_seven
+{
+    opacity: 1;
+}
+
+.input_circle1:checked ~ .firefly span,
+.input_circle2:checked ~ .firefly span,
+.input_circle3:checked ~ .firefly span,
+.input_circle4:checked ~ .firefly span,
+.input_circle5:checked ~ .firefly span,
+.input_circle6:checked ~ .firefly span,
+.input_circle7:checked ~ .firefly span
+{
+    display: block;
+}
+
+.firefly>span {
+    display: none; position: absolute; z-index: 2; left: -250%; bottom: -50%;
+    background-color: white; border: solid 2px #000; width: 80px; height: 30px; padding: 10px; border-radius: 50%;
+}
+
+.firefly>span:before {
+    content: "Caught!"; color: red; font-family: 'Arial'; font-size: 20px;
+}
+
+            .fly_button_placement {
+                position: relative;
+                width: 1200px;
+                height: 100px;
+                display: flex;
+                justify-content: center; 
+                align-items: center;                            
+            }
+
+                .fly_button {
+                    width: 200px;
+                    height: 50px;
+                    cursor: pointer;
+                    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+                    left: calc(50% - 75px);
+                    top: calc(50% - 25px);
+                    font-size: 30px;
+                    font-family: 'Arial';
+                    color: #8b669a;
+                    border-radius: 10px;            
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;                    
+                }
+
+                    .fly_button:before {
+                        content: '';
+                        z-index: 2;                        
+                        position: absolute;
+                        display: block;
+                        width: 16%;
+                        height: 45%;
+                        left: calc(50% - 95px);
+                        top: calc(50% - 45px);
+                        transition: 0.3 opacity ease-in-out;
+                        filter: blur(10px);                        
+                        opacity: 0;
+                        background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);                        
+                    }
+
+                    .fly_button:hover:before {
+                        color: #8b669a;
+                        background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82),
+                        linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);;                          
+                        cursor: pointer;
+                        filter: blur(20px);                                                
+                        opacity: 1;   
+                        transition: 0.3s opacity ease-in-out;                                                 
+                    } 
+
+                    .fly_button:after {
+                        content: 'Fly';                        
+                        text-align: center;
+                        line-height: 40px;
+                        font-size: 30px;
+                        color: #e3d961;
+                        z-index: 10;
+                        position: absolute;
+                        display: inline-block;
+                        border-radius: 10px;
+                        width: 16%;
+                        height: 45%;
+                        left: calc(50% - 95px);
+                        top: calc(50% - 45px);
+                        background: transparent;
+                        background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82), 
+                        linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); 
+                    }                   
+                    
+
+/*gems*/
+
+.slide_three {
+    width: 1200px;
+    height: 900px;
+}
+
+    .title_3_wrapper {
+        width: 1200px;
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #9f0040;        
+        border-radius: 30px 30px 0px 0px;              
+    } 
+    
+        .gems_chest {
+            width: 180px;
+            height: 188px;
+            background-image: url('./references/3_gems/chest.svg');
+        }
+
+            .name_game_gems {
+                width: 230px;
+                height: 80px;             
+                font-size: 30px;
+                font-family: 'Royal Kingdom';
+                letter-spacing: 4px;
+                color: #303030;                  
+                text-align: center; 
+                animation: glow 1s ease-in-out infinite alternate;                                                        
+            }
+
+            .jewels {
+                width: 200px;
+                height: 200px;
+                background-image: url('./references/3_gems/gems.svg');
+            }
+
+            @keyframes glow {
+                from {
+                    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
+                    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+                } 
+                to {
+                    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+                    0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+                }
+            }
+
+            .name_game_gems::first-letter {
+                font-size: 80px;
+                font-family: 'Black Chancery';
+                color: red;
+            }     
+
+        .main_3_wrapper {
+            width: 1200px;
+            height: 600px; 
+            display: flex;
+            justify-content: center;
+            background-color: #303030;    
+        }
+    
+        .third_game_gems {
+            width: 1200px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #9f0040;
+            border-radius: 0px 0px 30px 30px;    
+            overflow: hidden;        
+        }        
+
+        .gems {
+            width: 1150px;
+            height: 300px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            column-gap: 60px;
+        }
+
+            .gem_one {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_amethyst.svg'); 
+                cursor: pointer;                            
+            }
+
+            .gem_two {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_blue_crystal.svg');
+                cursor: pointer;              
+            }
+
+            .gem_three {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_blue_green_crystal.svg');
+                cursor: pointer;              
+            }
+
+            .gem_four {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_dark_blue_circle.svg');
+                cursor: pointer;              
+            }
+
+            .gem_five {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_dark_purple_piramid.svg');
+                cursor: pointer;              
+            }
+
+            .gem_six {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_diamond.svg');
+                cursor: pointer;              
+            }
+
+            .gem_seven {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_green_emerald.svg');
+                cursor: pointer;              
+            }
+
+            .gem_eight {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_green_round_emerald.svg');
+                cursor: pointer;              
+            }
+
+            .gem_nine {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_orange.svg');
+                cursor: pointer;              
+            }
+
+            .gem_ten {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_red.svg');
+                cursor: pointer;              
+            }
+
+            .gem_eleven {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_pink_heart.svg'); 
+                cursor: pointer;             
+            }
+
+            .gem_twelve {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_red_rhombus.svg'); 
+                cursor: pointer;             
+            }
+
+            .gem_thirteen {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_yellow_curvy_triangle.svg');
+                cursor: pointer;              
+            }           
+            
+
+        .shapes {            
+            width: 1150px;
+            height: 300px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            column-gap: 60px;            
+        }
+        
+            .shape_one {
+                width: 100px;
+                height: 100px;                
+                background-image: url('./references/3_gems/shape_blue_green_crystal.svg'); 
+                cursor: pointer;                
+                opacity: 0;                
+                animation-name:  shape_one_anim;
+                animation-duration: 3s;
+                animation-iteration-count: forwards;  
+                animation-delay: 5s;           
+            }
+
+            @keyframes shape_one_anim {
+                from {
+                    opacity: 0;        
+                }
+                20% {
+                    opacity: 1;
+                }
+                to {
+                    opacity: 1;        
+                }
+            }
+
+            .shape_two {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_diamond.svg');
+                cursor: pointer;
+                animation-delay: 4s;              
+            }
+
+            .shape_three {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_pink_heart.svg');
+                cursor: pointer;
+                animation-delay: 6s;              
+            }
+
+            .shape_four {
+                width: 100px;
+                height: 100px;                
+                background-image: url('./references/3_gems/shape_red_rhombus.svg');
+                cursor: pointer;
+                animation-delay: 8s;              
+            }
+
+            .shape_five {
+                width: 100px;
+                height: 100px;                 
+                background-image: url('./references/3_gems/shape_green_emerald.svg');
+                cursor: pointer;
+                animation-delay: 10s;              
+            }
+
+            .shape_six {
+                width: 100px;
+                height: 100px;                
+                background-image: url('./references/3_gems/shape_red.svg');
+                cursor: pointer; 
+                animation-delay: 12s;             
+            }
+
+            .shape_seven {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_amethyst.svg');
+                cursor: pointer;
+                animation-delay: 14s;              
+            }
+
+            .shape_eight {
+                width: 100px;
+                height: 100px;                
+                background-image: url('./references/3_gems/shape_dark_purple_piramid.svg');
+                cursor: pointer;
+                animation-delay: 16s;              
+            }
+
+            .shape_nine {
+                width: 100px;
+                height: 100px;                  
+                background-image: url('./references/3_gems/shape_orange.svg');
+                cursor: pointer;
+                animation-delay: 18s;              
+            }
+
+            .shape_ten {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_green_round_emerald.svg');
+                cursor: pointer;
+                animation-delay: 20s;              
+            }
+
+            .shape_eleven {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_yellow_curvy_triangle.svg'); 
+                cursor: pointer; 
+                animation-delay: 22s;            
+            }
+
+            .shape_twelve {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_dark_blue_circle.svg'); 
+                cursor: pointer;
+                animation-delay: 24s;             
+            }
+
+            .shape_thirteen {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_blue_crystal.svg');
+                cursor: pointer; 
+                animation-delay: 26s;
+                opacity: 1;              
+            }
+            
+            .shapes ~ .shape {
+                animation-name: shapes_anim;
+                animation-duration: 60s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }            
+                           
+            .fly_button_placement {
+                position: relative;
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;                             
+            }
+
+                .fly_button {
+                    width: 200px;
+                    height: 50px;
+                    cursor: pointer;
+                    background: #fff;
+                    left: calc(50% - 75px);
+                    top: calc(50% - 25px);
+                    font-size: 30px;
+                    font-family: 'Arial';
+                    color: #8b669a;
+                    border-radius: 10px;            
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer; 
+                    display: none;                   
+                }
+
+
+/*potions*/
+
+.slide_four {
+    width: 1200px;
+    height: 900px;
+}
+
+    .title_4_wrapper {
+        width: 1200px;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #7d6086;        
+        border-radius: 30px 30px 0px 0px;
+        overflow: hidden;              
+    }    
+    
+        .recipe_scroll_empty {
+            width: 300px;
+            height: 300px;
+            background-image: url('./references/4_potions/recipe_scroll.png');
+            margin: 0px 0px 0px 20px;            
+        }
+
+        .recipe_wrapper {
+            width: 200px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0px 0px 0px 50px;
+        }
+
+        .recipe {
+            display: inline-block;
+            font-size: 20px;
+            font-family: 'Blackadder';
+            margin: 0px 0px 0px 30px;                   
+        }
+
+            .recipe_1 {
+                font-size: 15px;
+                font-family: 'Blackadder';
+                color: #9f0040;
+            }
+
+            .recipe_2 {
+                font-size: 15px;
+                font-family: 'Blackadder';
+                color: #e95100;
+            }
+
+            .recipe_3 {
+                font-size: 15px;
+                font-family: 'Blackadder';
+                color: #dc9d00;
+            }
+
+            .recipe_4 {
+                font-size: 15px;
+                font-family: 'Blackadder';
+                color: #009f03;
+            }
+
+            .recipe_5 {
+                font-size: 15px;
+                font-family: 'Blackadder';
+                color: #007f9f;
+            }
+
+            .recipe_6 {
+                font-size: 15px;
+                font-family: 'Blackadder';
+                color: #0d009f;
+            }
+
+            .recipe_7 {
+                font-size: 15px;
+                font-family: 'Blackadder';
+                color: #9d00af;
+            }
+
+            .dirt {                        
+                width: 30px;
+                height: 30px;
+                background-image: url('./references/4_potions/klyaksa.svg');
+                z-index: 10;
+                position: absolute;
+                margin: 0px 0px 50px 50px;
+                display: inline-block;
+            }
+            
+        .game_name_potions {
+            width: 320px;
+            height: 320px;            
+        }      
+
+            .name_potions {
+                width: 230px;
+                height: 80px;             
+                font-size: 30px;
+                font-family: 'Royal Kingdom';
+                letter-spacing: 4px;
+                color: #303030;                  
+                text-align: center; 
+                animation: glow 1s ease-in-out infinite alternate;
+                margin: 0px 0px 30px 80px;                                                        
+            }
+
+            .name_potions::first-letter {
+                font-size: 80px;
+                font-family: 'Black Chancery';
+                color: red;
+            }
+
+            .potion_label {
+                width: 320px;
+                height: 320px;
+                background-image: url('./references/4_potions/label.svg');
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .window {
+                width: 500px;
+                height: 300px;                
+                background-color: transparent;
+                overflow: hidden;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .web_wrapper {
+                width: 200px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .spider_web {
+                width: 200px;
+                height: 200px;
+                background-image: url('./references/4_potions/spider-web.svg');  
+                z-index: 20;     
+            }
+
+            .spider {
+                width: 50px;
+                height: 100px;
+                background-image: url('./references/4_potions/spider_lower.svg');
+                z-index: 18;
+                animation-name: spider_anim;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-duration: 5s;
+                transform: rotate(0);
+                transform-origin: top center;
+            }
+
+            .spider:hover {
+                width: 50px;
+                height: 100px;
+                background-image: url('./references/4_potions/spider_higher.svg');
+                cursor: pointer;
+                animation-name: spider_anim;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-duration: 5s;
+                transform: translateX(0);
+                transform-origin: top center;
+            }
+
+            @keyframes spider_anim {
+                from {
+                    transform: rotate(0);
+                }
+                25% {
+                    transform: rotate(10deg);
+                }
+                75% {
+                    transform: rotate(-10deg);
+                }
+                100% {
+                    transform: rotate(0);
+                }
+            }
+
+            .behind_window {
+                width: 400px;
+                height: 300px;                 
+                margin: -80px 0px 0px -100px;               
+            }
+            
+            .window_background {
+                width: 400px;
+                height: 300px;
+                background-color: rgb(66, 70, 90);
+                border-radius: 0px 0px 0px 10px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .ufo {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/ufo.svg');
+                animation-name: ufo_anim;
+                animation-duration: 60s;
+                animation-timing-function: linear;
+                transform: translate(150px, 300px) scale(1);
+                animation-iteration-count: infinite;                
+            }
+
+            @keyframes ufo_anim {
+                from {
+                    background-image: url('./references/4_potions/ufo.svg');
+                    transform: translate(150px, 300px) scale(1);
+                }
+                25% {
+                    background-image: url('./references/4_potions/ufo.svg');
+                    transform: translate(150px, 300px) scale(1);
+                }
+                30% {
+                    background-image: url('./references/4_potions/ufo_flying.svg');
+                    transform: translate(150px, 100px) scale(0.9);
+                }
+                50% {
+                    background-image: url('./references/4_potions/ufo_flying.svg');
+                    transform: translate(500px, 50px) scale(0.05);  
+                }              
+                75% {
+                    background-image: url('./references/4_potions/ufo_flying.svg');
+                    transform: translate(150px, 100px) scale(0.9);
+                }
+                90% {
+                    background-image: url('./references/4_potions/ufo.svg');
+                    transform: translate(150px, 300px) scale(1);
+                }
+                to {
+                    background-image: url('./references/4_potions/ufo.svg');
+                    transform: translate(150px, 300px) scale(1);
+                }
+            }
+
+            .moon {
+                width: 120px;
+                height: 120px;
+                background-image: url('./references/4_potions/moon.svg');
+                opacity: 0.8;
+                animation-name: moon_anim;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                margin: 20px 0px 0px 15px;
+            }
+
+            @keyframes moon_anim {
+                0% {
+                    opacity: 0.8;
+                }                
+                60% {
+                    opacity: 0.6;
+                }
+                100% {
+                    opacity: 0.8;
+                }
+            }
+
+            .apple_tree {
+                width: 150px;
+                height: 150px;
+                background-image: url('./references/4_potions/apple-tree.svg');
+                opacity: 0.8; 
+                margin: 150px 10px 0px 0px;               
+            }
+
+            .recipe_scroll_empty {
+                width: 300px;
+                height: 300px;
+                background-image: url('./references/4_potions/recipe_scroll_empty.svg');
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1;
+            }                      
+
+        .main_potions_wrapper {
+            width: 1200px;
+            height: 600px; 
+            display: flex;
+            justify-content: center;
+            background-color: #303030;    
+        }
+
+        .everything {
+            width: 1200px;
+            height: 600px;           
+        }
+
+        .broom {
+            z-index: 2;
+            width: 200px;
+            height: 200px;
+            background-image: url('./references/4_potions/broom.svg');
+            opacity: 0.8;
+            display: inline-block;
+        }
+    
+        .fourth_game_potions {
+            width: 1200px;
+            height: 600px;
+            display: flex;                       
+            justify-content: space-between;
+            align-items: flex-end;
+            background-color: #7d6086;
+            border-radius: 0px 0px 30px 30px;    
+            overflow: hidden;        
+        }        
+        
+        
+        .game_stuff {
+            width: 1200px;
+            height: 600px;
+            display: flex;                       
+            justify-content: space-around;
+            align-items: flex-end;
+            background-color: #7d6086;
+            border-radius: 0px 0px 30px 30px;    
+            overflow: hidden;
+        }
+
+        .inventory {
+            z-index: 5;
+            width: 600px;
+            height: 580px;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .beer {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/beer_pint.svg');
+            }
+
+            .eggplant {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/aubergine.svg');
+            }
+
+            .shard {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/crystal-shard.svg');
+            }
+
+            .mushroom {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/mushroom2.svg');
+            }
+
+            .broccoli {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/broccoli.svg');
+            }
+
+            .star {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/star_dust.svg');
+            }
+
+            .pumpkin {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/pumpkin_yellow.svg');
+                animation-name: pumpkin_anim;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes pumpkin_anim {
+                from {
+                    background-image: url('./references/4_potions/pumpkin_yellow.svg');
+                }
+                50% {
+                    background-image: url('./references/4_potions/pumpkin_orange.svg');
+                }
+                to {
+                    background-image: url('./references/4_potions/pumpkin_yellow.svg');
+                }
+            }
+
+            .cookies {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/cookies.svg');
+            }
+
+            .steak {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/steak.svg');
+            }
+
+            .apple {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/apple.svg');
+            }
+
+            .carrot {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/carrot.svg');
+            }
+
+            .sushi {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/sushi.svg');
+            }
+
+            .blueberries {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/blueberries.svg');
+            }
+
+            .pink_water {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/water_pink.svg');
+            }
+
+            .grapes {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/grapes.svg');
+            }
+
+            .pink_water {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/water_pink.svg');
+            }
+
+            .unicorn {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/unicorn2.svg');
+            }
+
+            .garlic {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/garlic1_smaller.svg');
+            }
+
+            .salad {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/salad.svg');
+            }
+
+            .tulip {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/tulip2.svg');
+            }
+
+            .love_potion {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/love_potion.svg');
+            }
+
+            .acorn {
+                width: 80px;
+                height: 80px;
+                background-image: url('./references/4_potions/acorn1.svg');
+            }
+
+        .shelf_cauldron_cat {
+            width: 500px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .upper_shelf {
+            width: 500px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .potion {
+            width: 150px;
+            height: 150px;
+            background-image: url('./references/4_potions/potion_green.svg');
+            margin: 0px 0px 10px 0px;            
+        }
+
+        .candle {
+            width: 150px;
+            height: 150px;
+            background-image: url('./references/4_potions/candle.svg');
+            margin: 0px 0px 20px 0px;            
+        }
+
+        .candle_light {
+            width: 150px;
+            height: 150px;
+            background-image: url('./references/4_potions/candle_light.svg');            
+            opacity: 0.6;
+            filter: blur(10px);
+            transform: scale(1);
+            animation-name: candle_light_anim;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        .witch_hat {
+            width: 200px;
+            height: 200px;
+            background-image: url('./references/4_potions/witch_hat_2.svg');
+        }
+        
+        @keyframes candle_light_anim {
+            from {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .cauldron_cat {
+            width: 500px;
+            height: 400px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+            .cauldron {
+                z-index: 5;
+                width: 300px;
+                height: 300px;
+                background-image: url('./references/4_potions/cauldron_green.svg');
+                display: flex;
+                flex-direction: column;
+                justify-self: flex-end;
+                align-items: center;
+                animation-name: cauldron_anim; 
+                animation-duration: 2s;
+                animation-iteration-count: infinite;                     
+            }
+
+            @keyframes cauldron_anim {
+                from {
+                    background-image: url('./references/4_potions/cauldron_green.svg');
+                }
+                50% {
+                    background-image: url('./references/4_potions/cauldron_green_2.svg');
+                }
+                from {
+                    background-image: url('./references/4_potions/cauldron_green.svg');
+                }
+            }
+
+                .flame {
+                    width: 100px;
+                    height: 100px;
+                    background-image: url('./references/4_potions/flame.svg');
+                    display: inline-block;
+                    animation-name: flame_anim;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;
+                    margin: 200px 0px 0px 0px;
+                    opacity: 0.8;
+                }
+
+                @keyframes flame_anim {
+                    from {
+                        background-image: url('./references/4_potions/flame.svg');
+                    }
+                    50% {
+                        background-image: url('./references/4_potions/flame_orange.svg');
+                    }
+                    to {
+                        background-image: url('./references/4_potions/flame.svg');
+                    }
+                }
+
+            .cat {
+                z-index: 5;
+                width: 200px;
+                height: 200px;
+                background-image: url('./references/4_potions/black-cat_mouth.svg');
+            }    
+
+
+
+/*tree*/
+
+.slide_five {
+    width: 1200px;
+    height: 900px;
+}
+
+    .trees_wrapper {
+        width: 1200px;
+        height: 900px;
+        display: flex;
+        justify-content: space-between;
+        top: 0;
+        background: linear-gradient(rgb(154, 211, 238), rgb(238, 154, 221), rgb(223, 238, 154),
+        rgb(100, 244, 136), rgb(12, 174, 118));        
+        border-radius: 30px 30px 30px 30px;
+        overflow: hidden;              
+    }
+
+    .moving_branch {
+        width: 800px;
+        height: 900px;
+    }
+
+        .sakura_branch {
+            width: 800px;
+            height: 453px;
+            background-image: url('./references/5_tree/pngwing4.png');
+            animation-name: sakura_anim;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            transform-origin: left center;            
+        }
+
+        .butterfly {
+            width: 36px;
+            height: 36px;
+            background-image: url('./references/5_tree/butterfly-1.svg');
+            margin: 95px 0px 0px 230px;
+            display: inline-block;
+            animation-name: butterfly_anim;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes sakura_anim {
+            from {
+                transform: rotate(1deg);
+            }
+            50% {
+                transform: rotate(-1deg);
+            }
+            to {
+                transform: rotate(1deg);
+            }
+        }
+
+        @keyframes butterfly_anim {
+            from {
+                background-image: url('./references/5_tree/butterfly-1.svg');
+            }
+            50% {
+                background-image: url('./references/5_tree/butterfly-1_greenish.svg');
+            }
+            to {
+                background-image: url('./references/5_tree/butterfly-1.svg');
+            }
+        }
+
+        .leaves {
+            width: 800px;
+            height: 447px;
+            display: flex;            
+            flex-wrap: wrap;            
+        }
+        
+        .leaf_1 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-1.png'); 
+            animation-name: leaf_1_anim;
+            animation-duration: 28s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0) rotate(0);
+            opacity: 0;
+        }
+
+        @keyframes leaf_1_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(20px, 50px) rotate(80deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(80px, 100px) rotate(-80deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(150px, 200px) rotate(40deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(100px, 300) rotate(-40deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(50px, 350px) rotate(50deg);
+                opacity: 1;
+            }
+            90% {
+                transform: translate(100px, 380px) rotate(-100deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(150px, 430px) rotate(20deg);
+                opacity: 0.5;
+            }
+        }        
+
+        .leaf_2 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-2.png');  
+            animation-name: leaf_2_anim;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 3s;
+        }
+
+        @keyframes leaf_2_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            8% {
+                transform: translate(50px, 60px) rotate(100deg);
+                opacity: 1;
+            }
+            18% {
+                transform: translate(20px, 110px) rotate(-50deg);
+                opacity: 1;
+            }
+            42% {
+                transform: translate(150px, 180px) rotate(30deg);
+                opacity: 1;
+            }
+            58% {
+                transform: translate(180px, 280px) rotate(-40deg);
+                opacity: 1;
+            }
+            77% {
+                transform: translate(220px, 340px) rotate(60deg);
+                opacity: 1;
+            }
+            92% {
+                transform: translate(160px, 380px) rotate(-100deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(180px, 430px) rotate(200deg);
+                opacity: 0.5;
+            }
+        }  
+
+        .leaf_3 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-3.png');
+            animation-name: leaf_3_anim;
+            animation-duration: 26s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 4s;
+        }
+
+        @keyframes leaf_3_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            8% {
+                transform: translate(150px, 70px) rotate(-100deg);
+                opacity: 1;
+            }
+            18% {
+                transform: translate(220px, 120px) rotate(120deg);
+                opacity: 1;
+            }
+            42% {
+                transform: translate(250px, 160px) rotate(-80deg);
+                opacity: 1;
+            }
+            58% {
+                transform: translate(190px, 270px) rotate(-45deg);
+                opacity: 1;
+            }
+            77% {
+                transform: translate(220px, 340px) rotate(60deg);
+                opacity: 1;
+            }
+            92% {
+                transform: translate(160px, 380px) rotate(-100deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(180px, 430px) rotate(200deg);
+                opacity: 0.5;
+            }
+        } 
+
+        .leaf_4 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-4.png'); 
+            animation-name: leaf_4_anim;
+            animation-duration: 23s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 6s;
+        }
+
+        @keyframes leaf_4_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            12% {
+                transform: translate(100px, 50px) rotate(100deg);
+                opacity: 1;
+            }
+            18% {
+                transform: translate(220px, 120px) rotate(-120deg);
+                opacity: 1;
+            }
+            42% {
+                transform: translate(250px, 150px) rotate(80deg);
+                opacity: 1;
+            }
+            58% {
+                transform: translate(300px, 260px) rotate(-45deg);
+                opacity: 1;
+            }
+            77% {
+                transform: translate(210px, 320px) rotate(60deg);
+                opacity: 1;
+            }
+            92% {
+                transform: translate(320px, 360px) rotate(-100deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(240px, 430px) rotate(120deg);
+                opacity: 0.5;
+            }
+        } 
+
+        .leaf_5 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-5.png'); 
+            animation-name: leaf_5_anim;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 1s;
+        }
+
+        @keyframes leaf_5_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(100px, 40px) rotate(10deg);
+                opacity: 1;
+            }
+            18% {
+                transform: translate(-80px, 100px) rotate(-20deg);
+                opacity: 1;
+            }
+            42% {
+                transform: translate(150px, 200px) rotate(20deg);
+                opacity: 1;
+            }
+            58% {
+                transform: translate(300px, 280px) rotate(-25deg);
+                opacity: 1;
+            }
+            77% {
+                transform: translate(200px, 330px) rotate(10deg);
+                opacity: 1;
+            }
+            92% {
+                transform: translate(300px, 370px) rotate(-10deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(350px, 430px) rotate(12deg);
+                opacity: 0.5;
+            }
+        } 
+
+        .leaf_6 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-6.png'); 
+            animation-name: leaf_6_anim;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 4s;
+        }
+
+        @keyframes leaf_6_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            15% {
+                transform: translate(100px, 40px) rotate(50deg);
+                opacity: 1;
+            }
+            18% {
+                transform: translate(0px, 100px) rotate(-50deg);
+                opacity: 1;
+            }
+            42% {
+                transform: translate(150px, 220px) rotate(50deg);
+                opacity: 1;
+            }
+            58% {
+                transform: translate(270px, 260px) rotate(-55deg);
+                opacity: 1;
+            }
+            77% {
+                transform: translate(180px, 340px) rotate(50deg);
+                opacity: 1;
+            }
+            92% {
+                transform: translate(90px, 360px) rotate(-50deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(180px, 430px) rotate(52deg);
+                opacity: 0.5;
+            }
+        } 
+
+        .leaf_7 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-7.png'); 
+            animation-name: leaf_7_anim;
+            animation-duration: 32s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 8s;
+        }
+
+        @keyframes leaf_7_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(30px, 50px) rotate(-180deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(-50px, 110px) rotate(250deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(50px, 200px) rotate(-150deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(-70px, 290px) rotate(730deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(90px, 340px) rotate(-100deg);
+                opacity: 1;
+            }
+            92% {
+                transform: translate(90px, 360px) rotate(70deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(200px, 430px) rotate(-80deg);
+                opacity: 0.5;
+            }
+        } 
+
+
+        .leaf_8 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-8.png'); 
+            animation-name: leaf_8_anim;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 2s;
+        }
+
+        @keyframes leaf_8_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(40px, 60px) rotate(80deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(150px, 130px) rotate(-50deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(250px, 240px) rotate(90deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(280px, 300px) rotate(-330deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(250px, 350px) rotate(110deg);
+                opacity: 1;
+            }
+            92% {
+                transform: translate(290px, 370px) rotate(-40deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(350px, 430px) rotate(70deg);
+                opacity: 0.5;
+            }
+        }
+
+        .leaf_9 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-9.png'); 
+            animation-name: leaf_9_anim;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 9s;
+        }
+
+        @keyframes leaf_9_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(-100px, 80px) rotate(-50deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(150px, 130px) rotate(600deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(250px, 240px) rotate(-600deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(280px, 300px) rotate(330deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(250px, 350px) rotate(-110deg);
+                opacity: 1;
+            }
+            92% {
+                transform: translate(290px, 370px) rotate(400deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(350px, 430px) rotate(-700deg);
+                opacity: 0.5;
+            }
+        }
+
+        .leaf_10 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-10.png'); 
+            animation-name: leaf_10_anim;
+            animation-duration: 33s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 3s;
+        }
+
+        @keyframes leaf_10_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(200px, 70px) rotate(75deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(50px, 130px) rotate(-100deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(120px, 230px) rotate(500deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(300px, 310px) rotate(-30deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(350px, 340px) rotate(110deg);
+                opacity: 1;
+            }
+            90% {
+                transform: translate(280px, 370px) rotate(-600deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(440px, 430px) rotate(300deg);
+                opacity: 0.5;
+            }
+        }
+
+        .leaf_11 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-11.png'); 
+            animation-name: leaf_11_anim;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 1s;
+        }
+
+        @keyframes leaf_11_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(180px, 90px) rotate(750deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(50px, 130px) rotate(-180deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(120px, 230px) rotate(400deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(300px, 310px) rotate(-360deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(350px, 340px) rotate(180deg);
+                opacity: 1;
+            }
+            90% {
+                transform: translate(280px, 370px) rotate(-470deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(440px, 430px) rotate(430deg);
+                opacity: 0.5;
+            }
+        }
+
+        .leaf_12 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-12.png'); 
+            animation-name: leaf_12_anim;
+            animation-duration: 28s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 5s;
+        }
+
+        @keyframes leaf_12_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(100px, 90px) rotate(700deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(300px, 140px) rotate(-300deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(420px, 230px) rotate(330deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(290px, 320px) rotate(-500deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(450px, 350px) rotate(310deg);
+                opacity: 1;
+            }
+            90% {
+                transform: translate(430px, 400px) rotate(-800deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(480px, 430px) rotate(400deg);
+                opacity: 0.5;
+            }
+        }
+
+        .leaf_13 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-13.png'); 
+            animation-name: leaf_13_anim;
+            animation-duration: 31s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 6s;
+        }
+
+        @keyframes leaf_13_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(90px, 110px) rotate(-600deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(240px, 150px) rotate(900deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(420px, 230px) rotate(-30deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(250px, 320px) rotate(460deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(300px, 330px) rotate(-310deg);
+                opacity: 1;
+            }
+            90% {
+                transform: translate(480px, 380px) rotate(660deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(650px, 430px) rotate(-1200deg);
+                opacity: 0.5;
+            }
+        }
+
+        .leaf_14 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-14.png'); 
+            animation-name: leaf_14_anim;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 7s;
+        }
+
+        @keyframes leaf_14_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(-190px, 110px) rotate(350deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(240px, 150px) rotate(-200deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(-420px, 230px) rotate(300deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(250px, 320px) rotate(-360deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(-300px, 330px) rotate(810deg);
+                opacity: 1;
+            }
+            90% {
+                transform: translate(480px, 380px) rotate(-760deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(550px, 430px) rotate(800deg);
+                opacity: 0.5;
+            }
+        }
+   
+    .tree_with_hand {
+        width: 432px;
+        height: 900px;
+        background-image: url('./references/5_tree/tree_for_hand_cut.png');
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+    }
+
+    .hand {
+        width: 200px;
+        height: 236px;
+        background-image: url('./references/5_tree/hand_for_tree.png');
+        display: inline-block;
+        opacity: 0.4;
+        margin: 158px 0px 0px 132px;
+    }
+
+    .name_tree {
+        width: 300px;
+        height: 100px;
+        display: inline-block;
+        font-size: 40px;
+        font-family: 'Royal Kingdom';
+        margin: 0px 0px 0px 135px;
+        opacity: 0.9;
+        text-shadow: 0 0 10px #1e1b1b;        
+    }
+
+    .name_tree::first-letter {
+        font-size: 80px;
+        font-family: 'Black Chancery';
+        color: red;        
+    }
+
+
+/*hedgehog*/
+
+.slide_six {
+    width: 1200px;
+    height: 900px;
+}
+
+    .main_6_wrapper {
+        width: 1200px;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(rgb(159, 200, 220), rgb(237, 202, 75), rgb(170, 91, 1));        
+        border-radius: 30px 30px 30px 30px;
+        overflow: hidden;              
+    }
+
+    .top_wrapper {
+        width: 1200px;
+        height: 200px;
+        display: flex;        
+        justify-content: space-around; 
+        align-items: center;
+    }
+
+    .kite {
+        width: 150px;
+        height: 150px;
+        background-image: url('./references/6_hedgehog/kite1.svg');
+        animation-name: kite_anim;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes kite_anim {
+        0% {
+            background-image: url('./references/6_hedgehog/kite1.svg');
+        }
+        10% {
+            background-image: url('./references/6_hedgehog/kite1.svg');
+        }
+        20% {
+            background-image: url('./references/6_hedgehog/kite2.svg');
+        }
+        70% {
+            background-image: url('./references/6_hedgehog/kite2.svg');
+        }
+        80% {
+            background-image: url('./references/6_hedgehog/kite1.svg');
+        }
+        100% {
+            background-image: url('./references/6_hedgehog/kite1.svg');
+        }
+    }
+
+    .name_hedgehog {
+        width: 300px;
+        height: 100px;
+        display: inline-block;
+        font-size: 30px;
+        font-family: 'Royal Kingdom';
+        margin: 0px 0px 0px 130px;        
+    }
+
+    .name_hedgehog::first-letter {
+        font-size: 80px;
+        font-family: 'Black Chancery';
+        color: red;
+    }
+
+    .hive {
+        width: 150px;
+        height: 150px;
+        background-image: url('./references/6_hedgehog/hive.svg');
+    }
+
+    .puzzle {
+        width: 1200px;
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .puzzle_pic {
+        width: 800px;
+        height: 500px;
+        background-color: aquamarine;
+        border-radius: 20px;        
+    }
+
+        .details_left {
+            width: 200px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .detail_l1 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+            .detail_l2 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+            .detail_l3 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+            .detail_l4 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+            .detail_l5 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+        .details_right {
+            width: 200px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .detail_r1 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+            .detail_r2 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+            .detail_r3 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+            .detail_r4 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+            .detail_r5 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+    .hedgehog_wrapper {
+        width: 1200px;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .hedgehog {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/hedgehog1.svg');
+        }
+
+        .apple {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/apple-svgrepo-com.svg');
+        }
+
+        .mushrooms {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/mushrooms-mushroom-svgrepo-com.svg');
+        }
+
+        .maple_leaf {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/maple-leaf_smaller.svg');
+        }
+
+        .marshmallow {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/marshmallow-svgrepo-com.svg');
+        }
+
+        .sock {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/sock-svgrepo-com.svg');
+        }
+
+        .acorn {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/acorn-svgrepo-com.svg');
+        }
+
+        .muhomor {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/mushrooms-mushroom-svgrepo-com.svg');
+            display: none;
+        }
+
+        .oak_leaf {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/oak_leaf.svg');
+            display: none;
+        }
+
+        .pear {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/pear-svgrepo-com.svg');
+            display: none;
+        }
+
+        .umbrella {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/umbrella-svgrepo-com.svg');
+            display: none;
+        }
+
+        .broom {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/broom-svgrepo-com.svg');
+            display: none;
+        }
+
+        .house {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/house.svg');
+            display: none;
+        }
+    
+    .grass {
+        width: 1200px;
+        height: 55px;
+        background-image: url('./references/6_hedgehog/grass_long.svg');
+    }
+                
+
+/*heart*/
+
+.slide_seven {
+    width: 1200px;
+    height: 900px;
+}
+
+    .main_7_wrapper {
+        width: 1200px;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: #eeeeee;        
+        border-radius: 30px 30px 30px 30px;
+        overflow: hidden;              
+    }
+
+    .top_7_wrapper {
+        width: 1200px;
+        height: 150px;
+        display: flex;        
+        justify-content: space-around; 
+        align-items: center;
+    }    
+
+    .name_heart {
+        width: 300px;
+        height: 100px;
+        display: inline-block;
+        font-size: 30px;
+        font-family: 'Royal Kingdom';
+        margin: 0px 0px 0px 130px;        
+    }
+
+    .name_heart::first-letter {
+        font-size: 80px;
+        font-family: 'Black Chancery';
+        color: red;
+    }
+    
+    .labyrinth {
+        width: 1200px;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .heart {
+        width: 800px;
+        height: 800px;
+        background-image: url('./references/7_heart/heart.svg');
+        display: flex;
+        justify-content: center;
+        align-items: center;                             
+    }
+
+        .name_in_heart {
+            width: 500px;
+            height: 100px;
+            font-family: 'Princess Lulu';
+            font-size: 100px;
+            color: rgb(179, 93, 93);
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+/*about*/
+
+.boom {
+    z-index: 1;
+    width: 1300px;
+    height: 1300px;
+    position: absolute;
+    top: -180px;
+    left: 10px;
+    display: none;
+}
+
+.about {
+    width: 1200px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;     
+}
+
+.creator {
+    font-family: 'Princess Lulu';
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0px 0px 0px;
+}
+
+/*pagination circles stylizing*/
+
+.pagination_circles {
+    width: 300px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle_1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border-style: solid;
+    background-color: rgb(233, 32, 86);
+}
+
+.circle_2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border-style: solid;
+    background-color: rgb(233, 116, 43);
+}
+
+.circle_3 {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border-style: solid;
+    background-color: rgb(233, 216, 83);
+}
+
+.circle_4 {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border-style: solid;
+    background-color: rgb(100, 233, 83);
+}
+
+.circle_5 {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border-style: solid;
+    background-color: rgb(83, 226, 233);
+}
+
+.circle_6 {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border-style: solid;
+    background-color: rgb(83, 100, 233);
+}
+
+.circle_7 {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border-style: solid;
+    background-color: rgb(213, 83, 233);
+}
+
+#game_one:checked ~ .pagination_logic .circle_1 {
+    background-color: #fff;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(233, 32, 86);
+}
+
+#game_two:checked ~ .pagination_logic .circle_2 {
+    background-color: #fff;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(233, 116, 43);
+}
+
+#game_three:checked ~ .pagination_logic .circle_3 {
+    background-color: #fff;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(233, 216, 83);
+}
+
+#game_four:checked ~ .pagination_logic .circle_4 {
+    background-color: #fff;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(100, 233, 83);
+}
+
+#game_five:checked ~ .pagination_logic .circle_5 {
+    background-color: #fff;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(83, 226, 233);
+}
+
+#game_six:checked ~ .pagination_logic .circle_6 {
+    background-color: #fff;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(83, 100, 233);
+}
+
+#game_seven:checked ~ .pagination_logic .circle_7 {
+    background-color: #fff;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(213, 83, 233);
+}
+
+#game_one:not(checked):hover ~ .pagination_logic .circle_1 {
+    background-color: rgb(255, 115, 152);    
+}
+
+#game_two:not(checked):hover ~ .pagination_logic .circle_2 {
+    background-color: rgb(255, 173, 122);    
+}
+
+#game_three:not(checked):hover ~ .pagination_logic .circle_3 {
+    background-color: rgb(255, 244, 158);    
+}
+
+#game_four:not(checked):hover ~ .pagination_logic .circle_4 {
+    background-color: rgb(167, 255, 156);    
+}
+
+#game_five:not(checked):hover ~ .pagination_logic .circle_5 {
+    background-color: rgb(166, 251, 255);    
+}
+
+#game_six:not(checked):hover ~ .pagination_logic .circle_6 {
+    background-color: rgb(152, 164, 255);    
+}
+
+#game_seven:not(checked):hover ~ .pagination_logic .circle_7 {
+    background-color: rgb(244, 173, 255);    
+}
+
+#game_one:not(checked):active ~ .pagination_logic .circle_1 {
+    background-color: rgb(233, 32, 86);    
+}
+
+#game_two:not(checked):active ~ .pagination_logic .circle_2 {
+    background-color: rgb(233, 116, 43);    
+}
+
+#game_three:not(checked):active ~ .pagination_logic .circle_3 {
+    background-color: rgb(233, 216, 83);    
+}
+
+#game_four:not(checked):active ~ .pagination_logic .circle_4 {
+    background-color: rgb(100, 233, 83);    
+}
+
+#game_five:not(checked):active ~ .pagination_logic .circle_5 {
+    background-color: rgb(83, 226, 233);    
+}
+
+#game_six:not(checked):active ~ .pagination_logic .circle_6 {
+    background-color: rgb(83, 100, 233);    
+}
+
+#game_seven:not(checked):active ~ .pagination_logic .circle_7 {
+    background-color: rgb(213, 83, 233);    
+}
+
+label {
+    cursor: pointer;
+}
+
+
