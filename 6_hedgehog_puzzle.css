@@ -1,0 +1,489 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Arial";
+    src: url("./references/fonts/arial/arial-black.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Royal Kingdom";
+    src: url("./references/fonts/royal-kingdom-font/AnyConv.com__RoyalKingdom1-BWdrd.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Black Chancery";
+    src: url("./references/fonts/blackchancery/AnyConv.com__BLKCHCRY.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Princess Lulu";
+    src: url("./references/fonts/princess-lulu-font/AnyConv.com__PrincessLulu-lxBe.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Blackadder";
+    src: url("./references/fonts/blackadder-itc/blackadder.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+}
+
+    .main_wrapper {
+        width: 1200px;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(rgb(159, 200, 220), rgb(237, 202, 75), rgb(170, 91, 1));        
+        border-radius: 30px 30px 30px 30px;
+        overflow: hidden;              
+    }
+
+    .top_wrapper {
+        width: 1200px;
+        height: 200px;
+        display: flex;        
+        justify-content: space-around; 
+        align-items: center;
+    }
+
+    .kite {
+        width: 150px;
+        height: 150px;
+        background-image: url('./references/6_hedgehog/kite1.svg');
+        animation-name: kite_anim;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes kite_anim {
+        0% {
+            background-image: url('./references/6_hedgehog/kite1.svg');
+        }
+        10% {
+            background-image: url('./references/6_hedgehog/kite1.svg');
+        }
+        20% {
+            background-image: url('./references/6_hedgehog/kite2.svg');
+        }
+        70% {
+            background-image: url('./references/6_hedgehog/kite2.svg');
+        }
+        80% {
+            background-image: url('./references/6_hedgehog/kite1.svg');
+        }
+        100% {
+            background-image: url('./references/6_hedgehog/kite1.svg');
+        }
+    }
+
+    .name {
+        width: 300px;
+        height: 100px;
+        display: inline-block;
+        font-size: 30px;
+        font-family: 'Royal Kingdom';
+        margin: 0px 0px 0px 130px;        
+    }
+
+    .name::first-letter {
+        font-size: 80px;
+        font-family: 'Black Chancery';
+        color: red;
+    }
+
+    .hive {
+        width: 150px;
+        height: 150px;
+        background-image: url('./references/6_hedgehog/hive.svg');
+    }
+
+    .puzzle {
+        width: 1200px;
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .puzzle_pic {
+        width: 800px;
+        height: 500px;
+        background-color: aquamarine;
+        border-radius: 20px;        
+    }
+
+        .details_left {
+            width: 200px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .detail_l1 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+            .detail_l2 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+            .detail_l3 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+            .detail_l4 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+            .detail_l5 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+        .details_right {
+            width: 200px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .detail_r1 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+            .detail_r2 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+            .detail_r3 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+            .detail_r4 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+            .detail_r5 {
+                width: 80px;
+                height: 80px;
+                background-color: coral;
+            }
+
+    .hedgehog_wrapper {
+        width: 1200px;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .hedgehog {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/hedgehog1.svg');
+        }
+
+        .apple {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/apple-svgrepo-com.svg');
+        }
+
+        .mushrooms {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/mushrooms-mushroom-svgrepo-com.svg');
+        }
+
+        .maple_leaf {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/maple-leaf_smaller.svg');
+        }
+
+        .marshmallow {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/marshmallow-svgrepo-com.svg');
+        }
+
+        .sock {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/sock-svgrepo-com.svg');
+        }
+
+        .acorn {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/acorn-svgrepo-com.svg');
+        }
+
+        .muhomor {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/mushrooms-mushroom-svgrepo-com.svg');
+            display: none;
+        }
+
+        .oak_leaf {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/oak_leaf.svg');
+            display: none;
+        }
+
+        .pear {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/pear-svgrepo-com.svg');
+            display: none;
+        }
+
+        .umbrella {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/umbrella-svgrepo-com.svg');
+            display: none;
+        }
+
+        .broom {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/broom-svgrepo-com.svg');
+            display: none;
+        }
+
+        .house {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/house.svg');
+            display: none;
+        }
+    
+    .grass {
+        width: 1200px;
+        height: 55px;
+        background-image: url('./references/6_hedgehog/grass_long.svg');
+    }
+                
+       
+input[type=checkbox] {
+    appearance: none;
+}
+
+/*input[type=radio] {
+    display: none;
+}*/
+
+/*radio*/
+
+input[type="radio"] {
+    border: 0px;
+    width: 50px;
+    height: 3em;    
+}
+
+/*input[type='radio'] {    
+    transform: scale(1.2);
+}*/
+
+.slides_logic {
+    width: 1200px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0px 0px 0px;    
+}
+
+/* or */
+
+#l1:checked ~ .view .l1 {
+    background-color: red;    
+}
+
+#l2:checked ~ .view .l1 {
+    background-color: red;
+}
+
+#l1:checked ~ .view .l1_ {
+    background-color: red;
+}
+
+#l2:checked ~ .view .l2 {
+    background-color: red;
+}
+
+/* and */
+
+#r1:checked ~ #r2:checked ~ .view .r1 {
+    background-color: red;
+}
+
+#r1:checked ~ .view .r1_ {
+    background-color: red;
+}
+
+#r2:checked ~ .view .r2_ {
+    background-color: red;
+}
+
+/*xor*/
+
+#z1:checked ~ #n2:checked ~ .view .z1 {
+    background-color: red;
+}
+
+#z1:checked ~ .view .z1_ {
+    background-color: red;
+}
+
+#z2:checked ~ .view .z2_ {
+    background-color: red;
+}
+
+#s1:checked ~ .view .sv1 {
+    background-color: red;
+}
+
+#s2:checked ~ .view .sv2 {
+    background-color: red;
+}
+
+#s3:checked ~ .view .sv3 {
+    background-color: red;
+}
+
+#s4:checked ~ .view .sv4 {
+    background-color: red;
+}
+
+#s1:checked ~ .view .sl1 {
+    background-color: red;
+}
+
+#s4:checked ~ .view .sl4 {
+    background-color: red;
+}
+
+.sa {
+    display: none;
+}
+
+#s1:checked ~ .view .sa2 {
+    display: block;
+}
+
+#s2:checked ~ .view .sa3 {
+    display: block;
+}
+
+#s3:checked ~ .view .sa4 {
+    display: block;
+}
+
+#s4:checked ~ .view .sa1 {
+    display: block;
+}
+
+.sd {
+    display: block;
+}
+
+#s1:checked ~ .view .sd4 {
+    display: block;
+}
+
+#s2:checked ~ .view .sd1 {
+    display: block;
+}
+
+#s3:checked ~ .view .sd2 {
+    display: block;
+}
+
+#s4:checked ~ .view .sd3 {
+    display: block;
+}
+
+.arrow_container {
+    position: relative;
+    width: 20px;
+}
+
+.pagination {
+    display: flex;
+}
+
+#c1:checked ~ .view .one {
+    display: none;
+}
+
+
+.boom {
+    z-index: 1;
+    width: 1300px;
+    height: 1300px;
+    position: absolute;
+    top: -180px;
+    left: 10px;
+    display: none;
+}
+
+.about {
+    width: 1200px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;     
+}
+
+.creator {
+    font-family: 'Princess Lulu';
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0px 0px 0px;
+}

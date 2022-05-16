@@ -76,15 +76,39 @@
             transform-origin: left center;            
         }
 
+        .butterfly {
+            width: 36px;
+            height: 36px;
+            background-image: url('./references/5_tree/butterfly-1.svg');
+            margin: 95px 0px 0px 230px;
+            display: inline-block;
+            animation-name: butterfly_anim;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
         @keyframes sakura_anim {
             from {
-                transform: rotate(10deg);
+                transform: rotate(1deg);
             }
             50% {
-                transform: rotate(-10deg);
+                transform: rotate(-1deg);
             }
             to {
-                transform: rotate(10deg);
+                transform: rotate(1deg);
+            }
+        }
+
+        @keyframes butterfly_anim {
+            from {
+                background-image: url('./references/5_tree/butterfly-1.svg');
+            }
+            50% {
+                background-image: url('./references/5_tree/butterfly-1_greenish.svg');
+            }
+            to {
+                background-image: url('./references/5_tree/butterfly-1.svg');
             }
         }
 
@@ -92,7 +116,7 @@
             width: 800px;
             height: 447px;
             display: flex;            
-            flex-wrap: wrap;
+            flex-wrap: wrap;            
         }
         
         .leaf_1 {
@@ -702,7 +726,7 @@
                 opacity: 1;
             }
             100% {
-                transform: translate(650px, 430px) rotate(-5400deg);
+                transform: translate(650px, 430px) rotate(-1200deg);
                 opacity: 0.5;
             }
         }
@@ -758,6 +782,36 @@
         width: 432px;
         height: 900px;
         background-image: url('./references/5_tree/tree_for_hand_cut.png');
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+    }
+
+    .hand {
+        width: 200px;
+        height: 236px;
+        background-image: url('./references/5_tree/hand_for_tree.png');
+        display: inline-block;
+        opacity: 0.4;
+        margin: 158px 0px 0px 132px;
+    }
+
+    .name {
+        width: 300px;
+        height: 100px;
+        display: inline-block;
+        font-size: 40px;
+        font-family: 'Royal Kingdom';
+        margin: 0px 0px 0px 135px;
+        opacity: 0.9;
+        text-shadow: 0 0 10px #1e1b1b;        
+    }
+
+    .name::first-letter {
+        font-size: 80px;
+        font-family: 'Black Chancery';
+        color: red;        
     }
                 
        
