@@ -65,7 +65,8 @@ input[type="radio"] {
     height: 900px;               
     border-radius: 30px 30px 0px 0px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
+    justify-content: space-between;          
 }
 
 .for_move {    
@@ -73,10 +74,11 @@ input[type="radio"] {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /*gap: calc((var(--width) - 1200px) / 2);*/          
+    /*gap: calc((var(--width) - 1200px) / 2);*/           
 }
 
-/*move*/
+
+/*move left*/
 
 #game_one:checked ~ .pagination_logic .slide_one {
     display: block;
@@ -406,7 +408,7 @@ input[type=checkbox] {
 
 .slide_one {
     width: 1200px;
-    height: 900px;
+    height: 900px;    
 }
 
 .first_game_dino {
@@ -3421,7 +3423,7 @@ body {
     width: 1200px;
     height: 50px;
     display: flex;
-    justify-content: flex-start;     
+    justify-content: space-between;     
 }
 
 .creator {
@@ -3445,7 +3447,9 @@ body {
     height: 30px;
     border-radius: 100%;
     border-style: solid;
+    border-width: 2px;
     background-color: rgb(233, 32, 86);
+    border-color: #fff;
 }
 
 .circle_2 {
@@ -3453,7 +3457,9 @@ body {
     height: 30px;
     border-radius: 100%;
     border-style: solid;
+    border-width: 2px;
     background-color: rgb(233, 116, 43);
+    border-color: #fff;
 }
 
 .circle_3 {
@@ -3461,7 +3467,9 @@ body {
     height: 30px;
     border-radius: 100%;
     border-style: solid;
+    border-width: 2px;
     background-color: rgb(233, 216, 83);
+    border-color: #fff;
 }
 
 .circle_4 {
@@ -3469,7 +3477,9 @@ body {
     height: 30px;
     border-radius: 100%;
     border-style: solid;
+    border-width: 2px;
     background-color: rgb(100, 233, 83);
+    border-color: #fff;
 }
 
 .circle_5 {
@@ -3477,7 +3487,9 @@ body {
     height: 30px;
     border-radius: 100%;
     border-style: solid;
+    border-width: 2px;
     background-color: rgb(83, 226, 233);
+    border-color: #fff;
 }
 
 .circle_6 {
@@ -3485,7 +3497,9 @@ body {
     height: 30px;
     border-radius: 100%;
     border-style: solid;
+    border-width: 2px;
     background-color: rgb(83, 100, 233);
+    border-color: #fff;
 }
 
 .circle_7 {
@@ -3493,7 +3507,9 @@ body {
     height: 30px;
     border-radius: 100%;
     border-style: solid;
+    border-width: 2px;
     background-color: rgb(213, 83, 233);
+    border-color: #fff;
 }
 
 #game_one:checked ~ .pagination_logic .circle_1 {
@@ -3574,31 +3590,38 @@ body {
 }
 
 #game_one:not(checked):active ~ .pagination_logic .circle_1 {
-    background-color: rgb(233, 32, 86);    
+    background-color: rgb(233, 32, 86);
+    border-color: #fff;    
 }
 
 #game_two:not(checked):active ~ .pagination_logic .circle_2 {
-    background-color: rgb(233, 116, 43);    
+    background-color: rgb(233, 116, 43); 
+    border-color: #fff;   
 }
 
 #game_three:not(checked):active ~ .pagination_logic .circle_3 {
-    background-color: rgb(233, 216, 83);    
+    background-color: rgb(233, 216, 83); 
+    border-color: #fff;   
 }
 
 #game_four:not(checked):active ~ .pagination_logic .circle_4 {
-    background-color: rgb(100, 233, 83);    
+    background-color: rgb(100, 233, 83);
+    border-color: #fff;   
 }
 
 #game_five:not(checked):active ~ .pagination_logic .circle_5 {
-    background-color: rgb(83, 226, 233);    
+    background-color: rgb(83, 226, 233);
+    border-color: #fff;    
 }
 
 #game_six:not(checked):active ~ .pagination_logic .circle_6 {
-    background-color: rgb(83, 100, 233);    
+    background-color: rgb(83, 100, 233);
+    border-color: #fff;    
 }
 
 #game_seven:not(checked):active ~ .pagination_logic .circle_7 {
     background-color: rgb(213, 83, 233);    
+    border-color: #fff;
 }
 
 label {
