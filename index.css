@@ -38,9 +38,13 @@
     font-style: normal;
 }
 
+/* variables */
+
 :root {
     --width: 100vw;
 }
+
+/* radio buttons */
 
 input[type="radio"] {
     border: 0px;
@@ -48,6 +52,8 @@ input[type="radio"] {
     height: 3em;
     display: none;   
 }
+
+/* games body */
 
 .wrapper {
     width: 100%;
@@ -74,7 +80,7 @@ input[type="radio"] {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /*gap: calc((var(--width) - 1200px) / 2);*/           
+    /*gap: calc((var(--width) - 1200px) / 2);*/              
 }
 
 
@@ -686,7 +692,7 @@ input[type=checkbox] {
 
 .slide_two {
     width: 1200px;
-    height: 900px;
+    height: 900px;    
 }
 
     .title_2_wrapper {
@@ -2009,7 +2015,7 @@ body {
 
         .inventory {
             z-index: 5;
-            width: 600px;
+            width: 650px;
             height: 580px;
             display: flex;
             flex-wrap: wrap;
