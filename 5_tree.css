@@ -1,0 +1,938 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Arial";
+    src: url("./references/fonts/arial/arial-black.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Royal Kingdom";
+    src: url("./references/fonts/royal-kingdom-font/AnyConv.com__RoyalKingdom1-BWdrd.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Black Chancery";
+    src: url("./references/fonts/blackchancery/AnyConv.com__BLKCHCRY.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Princess Lulu";
+    src: url("./references/fonts/princess-lulu-font/AnyConv.com__PrincessLulu-lxBe.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Blackadder";
+    src: url("./references/fonts/blackadder-itc/blackadder.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+}
+
+    .trees_wrapper {
+        width: 1200px;
+        height: 900px;
+        display: flex;
+        justify-content: space-between;
+        top: 0;
+        background: linear-gradient(rgb(154, 211, 238), rgb(238, 154, 221), rgb(223, 238, 154),
+        rgb(100, 244, 136), rgb(12, 174, 118));        
+        border-radius: 30px 30px 30px 30px;
+        overflow: hidden;              
+    }
+
+    .branch {
+        width: 800px;
+        height: 900px;
+    }
+
+        .sakura_branch {
+            width: 800px;
+            height: 453px;
+            background-image: url('./references/5_tree/pngwing4.png');
+            animation-name: sakura_anim;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            transform-origin: left center;            
+        }
+
+        @keyframes sakura_anim {
+            from {
+                transform: rotate(10deg);
+            }
+            50% {
+                transform: rotate(-10deg);
+            }
+            to {
+                transform: rotate(10deg);
+            }
+        }
+
+        .leaves {
+            width: 800px;
+            height: 447px;
+            display: flex;            
+            flex-wrap: wrap;
+        }
+        
+        .leaf_1 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-1.png'); 
+            animation-name: leaf_1_anim;
+            animation-duration: 28s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0) rotate(0);
+            opacity: 0;
+        }
+
+        @keyframes leaf_1_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(20px, 50px) rotate(80deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(80px, 100px) rotate(-80deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(150px, 200px) rotate(40deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(100px, 300) rotate(-40deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(50px, 350px) rotate(50deg);
+                opacity: 1;
+            }
+            90% {
+                transform: translate(100px, 380px) rotate(-100deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(150px, 430px) rotate(20deg);
+                opacity: 0.5;
+            }
+        }        
+
+        .leaf_2 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-2.png');  
+            animation-name: leaf_2_anim;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 3s;
+        }
+
+        @keyframes leaf_2_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            8% {
+                transform: translate(50px, 60px) rotate(100deg);
+                opacity: 1;
+            }
+            18% {
+                transform: translate(20px, 110px) rotate(-50deg);
+                opacity: 1;
+            }
+            42% {
+                transform: translate(150px, 180px) rotate(30deg);
+                opacity: 1;
+            }
+            58% {
+                transform: translate(180px, 280px) rotate(-40deg);
+                opacity: 1;
+            }
+            77% {
+                transform: translate(220px, 340px) rotate(60deg);
+                opacity: 1;
+            }
+            92% {
+                transform: translate(160px, 380px) rotate(-100deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(180px, 430px) rotate(200deg);
+                opacity: 0.5;
+            }
+        }  
+
+        .leaf_3 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-3.png');
+            animation-name: leaf_3_anim;
+            animation-duration: 26s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 4s;
+        }
+
+        @keyframes leaf_3_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            8% {
+                transform: translate(150px, 70px) rotate(-100deg);
+                opacity: 1;
+            }
+            18% {
+                transform: translate(220px, 120px) rotate(120deg);
+                opacity: 1;
+            }
+            42% {
+                transform: translate(250px, 160px) rotate(-80deg);
+                opacity: 1;
+            }
+            58% {
+                transform: translate(190px, 270px) rotate(-45deg);
+                opacity: 1;
+            }
+            77% {
+                transform: translate(220px, 340px) rotate(60deg);
+                opacity: 1;
+            }
+            92% {
+                transform: translate(160px, 380px) rotate(-100deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(180px, 430px) rotate(200deg);
+                opacity: 0.5;
+            }
+        } 
+
+        .leaf_4 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-4.png'); 
+            animation-name: leaf_4_anim;
+            animation-duration: 23s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 6s;
+        }
+
+        @keyframes leaf_4_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            12% {
+                transform: translate(100px, 50px) rotate(100deg);
+                opacity: 1;
+            }
+            18% {
+                transform: translate(220px, 120px) rotate(-120deg);
+                opacity: 1;
+            }
+            42% {
+                transform: translate(250px, 150px) rotate(80deg);
+                opacity: 1;
+            }
+            58% {
+                transform: translate(300px, 260px) rotate(-45deg);
+                opacity: 1;
+            }
+            77% {
+                transform: translate(210px, 320px) rotate(60deg);
+                opacity: 1;
+            }
+            92% {
+                transform: translate(320px, 360px) rotate(-100deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(240px, 430px) rotate(120deg);
+                opacity: 0.5;
+            }
+        } 
+
+        .leaf_5 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-5.png'); 
+            animation-name: leaf_5_anim;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 1s;
+        }
+
+        @keyframes leaf_5_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(100px, 40px) rotate(10deg);
+                opacity: 1;
+            }
+            18% {
+                transform: translate(-80px, 100px) rotate(-20deg);
+                opacity: 1;
+            }
+            42% {
+                transform: translate(150px, 200px) rotate(20deg);
+                opacity: 1;
+            }
+            58% {
+                transform: translate(300px, 280px) rotate(-25deg);
+                opacity: 1;
+            }
+            77% {
+                transform: translate(200px, 330px) rotate(10deg);
+                opacity: 1;
+            }
+            92% {
+                transform: translate(300px, 370px) rotate(-10deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(350px, 430px) rotate(12deg);
+                opacity: 0.5;
+            }
+        } 
+
+        .leaf_6 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-6.png'); 
+            animation-name: leaf_6_anim;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 4s;
+        }
+
+        @keyframes leaf_6_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            15% {
+                transform: translate(100px, 40px) rotate(50deg);
+                opacity: 1;
+            }
+            18% {
+                transform: translate(0px, 100px) rotate(-50deg);
+                opacity: 1;
+            }
+            42% {
+                transform: translate(150px, 220px) rotate(50deg);
+                opacity: 1;
+            }
+            58% {
+                transform: translate(270px, 260px) rotate(-55deg);
+                opacity: 1;
+            }
+            77% {
+                transform: translate(180px, 340px) rotate(50deg);
+                opacity: 1;
+            }
+            92% {
+                transform: translate(90px, 360px) rotate(-50deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(180px, 430px) rotate(52deg);
+                opacity: 0.5;
+            }
+        } 
+
+        .leaf_7 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-7.png'); 
+            animation-name: leaf_7_anim;
+            animation-duration: 32s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 8s;
+        }
+
+        @keyframes leaf_7_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(30px, 50px) rotate(-180deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(-50px, 110px) rotate(250deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(50px, 200px) rotate(-150deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(-70px, 290px) rotate(730deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(90px, 340px) rotate(-100deg);
+                opacity: 1;
+            }
+            92% {
+                transform: translate(90px, 360px) rotate(70deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(200px, 430px) rotate(-80deg);
+                opacity: 0.5;
+            }
+        } 
+
+
+        .leaf_8 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-8.png'); 
+            animation-name: leaf_8_anim;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 2s;
+        }
+
+        @keyframes leaf_8_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(40px, 60px) rotate(80deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(150px, 130px) rotate(-50deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(250px, 240px) rotate(90deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(280px, 300px) rotate(-330deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(250px, 350px) rotate(110deg);
+                opacity: 1;
+            }
+            92% {
+                transform: translate(290px, 370px) rotate(-40deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(350px, 430px) rotate(70deg);
+                opacity: 0.5;
+            }
+        }
+
+        .leaf_9 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-9.png'); 
+            animation-name: leaf_9_anim;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 9s;
+        }
+
+        @keyframes leaf_9_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(-100px, 80px) rotate(-50deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(150px, 130px) rotate(600deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(250px, 240px) rotate(-600deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(280px, 300px) rotate(330deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(250px, 350px) rotate(-110deg);
+                opacity: 1;
+            }
+            92% {
+                transform: translate(290px, 370px) rotate(400deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(350px, 430px) rotate(-700deg);
+                opacity: 0.5;
+            }
+        }
+
+        .leaf_10 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-10.png'); 
+            animation-name: leaf_10_anim;
+            animation-duration: 33s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 3s;
+        }
+
+        @keyframes leaf_10_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(200px, 70px) rotate(75deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(50px, 130px) rotate(-100deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(120px, 230px) rotate(500deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(300px, 310px) rotate(-30deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(350px, 340px) rotate(110deg);
+                opacity: 1;
+            }
+            90% {
+                transform: translate(280px, 370px) rotate(-600deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(440px, 430px) rotate(300deg);
+                opacity: 0.5;
+            }
+        }
+
+        .leaf_11 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-11.png'); 
+            animation-name: leaf_11_anim;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 1s;
+        }
+
+        @keyframes leaf_11_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(180px, 90px) rotate(750deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(50px, 130px) rotate(-180deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(120px, 230px) rotate(400deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(300px, 310px) rotate(-360deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(350px, 340px) rotate(180deg);
+                opacity: 1;
+            }
+            90% {
+                transform: translate(280px, 370px) rotate(-470deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(440px, 430px) rotate(430deg);
+                opacity: 0.5;
+            }
+        }
+
+        .leaf_12 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-12.png'); 
+            animation-name: leaf_12_anim;
+            animation-duration: 28s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 5s;
+        }
+
+        @keyframes leaf_12_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(100px, 90px) rotate(700deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(300px, 140px) rotate(-300deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(420px, 230px) rotate(330deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(290px, 320px) rotate(-500deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(450px, 350px) rotate(310deg);
+                opacity: 1;
+            }
+            90% {
+                transform: translate(430px, 400px) rotate(-800deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(480px, 430px) rotate(400deg);
+                opacity: 0.5;
+            }
+        }
+
+        .leaf_13 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-13.png'); 
+            animation-name: leaf_13_anim;
+            animation-duration: 31s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 6s;
+        }
+
+        @keyframes leaf_13_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(90px, 110px) rotate(-600deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(240px, 150px) rotate(900deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(420px, 230px) rotate(-30deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(250px, 320px) rotate(460deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(300px, 330px) rotate(-310deg);
+                opacity: 1;
+            }
+            90% {
+                transform: translate(480px, 380px) rotate(660deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(650px, 430px) rotate(-5400deg);
+                opacity: 0.5;
+            }
+        }
+
+        .leaf_14 {
+            width: 50px;
+            height: 50px;
+            background-image: url('./references/5_tree/sakura_leaf-14.png'); 
+            animation-name: leaf_14_anim;
+            animation-duration: 25s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            transform: translate(0, 0);
+            animation-delay: 7s;
+        }
+
+        @keyframes leaf_14_anim {
+            0% {
+                transform: translate(0px, 0px);
+                opacity: 0;
+            }
+            10% {
+                transform: translate(-190px, 110px) rotate(350deg);
+                opacity: 1;
+            }
+            20% {
+                transform: translate(240px, 150px) rotate(-200deg);
+                opacity: 1;
+            }
+            40% {
+                transform: translate(-420px, 230px) rotate(300deg);
+                opacity: 1;
+            }
+            60% {
+                transform: translate(250px, 320px) rotate(-360deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translate(-300px, 330px) rotate(810deg);
+                opacity: 1;
+            }
+            90% {
+                transform: translate(480px, 380px) rotate(-760deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(550px, 430px) rotate(800deg);
+                opacity: 0.5;
+            }
+        }
+   
+    .tree_with_hand {
+        width: 432px;
+        height: 900px;
+        background-image: url('./references/5_tree/tree_for_hand_cut.png');
+    }
+                
+       
+input[type=checkbox] {
+    appearance: none;
+}
+
+/*input[type=radio] {
+    display: none;
+}*/
+
+/*radio*/
+
+input[type="radio"] {
+    border: 0px;
+    width: 50px;
+    height: 3em;    
+}
+
+/*input[type='radio'] {    
+    transform: scale(1.2);
+}*/
+
+.slides_logic {
+    width: 1200px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0px 0px 0px;    
+}
+
+/* or */
+
+#l1:checked ~ .view .l1 {
+    background-color: red;    
+}
+
+#l2:checked ~ .view .l1 {
+    background-color: red;
+}
+
+#l1:checked ~ .view .l1_ {
+    background-color: red;
+}
+
+#l2:checked ~ .view .l2 {
+    background-color: red;
+}
+
+/* and */
+
+#r1:checked ~ #r2:checked ~ .view .r1 {
+    background-color: red;
+}
+
+#r1:checked ~ .view .r1_ {
+    background-color: red;
+}
+
+#r2:checked ~ .view .r2_ {
+    background-color: red;
+}
+
+/*xor*/
+
+#z1:checked ~ #n2:checked ~ .view .z1 {
+    background-color: red;
+}
+
+#z1:checked ~ .view .z1_ {
+    background-color: red;
+}
+
+#z2:checked ~ .view .z2_ {
+    background-color: red;
+}
+
+#s1:checked ~ .view .sv1 {
+    background-color: red;
+}
+
+#s2:checked ~ .view .sv2 {
+    background-color: red;
+}
+
+#s3:checked ~ .view .sv3 {
+    background-color: red;
+}
+
+#s4:checked ~ .view .sv4 {
+    background-color: red;
+}
+
+#s1:checked ~ .view .sl1 {
+    background-color: red;
+}
+
+#s4:checked ~ .view .sl4 {
+    background-color: red;
+}
+
+.sa {
+    display: none;
+}
+
+#s1:checked ~ .view .sa2 {
+    display: block;
+}
+
+#s2:checked ~ .view .sa3 {
+    display: block;
+}
+
+#s3:checked ~ .view .sa4 {
+    display: block;
+}
+
+#s4:checked ~ .view .sa1 {
+    display: block;
+}
+
+.sd {
+    display: block;
+}
+
+#s1:checked ~ .view .sd4 {
+    display: block;
+}
+
+#s2:checked ~ .view .sd1 {
+    display: block;
+}
+
+#s3:checked ~ .view .sd2 {
+    display: block;
+}
+
+#s4:checked ~ .view .sd3 {
+    display: block;
+}
+
+.arrow_container {
+    position: relative;
+    width: 20px;
+}
+
+.pagination {
+    display: flex;
+}
+
+#c1:checked ~ .view .one {
+    display: none;
+}
+
+
+.boom {
+    z-index: 1;
+    width: 1300px;
+    height: 1300px;
+    position: absolute;
+    top: -180px;
+    left: 10px;
+    display: none;
+}
+
+.about {
+    width: 1200px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;     
+}
+
+.creator {
+    font-family: 'Princess Lulu';
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0px 0px 0px;
+}

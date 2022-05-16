@@ -546,13 +546,51 @@
             height: 200px;
             display: flex;
             justify-content: center;
+            align-items: flex-end;
         }
 
         .potion {
             width: 150px;
             height: 150px;
             background-image: url('./references/4_potions/potion_green.svg');
-            margin: 80px 0px 0px 0px;
+            margin: 0px 0px 10px 0px;            
+        }
+
+        .candle {
+            width: 150px;
+            height: 150px;
+            background-image: url('./references/4_potions/candle.svg');
+            margin: 0px 0px 20px 0px;            
+        }
+
+        .candle_light {
+            width: 150px;
+            height: 150px;
+            background-image: url('./references/4_potions/candle_light.svg');            
+            opacity: 0.6;
+            filter: blur(10px);
+            transform: scale(1);
+            animation-name: candle_light_anim;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        .witch_hat {
+            width: 200px;
+            height: 200px;
+            background-image: url('./references/4_potions/witch_hat_2.svg');
+        }
+        
+        @keyframes candle_light_anim {
+            from {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            to {
+                transform: scale(1);
+            }
         }
 
         .cauldron_cat {
