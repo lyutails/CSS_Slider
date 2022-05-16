@@ -55,49 +55,18 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        background: linear-gradient(rgb(159, 200, 220), rgb(237, 202, 75), rgb(170, 91, 1));        
+        background: #eeeeee;        
         border-radius: 30px 30px 30px 30px;
         overflow: hidden;              
     }
 
     .top_wrapper {
         width: 1200px;
-        height: 200px;
+        height: 150px;
         display: flex;        
         justify-content: space-around; 
         align-items: center;
-    }
-
-    .kite {
-        width: 150px;
-        height: 150px;
-        background-image: url('./references/6_hedgehog/kite1.svg');
-        animation-name: kite_anim;
-        animation-duration: 3s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
-
-    @keyframes kite_anim {
-        0% {
-            background-image: url('./references/6_hedgehog/kite1.svg');
-        }
-        10% {
-            background-image: url('./references/6_hedgehog/kite1.svg');
-        }
-        20% {
-            background-image: url('./references/6_hedgehog/kite2.svg');
-        }
-        70% {
-            background-image: url('./references/6_hedgehog/kite2.svg');
-        }
-        80% {
-            background-image: url('./references/6_hedgehog/kite1.svg');
-        }
-        100% {
-            background-image: url('./references/6_hedgehog/kite1.svg');
-        }
-    }
+    }    
 
     .name {
         width: 300px;
@@ -113,204 +82,35 @@
         font-family: 'Black Chancery';
         color: red;
     }
-
-    .hive {
-        width: 150px;
-        height: 150px;
-        background-image: url('./references/6_hedgehog/hive.svg');
-    }
-
-    .puzzle {
-        width: 1200px;
-        height: 500px;
-        display: flex;
-        justify-content: space-between;
-        
-    }
-
-    .puzzle_pic {
-        width: 800px;
-        height: 500px;
-        background-color: aquamarine;
-        border-radius: 20px;        
-    }
-
-        .details_left {
-            width: 200px;
-            height: 500px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-            .detail_l1 {
-                width: 80px;
-                height: 80px;
-                background-color: coral;
-            }
-
-            .detail_l2 {
-                width: 80px;
-                height: 80px;
-                background-color: coral;
-            }
-
-            .detail_l3 {
-                width: 80px;
-                height: 80px;
-                background-color: coral;
-            }
-
-            .detail_l4 {
-                width: 80px;
-                height: 80px;
-                background-color: coral;
-            }
-
-            .detail_l5 {
-                width: 80px;
-                height: 80px;
-                background-color: coral;
-            }
-
-        .details_right {
-            width: 200px;
-            height: 500px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-            .detail_r1 {
-                width: 80px;
-                height: 80px;
-                background-color: coral;
-            }
-
-            .detail_r2 {
-                width: 80px;
-                height: 80px;
-                background-color: coral;
-            }
-
-            .detail_r3 {
-                width: 80px;
-                height: 80px;
-                background-color: coral;
-            }
-
-            .detail_r4 {
-                width: 80px;
-                height: 80px;
-                background-color: coral;
-            }
-
-            .detail_r5 {
-                width: 80px;
-                height: 80px;
-                background-color: coral;
-            }
-
-    .hedgehog_wrapper {
-        width: 1200px;
-        height: 200px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-        .hedgehog {
-            width: 100px;
-            height: 100px;
-            background-image: url('./references/6_hedgehog/hedgehog1.svg');
-        }
-
-        .apple {
-            width: 100px;
-            height: 100px;
-            background-image: url('./references/6_hedgehog/apple-svgrepo-com.svg');
-        }
-
-        .mushrooms {
-            width: 100px;
-            height: 100px;
-            background-image: url('./references/6_hedgehog/mushrooms-mushroom-svgrepo-com.svg');
-        }
-
-        .maple_leaf {
-            width: 100px;
-            height: 100px;
-            background-image: url('./references/6_hedgehog/maple-leaf_smaller.svg');
-        }
-
-        .marshmallow {
-            width: 100px;
-            height: 100px;
-            background-image: url('./references/6_hedgehog/marshmallow-svgrepo-com.svg');
-        }
-
-        .sock {
-            width: 100px;
-            height: 100px;
-            background-image: url('./references/6_hedgehog/sock-svgrepo-com.svg');
-        }
-
-        .acorn {
-            width: 100px;
-            height: 100px;
-            background-image: url('./references/6_hedgehog/acorn-svgrepo-com.svg');
-        }
-
-        .muhomor {
-            width: 100px;
-            height: 100px;
-            background-image: url('./references/6_hedgehog/mushrooms-mushroom-svgrepo-com.svg');
-            display: none;
-        }
-
-        .oak_leaf {
-            width: 100px;
-            height: 100px;
-            background-image: url('./references/6_hedgehog/oak_leaf.svg');
-            display: none;
-        }
-
-        .pear {
-            width: 100px;
-            height: 100px;
-            background-image: url('./references/6_hedgehog/pear-svgrepo-com.svg');
-            display: none;
-        }
-
-        .umbrella {
-            width: 100px;
-            height: 100px;
-            background-image: url('./references/6_hedgehog/umbrella-svgrepo-com.svg');
-            display: none;
-        }
-
-        .broom {
-            width: 100px;
-            height: 100px;
-            background-image: url('./references/6_hedgehog/broom-svgrepo-com.svg');
-            display: none;
-        }
-
-        .house {
-            width: 100px;
-            height: 100px;
-            background-image: url('./references/6_hedgehog/house.svg');
-            display: none;
-        }
     
-    .grass {
+    .labyrinth {
         width: 1200px;
-        height: 55px;
-        background-image: url('./references/6_hedgehog/grass_long.svg');
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
     }
-                
+
+    .heart {
+        width: 800px;
+        height: 800px;
+        background-image: url('./references/7_heart/heart.svg');
+        display: flex;
+        justify-content: center;
+        align-items: center;                             
+    }
+
+        .name_in_heart {
+            width: 500px;
+            height: 100px;
+            font-family: 'Princess Lulu';
+            font-size: 100px;
+            color: rgb(179, 93, 93);
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
        
 input[type=checkbox] {
     appearance: none;
