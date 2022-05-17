@@ -1880,8 +1880,7 @@ body {
                 animation-name: caterpillar_anim;
                 animation-duration: 5s;
                 animation-timing-function: linear;
-                animation-iteration-count: infinite;
-                transform: translateX(0);                                              
+                animation-iteration-count: infinite;                                                              
             }
 
             @keyframes caterpillar_anim {
@@ -1898,7 +1897,7 @@ body {
                     background-image: url('./references/4_potions/caterpillar_to_right.svg');
                 }
                 99% {
-                    transform: translateX(-10);
+                    transform: translateX(10);
                     background-image: url('./references/4_potions/caterpillar_to_left.svg');
                 }
                 100% {
@@ -2412,7 +2411,7 @@ body {
                 justify-self: flex-end;
                 align-items: center;
                 animation-name: cauldron_anim; 
-                animation-duration: 2s;
+                animation-duration: 4s;
                 animation-iteration-count: infinite;                     
             }
 
@@ -2420,10 +2419,22 @@ body {
                 from {
                     background-image: url('./references/4_potions/cauldron_green.svg');
                 }
-                50% {
+                15% {
                     background-image: url('./references/4_potions/cauldron_green_2.svg');
                 }
-                from {
+                30% {
+                    background-image: url('./references/4_potions/cauldron_green.svg');
+                }
+                50% {
+                    background-image: url('./references/4_potions/cauldron_orange.svg');
+                }
+                75% {
+                    background-image: url('./references/4_potions/cauldron_orange_2.svg');
+                }
+                95% {
+                    background-image: url('./references/4_potions/cauldron_orange.svg');
+                }
+                to {
                     background-image: url('./references/4_potions/cauldron_green.svg');
                 }
             }
@@ -2458,20 +2469,25 @@ body {
                 width: 200px;
                 height: 200px;
                 background-image: url('./references/4_potions/black-cat_mouth.svg');
-            }  
+            } 
             
-    #eat_sushi:checked ~ .title_4_wrapper .sushi_label {
-        display: none;
-    }
+            .sushi_label {
+                width: 80px;
+                height: 80px;
+            }
+            
+            #eat_sushi:checked ~ .title_4_wrapper .sushi_label {
+                display: none;
+            }
 
-    #eat_sushi:checked ~ .title_4_wrapper .cat_label{
-        background-image: url('./references/4_potions/black-cat_after_sushi.svg');
-    }
+            #eat_sushi:checked ~ .title_4_wrapper .cat_label{
+                background-image: url('./references/4_potions/black-cat_after_sushi.svg');
+            }
 
-    .sushi:hover {
-        box-shadow: 0 0 30px #e3d961;
-        transition: ease-in-out 0.1s;
-    }
+            .sushi:hover {
+                box-shadow: 0 0 30px #e3d961;
+                transition: ease-in-out 0.1s;
+            }
 
 
 
