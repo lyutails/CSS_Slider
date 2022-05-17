@@ -1188,13 +1188,13 @@ input[type=checkbox] {
                 transform: scale(0.9);
                 animation-name: move_anim;
                 animation-duration: 10s;  
-                cursor: url('./references/2_firefly_pics/magic_wand_2.png'), 24 24, auto;                                                            
+                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');                                                            
             }            
 
             .firefly_one:hover {
                 background-image: url('./references/2_firefly_pics/firefly_red.svg');                
                 transition: 0.5s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2.png'), 24 24, auto;                    
+                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');                    
             }
 
             .firefly_two {
@@ -1206,13 +1206,13 @@ input[type=checkbox] {
                 transform: scale(0.8);
                 animation-name: move_anim;
                 animation-duration: 10s; 
-                cursor: url('./references/2_firefly_pics/magic_wand.png');                
+                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');               
             }
 
             .firefly_two:hover {
                 background-image: url('./references/2_firefly_pics/firefly_orange.svg');                
                 transition: 0.5s;                
-                cursor: url('./references/2_firefly_pics/magic_wand.png');
+                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');
             }
 
             .firefly_three {
@@ -1224,13 +1224,13 @@ input[type=checkbox] {
                 transform: scale(1.2);
                 animation-name: move_anim;
                 animation-duration: 10s;
-                cursor: url('./references/2_firefly_pics/magic_wand.png');                 
+                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');                 
             }
 
             .firefly_three:hover {
                 background-image: url('./references/2_firefly_pics/firefly_yellow.svg');
                 transition: 0.5s;                
-                cursor: url('./references/2_firefly_pics/magic_wand.png');
+                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');
             }
 
             .firefly_four {
@@ -1241,13 +1241,14 @@ input[type=checkbox] {
                 animation-delay: -6s !important;
                 transform: scale(0.7);
                 animation-name: move_anim;
-                animation-duration: 10s;                   
+                animation-duration: 10s;
+                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');                   
             }
 
             .firefly_four:hover {
                 background-image: url('./references/2_firefly_pics/firefly_green.svg');                
                 transition: 0.5s;
-                cursor: url('./references/2_firefly_pics/magic_wand.png');
+                ccursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');
             }
 
             .firefly_five {
@@ -1259,13 +1260,13 @@ input[type=checkbox] {
                 transform: scale(1.1);
                 animation-name: move_anim;
                 animation-duration: 10s; 
-                cursor: url('./references/2_firefly_pics/magic_wand.png');               
+                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');               
             }
             
             .firefly_five:hover {
                 background-image: url('./references/2_firefly_pics/firefly_blue.svg');                
                 transition: 0.5s;
-                cursor: url('./references/2_firefly_pics/magic_wand.png');                
+                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');                
             }
 
             .firefly_six {
@@ -1278,13 +1279,13 @@ input[type=checkbox] {
                 transform: scale(0.5);
                 animation-name: move_anim;
                 animation-duration: 10s;
-                cursor: url('./references/2_firefly_pics/magic_wand.png'); 
+                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');
             }
 
             .firefly_six:hover {
                 background-image: url('./references/2_firefly_pics/firefly_navy_blue.svg');                
                 transition: 0.5s;
-                cursor: url('./references/2_firefly_pics/magic_wand.png'); 
+                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'); 
             }
 
             .firefly_seven {
@@ -1297,13 +1298,13 @@ input[type=checkbox] {
                 transform: scale(0.6);
                 animation-name: move_anim;
                 animation-duration: 10s;  
-                cursor: url('./references/2_firefly_pics/magic_wand.png');
+                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');
             }
 
             .firefly_seven:hover {
                 background-image: url('./references/2_firefly_pics/firefly_purple.svg');                
                 transition: 0.5s;
-                cursor: url('./references/2_firefly_pics/magic_wand.png');                 
+                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');                 
             }
 
             @keyframes move_anim {
@@ -2245,7 +2246,7 @@ body {
                 cursor: pointer;
             }
 
-            .apple {
+            .potions_apple {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/apple.svg');
@@ -2459,11 +2460,11 @@ body {
                 background-image: url('./references/4_potions/black-cat_mouth.svg');
             }  
             
-    #eat_sushi:checked ~ .title_4_wrapper .inventory .sushi .cats_sushi {
+    #eat_sushi:checked ~ .title_4_wrapper .sushi_label {
         display: none;
     }
 
-    #eat_sushi:checked ~ .title_4_wrapper .cat {
+    #eat_sushi:checked ~ .title_4_wrapper .cat_label{
         background-image: url('./references/4_potions/black-cat_after_sushi.svg');
     }
 
@@ -2557,7 +2558,7 @@ body {
             height: 50px;
             background-image: url('./references/5_tree/sakura_leaf-1.png'); 
             animation-name: leaf_1_anim;
-            animation-duration: 28s;
+            animation-duration: 0s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             transform: translate(0, 0) rotate(0);
@@ -2604,7 +2605,7 @@ body {
             height: 50px;
             background-image: url('./references/5_tree/sakura_leaf-2.png');  
             animation-name: leaf_2_anim;
-            animation-duration: 20s;
+            animation-duration: 0s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             transform: translate(0, 0);
@@ -2651,7 +2652,7 @@ body {
             height: 50px;
             background-image: url('./references/5_tree/sakura_leaf-3.png');
             animation-name: leaf_3_anim;
-            animation-duration: 26s;
+            animation-duration: 0s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             transform: translate(0, 0);
@@ -2698,7 +2699,7 @@ body {
             height: 50px;
             background-image: url('./references/5_tree/sakura_leaf-4.png'); 
             animation-name: leaf_4_anim;
-            animation-duration: 23s;
+            animation-duration: 0s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             transform: translate(0, 0);
@@ -2745,7 +2746,7 @@ body {
             height: 50px;
             background-image: url('./references/5_tree/sakura_leaf-5.png'); 
             animation-name: leaf_5_anim;
-            animation-duration: 10s;
+            animation-duration: 0s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             transform: translate(0, 0);
@@ -2792,7 +2793,7 @@ body {
             height: 50px;
             background-image: url('./references/5_tree/sakura_leaf-6.png'); 
             animation-name: leaf_6_anim;
-            animation-duration: 16s;
+            animation-duration: 0s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             transform: translate(0, 0);
@@ -2839,7 +2840,7 @@ body {
             height: 50px;
             background-image: url('./references/5_tree/sakura_leaf-7.png'); 
             animation-name: leaf_7_anim;
-            animation-duration: 32s;
+            animation-duration: 0s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             transform: translate(0, 0);
@@ -2887,7 +2888,7 @@ body {
             height: 50px;
             background-image: url('./references/5_tree/sakura_leaf-8.png'); 
             animation-name: leaf_8_anim;
-            animation-duration: 25s;
+            animation-duration: 0s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             transform: translate(0, 0);
@@ -2934,7 +2935,7 @@ body {
             height: 50px;
             background-image: url('./references/5_tree/sakura_leaf-9.png'); 
             animation-name: leaf_9_anim;
-            animation-duration: 15s;
+            animation-duration: 0s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             transform: translate(0, 0);
@@ -2981,7 +2982,7 @@ body {
             height: 50px;
             background-image: url('./references/5_tree/sakura_leaf-10.png'); 
             animation-name: leaf_10_anim;
-            animation-duration: 33s;
+            animation-duration: 0s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             transform: translate(0, 0);
@@ -3028,7 +3029,7 @@ body {
             height: 50px;
             background-image: url('./references/5_tree/sakura_leaf-11.png'); 
             animation-name: leaf_11_anim;
-            animation-duration: 20s;
+            animation-duration: 0s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             transform: translate(0, 0);
@@ -3075,7 +3076,7 @@ body {
             height: 50px;
             background-image: url('./references/5_tree/sakura_leaf-12.png'); 
             animation-name: leaf_12_anim;
-            animation-duration: 28s;
+            animation-duration: 0s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             transform: translate(0, 0);
@@ -3122,7 +3123,7 @@ body {
             height: 50px;
             background-image: url('./references/5_tree/sakura_leaf-13.png'); 
             animation-name: leaf_13_anim;
-            animation-duration: 31s;
+            animation-duration: 0s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             transform: translate(0, 0);
@@ -3169,7 +3170,7 @@ body {
             height: 50px;
             background-image: url('./references/5_tree/sakura_leaf-14.png'); 
             animation-name: leaf_14_anim;
-            animation-duration: 25s;
+            animation-duration: 0s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             transform: translate(0, 0);
@@ -3219,7 +3220,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: space-between;
-    }
+    }    
 
     .hand {
         width: 200px;
@@ -3228,7 +3229,113 @@ body {
         display: inline-block;
         opacity: 0.4;
         margin: 158px 0px 0px 132px;
+        cursor: pointer;
     }
+
+        .radio_hand_style {
+            width: 200px;
+            height: 236px;
+            background-image: url('./references/5_tree/hand_for_tree.png');
+            opacity: 0.2;
+        }
+
+        #radio_hand:checked ~ .trees_wrapper .leaf_14 {
+            animation-name: leaf_14_anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 25s;
+        }
+
+        #radio_hand:checked ~ .trees_wrapper .leaf_13 {
+            animation-name: leaf_13_anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 31s;
+        }
+
+        #radio_hand:checked ~ .trees_wrapper .leaf_12 {
+            animation-name: leaf_12_anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 28s;
+        }
+
+        #radio_hand:checked ~ .trees_wrapper .leaf_11 {
+            animation-name: leaf_11_anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 20s;
+        }
+
+        #radio_hand:checked ~ .trees_wrapper .leaf_10 {
+            animation-name: leaf_10_anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 33s;
+        }
+
+        #radio_hand:checked ~ .trees_wrapper .leaf_9 {
+            animation-name: leaf_9_anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 15s;
+        }
+
+        #radio_hand:checked ~ .trees_wrapper .leaf_8 {
+            animation-name: leaf_8_anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 25s;
+        }
+
+        #radio_hand:checked ~ .trees_wrapper .leaf_7 {
+            animation-name: leaf_7_anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 32s;
+        }
+
+        #radio_hand:checked ~ .trees_wrapper .leaf_6 {
+            animation-name: leaf_6_anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 16s;
+        }
+
+        #radio_hand:checked ~ .trees_wrapper .leaf_5 {
+            animation-name: leaf_5_anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 10s;
+        }
+
+        #radio_hand:checked ~ .trees_wrapper .leaf_4 {
+            animation-name: leaf_4_anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 23s;
+        }
+
+        #radio_hand:checked ~ .trees_wrapper .leaf_3 {
+            animation-name: leaf_3_anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 26s;
+        }
+
+        #radio_hand:checked ~ .trees_wrapper .leaf_2 {
+            animation-name: leaf_2_anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 20s;
+        }
+
+        #radio_hand:checked ~ .trees_wrapper .leaf_1 {
+            animation-name: leaf_1_anim;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 28s;
+        }
 
     .name_tree {
         width: 300px;
