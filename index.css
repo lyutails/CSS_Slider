@@ -50,7 +50,7 @@ input[type="radio"] {
     border: 0px;
     width: 50px;
     height: 3em;
-    display: none;   
+    display: none;  
 }
 
 /* games body */
@@ -84,13 +84,52 @@ input[type="radio"] {
 }
 
 
+/* somebody make a move */
 
-/*move left*/
+/* first looking at himself - if checked - stay on place */
 
 #game_one:checked ~ .pagination_logic .slide_one {
     display: block;
     transition: 1s ease-in-out;
     transform: translateX(0);
+}
+
+/* first looking at second - if second checked - moves left */
+
+#game_two:checked ~ .pagination_logic .slide_one {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-200%);
+}
+
+#game_three:checked ~ .pagination_logic .slide_one {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-300%);
+}
+
+#game_four:checked ~ .pagination_logic .slide_one {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-400%);
+}
+
+#game_five:checked ~ .pagination_logic .slide_one {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-500%);
+}
+
+#game_six:checked ~ .pagination_logic .slide_one {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-600%);
+}
+
+#game_seven:checked ~ .pagination_logic .slide_one {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-700%);
 }
 
 #game_two:checked ~ .pagination_logic .slide_two {
@@ -99,52 +138,10 @@ input[type="radio"] {
     transform: translateX(-100%);
 }
 
-#game_three:checked ~ .pagination_logic .slide_three {
+#game_one:checked ~ .pagination_logic .slide_two {
     display: block;
     transition: 1s ease-in-out;
-    transform: translateX(-200%);
-}
-
-#game_four:checked ~ .pagination_logic .slide_four {
-    display: block;
-    transition: 1s ease-in-out;
-    transform: translateX(-300%);
-}
-
-#game_five:checked ~ .pagination_logic .slide_five {
-    display: block;
-    transition: 1s ease-in-out;
-    transform: translateX(-400%);
-}
-
-#game_six:checked ~ .pagination_logic .slide_six {
-    display: block;
-    transition: 1s ease-in-out;
-    transform: translateX(-500%);
-}
-
-#game_seven:checked ~ .pagination_logic .slide_seven {
-    display: block;
-    transition: 1s ease-in-out;
-    transform: translateX(-600%);
-}
-
-#game_two:checked ~ .pagination_logic .slide_one {
-    display: block;
-    transition: 1s ease-in-out;
-    transform: translateX(-100%);
-}
-
-#game_one:not(checked) #game_three:not(checked) ~ .pagination_logic .slide_two {
-    display: block;
-    transition: 1s ease-in-out;
-    transform: translateX(0%);
-}
-
-#game_two:checked ~ .pagination_logic .slide_one {
-    display: block;
-    transition: 1s ease-in-out;
-    transform: translateX(-200%);
+    transform: translateX(100%);
 }
 
 #game_three:checked ~ .pagination_logic .slide_two {
@@ -153,13 +150,31 @@ input[type="radio"] {
     transform: translateX(-300%);
 }
 
-#game_two:checked #game_one:checked ~ .pagination_logic .slide_three {
+#game_four:checked ~ .pagination_logic .slide_two {
     display: block;
     transition: 1s ease-in-out;
-    transform: translateX(-100%);
+    transform: translateX(-400%);
 }
 
-#game_two:not(checked) #game_one:not(checked) ~ .pagination_logic .slide_three {
+#game_five:checked ~ .pagination_logic .slide_two {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-500%);
+}
+
+#game_six:checked ~ .pagination_logic .slide_two {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-600%);
+}
+
+#game_seven:checked ~ .pagination_logic .slide_two {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-700%);
+}
+
+#game_three:checked ~ .pagination_logic .slide_three {
     display: block;
     transition: 1s ease-in-out;
     transform: translateX(-200%);
@@ -171,28 +186,10 @@ input[type="radio"] {
     transform: translateX(-400%);
 }
 
-#game_three #game_two:checked #game_one:checked ~ .pagination_logic .slide_four {
+#game_four:checked ~ .pagination_logic .slide_four {
     display: block;
     transition: 1s ease-in-out;
     transform: translateX(-300%);
-}
-
-#game_two:not(checked) #game_one:not(checked) ~ .pagination_logic .slide_three {
-    display: block;
-    transition: 1s ease-in-out;
-    transform: translateX(-200%);
-}
-
-#game_three:not(checked) #game_two:not(checked) #game_one:not(checked) ~ .pagination_logic .slide_four {
-    display: block;
-    transition: 1s ease-in-out;
-    transform: translateX(-300%);
-}
-
-#game_four:checked #game_three:checked #game_two:checked #game_one:checked ~ .pagination_logic .slide_five {
-    display: block;
-    transition: 1s ease-in-out;
-    transform: translateX(-400%);
 }
 
 #game_five:checked ~ .pagination_logic .slide_four {
@@ -201,17 +198,22 @@ input[type="radio"] {
     transform: translateX(-500%);
 }
 
-#game_four:not(checked) #game_three:not(checked) #game_two:not(checked) #game_one:not(checked) ~ .pagination_logic .slide_five {
+#game_five:checked ~ .pagination_logic .slide_five {
     display: block;
     transition: 1s ease-in-out;
-    transform: translateX(-300%);
+    transform: translateX(-400%);
 }
-
 
 #game_six:checked ~ .pagination_logic .slide_five {
     display: block;
     transition: 1s ease-in-out;
     transform: translateX(-600%);
+}
+
+#game_six:checked ~ .pagination_logic .slide_six {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-500%);
 }
 
 #game_seven:checked ~ .pagination_logic .slide_six {
@@ -220,19 +222,11 @@ input[type="radio"] {
     transform: translateX(-700%);
 }
 
-#game_two:not(checked) ~ .pagination_logic .slide_two {
+#game_seven:checked ~ .pagination_logic .slide_seven {
     display: block;
     transition: 1s ease-in-out;
-    transform: translateX(100%);
+    transform: translateX(-600%);
 }
-
-/* move right */
-
-
-
-
-
-
 
 
 
@@ -2264,6 +2258,11 @@ body {
                 height: 80px;
                 background-image: url('./references/4_potions/sushi.svg');
                 cursor: pointer;
+                animation-name: sushi_anim;
+                animation-duration: 1s;
+                transition: ease-in-out;
+                animation-iteration-count: 1;
+                animation-timing-function: linear;                
             }
 
             .blueberries {
@@ -2469,19 +2468,53 @@ body {
                 width: 200px;
                 height: 200px;
                 background-image: url('./references/4_potions/black-cat_mouth.svg');
+                animation-name: cat_anim_1;                
             } 
             
             .sushi_label {
                 width: 80px;
                 height: 80px;
-            }
-            
-            #eat_sushi:checked ~ .title_4_wrapper .sushi_label {
-                display: none;
+                background-color: #07b39b;
+                opacity: 0;
+                display: inline-block;
             }
 
-            #eat_sushi:checked ~ .title_4_wrapper .cat_label{
-                background-image: url('./references/4_potions/black-cat_after_sushi.svg');
+            .cat_label {
+                width: 200px;
+                height: 200px;
+                background-color: #07b39b;
+                opacity: 0;
+                display: inline-block;
+            }
+            
+            #eat_sushi:checked ~ .title_4_wrapper .sushi {
+                animation-name: sushi_anim;
+                animation-iteration-count: forwards;
+                animation-duration: 1s;
+            }
+
+            @keyframes sushi_anim {
+                from {
+                    opacity: 1;
+                }
+                to {
+                    opacity: 0;
+                }
+            }
+
+            #eat_sushi:checked ~ .title_4_wrapper .cat {                
+                animation-duration: 1s;
+                animation-iteration-count: forwards;
+                animation-name: cat_anim_1;
+            }
+
+            @keyframes cat_anim_1 {
+                from {
+                    background-image: url('./references/4_potions/black-cat_mouth.svg');
+                }
+                to {
+                    background-image: url('./references/4_potions/black-cat_after_sushi.svg');
+                }
             }
 
             .sushi:hover {
@@ -4139,6 +4172,7 @@ body {
     background-color: rgb(233, 32, 86);
     border-color: #fff;
 }
+
 
 
 
