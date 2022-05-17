@@ -3849,9 +3849,13 @@ body {
         width: 1200px;
         height: 150px;
         display: flex;        
-        justify-content: space-around; 
+        justify-content: space-between; 
         align-items: center;
-    }    
+    } 
+    
+    .heartbeat_sound {
+        display: inline-block;
+    }
 
     .name_heart {
         width: 300px;
