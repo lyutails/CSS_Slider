@@ -3453,6 +3453,10 @@ body {
             display: inline-block;    
             transform: translate(0);            
             z-index: 50;
+            display: flex;
+            justify-content: space-between;
+            column-gap: 30px;
+            flex-wrap: wrap;
         }
         
             .bee_1 {
@@ -3537,7 +3541,7 @@ body {
                 animation-name: bees_anim;
                 animation-duration: 15s;
                 animation-timing-function: linear;
-                animation-iteration-count: infinite;                
+                animation-iteration-count: infinite;                              
             }
 
             
@@ -3553,6 +3557,9 @@ body {
                 }
                 75% {
                     transform: translate(8vw, -5vh);
+                }
+                80% {
+                    transform: translate(12vw, 4vh);
                 }
                 90% {
                     transform: translate(-8vw, 8vh);
