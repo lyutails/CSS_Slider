@@ -3889,7 +3889,7 @@ body {
         align-items: center; 
         animation-name: heartbeat; 
         transition: all 1s ease-in-out;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;                                  
     }
