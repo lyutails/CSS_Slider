@@ -1248,7 +1248,7 @@ input[type=checkbox] {
             .firefly_four:hover {
                 background-image: url('./references/2_firefly_pics/firefly_green.svg');                
                 transition: 0.5s;
-                ccursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');
+                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');
             }
 
             .firefly_five {
@@ -2563,6 +2563,7 @@ body {
             animation-timing-function: linear;
             transform: translate(0, 0) rotate(0);
             opacity: 0;
+            opacity: 0;
         }
 
         @keyframes leaf_1_anim {
@@ -2610,6 +2611,7 @@ body {
             animation-timing-function: linear;
             transform: translate(0, 0);
             animation-delay: 3s;
+            opacity: 0;
         }
 
         @keyframes leaf_2_anim {
@@ -2657,6 +2659,7 @@ body {
             animation-timing-function: linear;
             transform: translate(0, 0);
             animation-delay: 4s;
+            opacity: 0;
         }
 
         @keyframes leaf_3_anim {
@@ -2704,6 +2707,7 @@ body {
             animation-timing-function: linear;
             transform: translate(0, 0);
             animation-delay: 6s;
+            opacity: 0;
         }
 
         @keyframes leaf_4_anim {
@@ -2751,6 +2755,7 @@ body {
             animation-timing-function: linear;
             transform: translate(0, 0);
             animation-delay: 1s;
+            opacity: 0;
         }
 
         @keyframes leaf_5_anim {
@@ -2798,6 +2803,7 @@ body {
             animation-timing-function: linear;
             transform: translate(0, 0);
             animation-delay: 4s;
+            opacity: 0;
         }
 
         @keyframes leaf_6_anim {
@@ -2845,6 +2851,7 @@ body {
             animation-timing-function: linear;
             transform: translate(0, 0);
             animation-delay: 8s;
+            opacity: 0;
         }
 
         @keyframes leaf_7_anim {
@@ -2893,6 +2900,7 @@ body {
             animation-timing-function: linear;
             transform: translate(0, 0);
             animation-delay: 2s;
+            opacity: 0;
         }
 
         @keyframes leaf_8_anim {
@@ -2940,6 +2948,7 @@ body {
             animation-timing-function: linear;
             transform: translate(0, 0);
             animation-delay: 9s;
+            opacity: 0;
         }
 
         @keyframes leaf_9_anim {
@@ -2987,6 +2996,7 @@ body {
             animation-timing-function: linear;
             transform: translate(0, 0);
             animation-delay: 3s;
+            opacity: 0;
         }
 
         @keyframes leaf_10_anim {
@@ -3034,6 +3044,7 @@ body {
             animation-timing-function: linear;
             transform: translate(0, 0);
             animation-delay: 1s;
+            opacity: 0;
         }
 
         @keyframes leaf_11_anim {
@@ -3081,6 +3092,7 @@ body {
             animation-timing-function: linear;
             transform: translate(0, 0);
             animation-delay: 5s;
+            opacity: 0;
         }
 
         @keyframes leaf_12_anim {
@@ -3128,6 +3140,7 @@ body {
             animation-timing-function: linear;
             transform: translate(0, 0);
             animation-delay: 6s;
+            opacity: 0;
         }
 
         @keyframes leaf_13_anim {
@@ -3175,6 +3188,7 @@ body {
             animation-timing-function: linear;
             transform: translate(0, 0);
             animation-delay: 7s;
+            opacity: 0;
         }
 
         @keyframes leaf_14_anim {
