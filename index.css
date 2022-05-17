@@ -3823,6 +3823,7 @@ body {
         width: 1200px;
         height: 55px;
         background-image: url('./references/6_hedgehog/grass_long.svg');
+        border-radius: 30px;
     }
                 
 
@@ -3855,6 +3856,7 @@ body {
     
     .heartbeat_sound {
         display: inline-block;
+        background-color: #eeeeee;
     }
 
     .name_heart {
