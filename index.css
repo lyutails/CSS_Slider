@@ -228,17 +228,7 @@ input[type="radio"] {
 
 /* move right */
 
-#game_seven:not(checked) #game_six:checked ~ .pagination_logic .slide_seven {
-    display: block;
-    transition: 1s ease-in-out;
-    transform: translateX(-700%);
-}
 
-#game_seven:not(checked) #game_six:checked ~ .pagination_logic .slide_six {
-    display: block;
-    transition: 1s ease-in-out;
-    transform: translateX(-500%);
-}
 
 
 
@@ -1392,68 +1382,67 @@ body {
                 align-items: center;                            
             }
 
-                .fly_button {
-                    width: 200px;
-                    height: 50px;
-                    cursor: pointer;
-                    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-                    left: calc(50% - 75px);
-                    top: calc(50% - 25px);
-                    font-size: 30px;
-                    font-family: 'Arial';
-                    color: #8b669a;
-                    border-radius: 10px;            
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    cursor: pointer;                    
+            .one_more_fly_button {
+                width: 200px;
+                height: 50px;
+                cursor: pointer;
+                background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+                left: calc(50% - 75px);
+                top: calc(50% - 25px);
+                font-size: 30px;
+                font-family: 'Arial';
+                color: #8b669a;
+                border-radius: 10px;            
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;                   
+            }
+
+                .one_more_fly_button:before {
+                    content: '';
+                    z-index: 2;                        
+                    position: absolute;
+                    display: block;
+                    width: 16%;
+                    height: 45%;
+                    left: calc(50% - 95px);
+                    top: calc(50% - 45px);
+                    transition: 0.3 opacity ease-in-out;
+                    filter: blur(10px);                        
+                    opacity: 0;
+                    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);                        
                 }
 
-                    .fly_button:before {
-                        content: '';
-                        z-index: 2;                        
-                        position: absolute;
-                        display: block;
-                        width: 16%;
-                        height: 45%;
-                        left: calc(50% - 95px);
-                        top: calc(50% - 45px);
-                        transition: 0.3 opacity ease-in-out;
-                        filter: blur(10px);                        
-                        opacity: 0;
-                        background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);                        
-                    }
+                .one_more_fly_button:hover:before {
+                    color: #8b669a;
+                    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82),
+                    linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);;                          
+                    cursor: pointer;
+                    filter: blur(20px);                                                
+                    opacity: 1;   
+                    transition: 0.3s opacity ease-in-out;                                                 
+                } 
 
-                    .fly_button:hover:before {
-                        color: #8b669a;
-                        background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82),
-                        linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);;                          
-                        cursor: pointer;
-                        filter: blur(20px);                                                
-                        opacity: 1;   
-                        transition: 0.3s opacity ease-in-out;                                                 
-                    } 
-
-                    .fly_button:after {
-                        content: 'Fly';                        
-                        text-align: center;
-                        line-height: 40px;
-                        font-size: 30px;
-                        color: #e3d961;
-                        z-index: 10;
-                        position: absolute;
-                        display: inline-block;
-                        border-radius: 10px;
-                        width: 16%;
-                        height: 45%;
-                        left: calc(50% - 95px);
-                        top: calc(50% - 45px);
-                        background: transparent;
-                        background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82), 
-                        linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); 
-                    }                   
-                    
-
+                .one_more_fly_button:after {
+                    content: 'Fly';                        
+                    text-align: center;
+                    line-height: 40px;
+                    font-size: 30px;
+                    color: #e3d961;
+                    z-index: 10;
+                    position: absolute;
+                    display: inline-block;
+                    border-radius: 10px;
+                    width: 16%;
+                    height: 45%;
+                    left: calc(50% - 95px);
+                    top: calc(50% - 45px);
+                    background: transparent;
+                    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82), 
+                    linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); 
+                }        
+                
 /*gems*/
 
 .slide_three {
@@ -3847,7 +3836,6 @@ body {
     background-color: rgb(233, 32, 86);
     border-color: #fff;
 }
-
 
 
 
