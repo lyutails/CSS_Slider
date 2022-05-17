@@ -220,11 +220,30 @@ input[type="radio"] {
     transform: translateX(-700%);
 }
 
-#game_one:checked #game_three:not(checked) ~ .pagination_logic .slide_two {
+#game_two:not(checked) ~ .pagination_logic .slide_two {
     display: block;
     transition: 1s ease-in-out;
     transform: translateX(100%);
 }
+
+/* move right */
+
+#game_seven:not(checked) #game_six:checked ~ .pagination_logic .slide_seven {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-700%);
+}
+
+#game_seven:not(checked) #game_six:checked ~ .pagination_logic .slide_six {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-500%);
+}
+
+
+
+
+
 
 
 
@@ -3798,6 +3817,39 @@ body {
     background-color: rgb(213, 83, 233);    
     border-color: #fff;
 }
+
+#game_seven:checked ~ .pagination_logic .circle_6 {
+    background-color: rgb(83, 100, 233);
+    border-color: #fff;
+}
+
+#game_six:checked ~ .pagination_logic .circle_5 {
+    background-color: rgb(83, 226, 233);
+    border-color: #fff;
+}
+
+#game_five:checked ~ .pagination_logic .circle_4 {
+    background-color: rgb(100, 233, 83);
+    border-color: #fff;
+}
+
+#game_four:checked ~ .pagination_logic .circle_3 {
+    background-color: rgb(233, 216, 83);
+    border-color: #fff;
+}
+
+#game_three:checked ~ .pagination_logic .circle_2 {
+    background-color: rgb(233, 116, 43);
+    border-color: #fff;
+}
+
+#game_two:checked ~ .pagination_logic .circle_1 {
+    background-color: rgb(233, 32, 86);
+    border-color: #fff;
+}
+
+
+
 
 label {
     cursor: pointer;
