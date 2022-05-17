@@ -1379,7 +1379,7 @@ body {
                 height: 100px;
                 display: flex;
                 justify-content: center; 
-                align-items: center;                            
+                align-items: flex-start;                            
             }
 
             .one_more_fly_button {
@@ -1407,7 +1407,7 @@ body {
                     width: 16%;
                     height: 45%;
                     left: calc(50% - 95px);
-                    top: calc(50% - 25px);
+                    top: calc(50% - 45px);
                     transition: 0.3 opacity ease-in-out;
                     filter: blur(10px);                        
                     opacity: 0;
@@ -1437,7 +1437,7 @@ body {
                     width: 16%;
                     height: 45%;
                     left: calc(50% - 95px);
-                    top: calc(50% - 25px);
+                    top: calc(50% - 45px);
                     background: transparent;
                     background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82), 
                     linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); 
