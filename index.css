@@ -2028,36 +2028,42 @@ body {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/beer_pint.svg');
+                cursor: pointer;
             }
 
             .eggplant {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/aubergine.svg');
+                cursor: pointer;
             }
 
             .shard {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/crystal-shard.svg');
+                cursor: pointer;
             }
 
             .mushroom {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/mushroom2.svg');
+                cursor: pointer;
             }
 
             .broccoli {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/broccoli.svg');
+                cursor: pointer;
             }
 
             .star {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/star_dust.svg');
+                cursor: pointer;
             }
 
             .pumpkin {
@@ -2067,6 +2073,7 @@ body {
                 animation-name: pumpkin_anim;
                 animation-duration: 10s;
                 animation-iteration-count: infinite;
+                cursor: pointer;
             }
 
             @keyframes pumpkin_anim {
@@ -2085,36 +2092,42 @@ body {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/cookies.svg');
+                cursor: pointer;
             }
 
             .steak {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/steak.svg');
+                cursor: pointer;
             }
 
             .apple {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/apple.svg');
+                cursor: pointer;
             }
 
             .carrot {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/carrot.svg');
+                cursor: pointer;
             }
 
             .sushi {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/sushi.svg');
+                cursor: pointer;
             }
 
             .blueberries {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/blueberries.svg');
+                cursor: pointer;
             }
 
             .pink_water {
@@ -2127,48 +2140,56 @@ body {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/grapes.svg');
+                cursor: pointer;
             }
 
             .pink_water {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/water_pink.svg');
+                cursor: pointer;
             }
 
             .unicorn {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/unicorn2.svg');
+                cursor: pointer;
             }
 
             .garlic {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/garlic1_smaller.svg');
+                cursor: pointer;
             }
 
             .salad {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/salad.svg');
+                cursor: pointer;
             }
 
             .tulip {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/tulip2.svg');
+                cursor: pointer;
             }
 
             .love_potion {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/love_potion.svg');
+                cursor: pointer;
             }
 
-            .acorn {
+            .potions_acorn {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/acorn1.svg');
+                cursor: pointer;
             }
 
         .shelf_cauldron_cat {
