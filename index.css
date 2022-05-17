@@ -84,6 +84,7 @@ input[type="radio"] {
 }
 
 
+
 /*move left*/
 
 #game_one:checked ~ .pagination_logic .slide_one {
@@ -127,9 +128,6 @@ input[type="radio"] {
     transition: 1s ease-in-out;
     transform: translateX(-600%);
 }
-
-
-
 
 #game_two:checked ~ .pagination_logic .slide_one {
     display: block;
@@ -185,8 +183,48 @@ input[type="radio"] {
     transform: translateX(-200%);
 }
 
+#game_three:not(checked) #game_two:not(checked) #game_one:not(checked) ~ .pagination_logic .slide_four {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-300%);
+}
+
+#game_four:checked #game_three:checked #game_two:checked #game_one:checked ~ .pagination_logic .slide_five {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-400%);
+}
+
+#game_five:checked ~ .pagination_logic .slide_four {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-500%);
+}
+
+#game_four:not(checked) #game_three:not(checked) #game_two:not(checked) #game_one:not(checked) ~ .pagination_logic .slide_five {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-300%);
+}
 
 
+#game_six:checked ~ .pagination_logic .slide_five {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-600%);
+}
+
+#game_seven:checked ~ .pagination_logic .slide_six {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-700%);
+}
+
+#game_one:checked #game_three:not(checked) ~ .pagination_logic .slide_two {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(100%);
+}
 
 
 
