@@ -2564,6 +2564,7 @@ body {
             transform: translate(0, 0) rotate(0);
             opacity: 0;
             opacity: 0;
+            z-index: 60;
         }
 
         @keyframes leaf_1_anim {
@@ -2612,6 +2613,7 @@ body {
             transform: translate(0, 0);
             animation-delay: 3s;
             opacity: 0;
+            z-index: 60;
         }
 
         @keyframes leaf_2_anim {
@@ -2660,6 +2662,7 @@ body {
             transform: translate(0, 0);
             animation-delay: 4s;
             opacity: 0;
+            z-index: 60;
         }
 
         @keyframes leaf_3_anim {
@@ -2708,6 +2711,7 @@ body {
             transform: translate(0, 0);
             animation-delay: 6s;
             opacity: 0;
+            z-index: 60;
         }
 
         @keyframes leaf_4_anim {
@@ -2756,6 +2760,7 @@ body {
             transform: translate(0, 0);
             animation-delay: 1s;
             opacity: 0;
+            z-index: 60;
         }
 
         @keyframes leaf_5_anim {
@@ -2804,6 +2809,7 @@ body {
             transform: translate(0, 0);
             animation-delay: 4s;
             opacity: 0;
+            z-index: 60;
         }
 
         @keyframes leaf_6_anim {
@@ -2852,6 +2858,7 @@ body {
             transform: translate(0, 0);
             animation-delay: 8s;
             opacity: 0;
+            z-index: 60;
         }
 
         @keyframes leaf_7_anim {
@@ -2901,6 +2908,7 @@ body {
             transform: translate(0, 0);
             animation-delay: 2s;
             opacity: 0;
+            z-index: 60;
         }
 
         @keyframes leaf_8_anim {
@@ -2949,6 +2957,7 @@ body {
             transform: translate(0, 0);
             animation-delay: 9s;
             opacity: 0;
+            z-index: 60;
         }
 
         @keyframes leaf_9_anim {
@@ -2997,6 +3006,7 @@ body {
             transform: translate(0, 0);
             animation-delay: 3s;
             opacity: 0;
+            z-index: 60;
         }
 
         @keyframes leaf_10_anim {
@@ -3045,6 +3055,7 @@ body {
             transform: translate(0, 0);
             animation-delay: 1s;
             opacity: 0;
+            z-index: 60;
         }
 
         @keyframes leaf_11_anim {
@@ -3093,6 +3104,7 @@ body {
             transform: translate(0, 0);
             animation-delay: 5s;
             opacity: 0;
+            z-index: 60;
         }
 
         @keyframes leaf_12_anim {
@@ -3141,6 +3153,7 @@ body {
             transform: translate(0, 0);
             animation-delay: 6s;
             opacity: 0;
+            z-index: 60;
         }
 
         @keyframes leaf_13_anim {
@@ -3189,6 +3202,7 @@ body {
             transform: translate(0, 0);
             animation-delay: 7s;
             opacity: 0;
+            z-index: 60;
         }
 
         @keyframes leaf_14_anim {
@@ -3779,7 +3793,7 @@ body {
         align-items: center;
         background: #eeeeee;        
         border-radius: 30px 30px 30px 30px;
-        overflow: hidden;              
+        overflow: hidden;                     
     }
 
     .top_7_wrapper {
