@@ -1248,7 +1248,7 @@ input[type=checkbox] {
             .firefly_four:hover {
                 background-image: url('./references/2_firefly_pics/firefly_green.svg');                
                 transition: 0.5s;
-                ccursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');
+                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');
             }
 
             .firefly_five {
