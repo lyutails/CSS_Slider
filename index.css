@@ -2314,7 +2314,15 @@ body {
                 width: 200px;
                 height: 200px;
                 background-image: url('./references/4_potions/black-cat_mouth.svg');
-            }    
+            }  
+            
+    #eat_sushi:checked ~ .inventory .cats_sushi {
+        display: none;
+    }
+
+    .sushi:hover {
+        box-shadow: 0 0 30px #e3d961;
+    }
 
 
 
