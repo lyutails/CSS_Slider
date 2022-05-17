@@ -129,6 +129,67 @@ input[type="radio"] {
 }
 
 
+
+
+#game_two:checked ~ .pagination_logic .slide_one {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-100%);
+}
+
+#game_one:not(checked) #game_three:not(checked) ~ .pagination_logic .slide_two {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(0%);
+}
+
+#game_two:checked ~ .pagination_logic .slide_one {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-200%);
+}
+
+#game_three:checked ~ .pagination_logic .slide_two {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-300%);
+}
+
+#game_two:checked #game_one:checked ~ .pagination_logic .slide_three {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-100%);
+}
+
+#game_two:not(checked) #game_one:not(checked) ~ .pagination_logic .slide_three {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-200%);
+}
+
+#game_four:checked ~ .pagination_logic .slide_three {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-400%);
+}
+
+#game_three #game_two:checked #game_one:checked ~ .pagination_logic .slide_four {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-300%);
+}
+
+#game_two:not(checked) #game_one:not(checked) ~ .pagination_logic .slide_three {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(-200%);
+}
+
+
+
+
+
+
 /*dino*/
 
     .title_wrapper {
@@ -1762,14 +1823,41 @@ body {
                 color: #9d00af;
             }
 
-            .dirt {                        
+            .caterpillar {                        
                 width: 30px;
                 height: 30px;
-                background-image: url('./references/4_potions/klyaksa.svg');
+                background-image: url('./references/4_potions/caterpillar_to_right.svg');
                 z-index: 10;
-                position: absolute;
-                margin: 0px 0px 50px 50px;
+                position: absolute;               
                 display: inline-block;
+                animation-name: caterpillar_anim;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                transform: translateX(0);                                              
+            }
+
+            @keyframes caterpillar_anim {
+                0% {
+                    transform: translateX(0);
+                    background-image: url('./references/4_potions/caterpillar_to_right.svg');
+                }
+                1% {
+                    transform: translateX(10);
+                    background-image: url('./references/4_potions/caterpillar_to_right.svg');
+                }
+                50% {
+                    transform: translateX(150);
+                    background-image: url('./references/4_potions/caterpillar_to_right.svg');
+                }
+                99% {
+                    transform: translateX(-10);
+                    background-image: url('./references/4_potions/caterpillar_to_left.svg');
+                }
+                100% {
+                    transform: translateX(0);
+                    background-image: url('./references/4_potions/caterpillar_to_left.svg');
+                }
             }
             
         .game_name_potions {
@@ -1803,6 +1891,15 @@ body {
                 justify-content: center;
                 align-items: center;
             }
+
+                .klyaksa {
+                    width: 50px;
+                    height: 48px;
+                    background-image: url('./references/4_potions/klyaksa.svg');
+                    display: inline-block;
+                    margin: 0px 0px 0px 100px;
+                    opacity: 0.6;
+                }
 
             .window {
                 width: 500px;
@@ -2316,12 +2413,17 @@ body {
                 background-image: url('./references/4_potions/black-cat_mouth.svg');
             }  
             
-    #eat_sushi:checked ~ .inventory .cats_sushi {
+    #eat_sushi:checked ~ .title_4_wrapper .inventory .sushi .cats_sushi {
         display: none;
+    }
+
+    #eat_sushi:checked ~ .title_4_wrapper .cat {
+        background-image: url('./references/4_potions/black-cat_after_sushi.svg');
     }
 
     .sushi:hover {
         box-shadow: 0 0 30px #e3d961;
+        transition: ease-in-out 0.1s;
     }
 
 
@@ -3458,14 +3560,14 @@ body {
     width: 1200px;
     height: 50px;
     display: flex;
-    justify-content: space-between;     
+    justify-content: space-between; 
+    align-items: center;    
 }
 
 .creator {
     font-family: 'Princess Lulu';
     font-size: 20px;
-    color: #fff;
-    margin: 10px 0px 0px 0px;
+    color: #fff;    
 }
 
 /*pagination circles stylizing*/
