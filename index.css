@@ -2532,6 +2532,14 @@ body {
                 transition: ease-in-out 0.1s;
             }
 
+            .sushi_label_style {
+                width: 80px;
+                height: 80px;                
+                opacity: 0;
+                display: inline-block;
+                background-image: url('./references/4_potions/sushi.svg');
+            }
+
 
 
 /*tree*/
@@ -3957,7 +3965,7 @@ body {
         animation-fill-mode: forwards;           
     }
 
-    .radio_for_maple {
+    .radio_for_maple_leaf {
         width: 100px;
         height: 100px; 
         display: inline-block;                       
@@ -3971,7 +3979,7 @@ body {
         display: hidden;
     }
 
-    #maple_radio:checked ~ .main_6_wrapper .maple {
+    #maple_radio:checked ~ .main_6_wrapper .maple_leaf {
         animation-name: maple_anim;
         animation-duration: 3s;
         animation-iteration-count: 1;
@@ -4149,6 +4157,24 @@ body {
             opacity: 0;
         }                                    
     }
+
+#game_six:checked #game_five:checked #game_four:checked #game_three:checked #game_two:checked #game_one:checked ~ .main_6_wrapper .hedgehog {
+    animation-name: hedgehog_backwards_anim;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes hedgehog_backwards_anim {
+    from {
+        transform: scaleX(1);
+    }
+    from {
+        transform: scaleX(-1);
+    }
+}
+
+
 
 
 
