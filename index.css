@@ -1634,83 +1634,389 @@ body {
                     transform: rotateY(360deg);
                 }
 
-            .gem_three {
-                width: 100px;
-                height: 100px;  
-                background-image: url('./references/3_gems/gem_blue_green_crystal.svg');
-                cursor: pointer;              
-            }
+                .gem_three_front {                    
+                    width: 100%;
+                    height: 100%;  
+                    background-color: #ce0056;
+                    cursor: pointer;
+                    border-radius: 20px;             
+                    box-sizing: border-box;                     
+                    transform: rotateY(0deg);
+                    transition-duration: 0.5s;
+                } 
+                
+                .gem_three_backface {
+                    width: 100%;
+                    height: 100%;  
+                    background-image: url('./references/3_gems/gem_blue_green_crystal.svg');
+                    cursor: pointer;   
+                    border-radius: 20px;                     
+                    box-sizing: border-box;
+                    transform: rotateY(180deg);
+                    transition-duration: 0.5s;
+                    backface-visibility: hidden;                    
+                }
 
-            .gem_four {
-                width: 100px;
-                height: 100px;  
-                background-image: url('./references/3_gems/gem_dark_blue_circle.svg');
-                cursor: pointer;              
-            }
+                .gem_card:hover .gem_three_front {
+                    transform: rotateY(180deg);
+                    visibility: hidden;
+                }
 
-            .gem_five {
-                width: 100px;
-                height: 100px;  
-                background-image: url('./references/3_gems/gem_dark_purple_piramid.svg');
-                cursor: pointer;              
-            }
+                .gem_card:hover .gem_three_backface {
+                    transform: rotateY(360deg);
+                }
 
-            .gem_six {
-                width: 100px;
-                height: 100px;  
-                background-image: url('./references/3_gems/gem_diamond.svg');
-                cursor: pointer;              
-            }
+                .gem_four_front {                    
+                    width: 100%;
+                    height: 100%;  
+                    background-color: #ce0056;
+                    cursor: pointer;
+                    border-radius: 20px;             
+                    box-sizing: border-box;                     
+                    transform: rotateY(0deg);
+                    transition-duration: 0.5s;
+                } 
+                
+                .gem_four_backface {
+                    width: 100%;
+                    height: 100%;  
+                    background-image: url('./references/3_gems/gem_dark_blue_circle.svg');
+                    cursor: pointer;   
+                    border-radius: 20px;                     
+                    box-sizing: border-box;
+                    transform: rotateY(180deg);
+                    transition-duration: 0.5s;
+                    backface-visibility: hidden;                    
+                }
 
-            .gem_seven {
-                width: 100px;
-                height: 100px;  
-                background-image: url('./references/3_gems/gem_green_emerald.svg');
-                cursor: pointer;              
-            }
+                .gem_card:hover .gem_four_front {
+                    transform: rotateY(180deg);
+                    visibility: hidden;
+                }
 
-            .gem_eight {
-                width: 100px;
-                height: 100px;  
-                background-image: url('./references/3_gems/gem_green_round_emerald.svg');
-                cursor: pointer;              
-            }
+                .gem_card:hover .gem_four_backface {
+                    transform: rotateY(360deg);
+                }           
 
-            .gem_nine {
-                width: 100px;
-                height: 100px;  
-                background-image: url('./references/3_gems/gem_orange.svg');
-                cursor: pointer;              
-            }
+                .gem_five_front {                    
+                    width: 100%;
+                    height: 100%;  
+                    background-color: #ce0056;
+                    cursor: pointer;
+                    border-radius: 20px;             
+                    box-sizing: border-box;                     
+                    transform: rotateY(0deg);
+                    transition-duration: 0.5s;
+                } 
+                
+                .gem_five_backface {
+                    width: 100%;
+                    height: 100%;  
+                    background-image: url('./references/3_gems/gem_dark_purple_piramid.svg');
+                    cursor: pointer;   
+                    border-radius: 20px;                     
+                    box-sizing: border-box;
+                    transform: rotateY(180deg);
+                    transition-duration: 0.5s;
+                    backface-visibility: hidden;                    
+                }
 
-            .gem_ten {
-                width: 100px;
-                height: 100px;  
-                background-image: url('./references/3_gems/gem_red.svg');
-                cursor: pointer;              
-            }
+                .gem_card:hover .gem_five_front {
+                    transform: rotateY(180deg);
+                    visibility: hidden;
+                }
 
-            .gem_eleven {
-                width: 100px;
-                height: 100px;  
-                background-image: url('./references/3_gems/gem_pink_heart.svg'); 
-                cursor: pointer;             
-            }
+                .gem_card:hover .gem_five_backface {
+                    transform: rotateY(360deg);
+                }            
 
-            .gem_twelve {
-                width: 100px;
-                height: 100px;  
-                background-image: url('./references/3_gems/gem_red_rhombus.svg'); 
-                cursor: pointer;             
-            }
+                .gem_six_front {                    
+                    width: 100%;
+                    height: 100%;  
+                    background-color: #ce0056;
+                    cursor: pointer;
+                    border-radius: 20px;             
+                    box-sizing: border-box;                     
+                    transform: rotateY(0deg);
+                    transition-duration: 0.5s;
+                } 
+                
+                .gem_six_backface {
+                    width: 100%;
+                    height: 100%;  
+                    background-image: url('./references/3_gems/gem_diamond.svg');
+                    cursor: pointer;   
+                    border-radius: 20px;                     
+                    box-sizing: border-box;
+                    transform: rotateY(180deg);
+                    transition-duration: 0.5s;
+                    backface-visibility: hidden;                    
+                }
 
-            .gem_thirteen {
-                width: 100px;
-                height: 100px;  
-                background-image: url('./references/3_gems/gem_yellow_curvy_triangle.svg');
-                cursor: pointer;              
-            }           
+                .gem_card:hover .gem_six_front {
+                    transform: rotateY(180deg);
+                    visibility: hidden;
+                }
+
+                .gem_card:hover .gem_six_backface {
+                    transform: rotateY(360deg);
+                }
+
+                .gem_seven_front {                    
+                    width: 100%;
+                    height: 100%;  
+                    background-color: #ce0056;
+                    cursor: pointer;
+                    border-radius: 20px;             
+                    box-sizing: border-box;                     
+                    transform: rotateY(0deg);
+                    transition-duration: 0.5s;
+                } 
+                
+                .gem_seven_backface {
+                    width: 100%;
+                    height: 100%;  
+                    background-image: url('./references/3_gems/gem_green_emerald.svg');
+                    cursor: pointer;   
+                    border-radius: 20px;                     
+                    box-sizing: border-box;
+                    transform: rotateY(180deg);
+                    transition-duration: 0.5s;
+                    backface-visibility: hidden;                    
+                }
+
+                .gem_card:hover .gem_seven_front {
+                    transform: rotateY(180deg);
+                    visibility: hidden;
+                }
+
+                .gem_card:hover .gem_seven_backface {
+                    transform: rotateY(360deg);
+                }
+
+                .gem_eight_front {                    
+                    width: 100%;
+                    height: 100%;  
+                    background-color: #ce0056;
+                    cursor: pointer;
+                    border-radius: 20px;             
+                    box-sizing: border-box;                     
+                    transform: rotateY(0deg);
+                    transition-duration: 0.5s;
+                } 
+                
+                .gem_eight_backface {
+                    width: 100%;
+                    height: 100%;  
+                    background-image: url('./references/3_gems/gem_green_round_emerald.svg');
+                    cursor: pointer;   
+                    border-radius: 20px;                     
+                    box-sizing: border-box;
+                    transform: rotateY(180deg);
+                    transition-duration: 0.5s;
+                    backface-visibility: hidden;                    
+                }
+
+                .gem_card:hover .gem_eight_front {
+                    transform: rotateY(180deg);
+                    visibility: hidden;
+                }
+
+                .gem_card:hover .gem_eight_backface {
+                    transform: rotateY(360deg);
+                }
+
+                .gem_nine_front {                    
+                    width: 100%;
+                    height: 100%;  
+                    background-color: #ce0056;
+                    cursor: pointer;
+                    border-radius: 20px;             
+                    box-sizing: border-box;                     
+                    transform: rotateY(0deg);
+                    transition-duration: 0.5s;
+                } 
+                
+                .gem_nine_backface {
+                    width: 100%;
+                    height: 100%;  
+                    background-image: url('./references/3_gems/gem_orange.svg');
+                    cursor: pointer;   
+                    border-radius: 20px;                     
+                    box-sizing: border-box;
+                    transform: rotateY(180deg);
+                    transition-duration: 0.5s;
+                    backface-visibility: hidden;                    
+                }
+
+                .gem_card:hover .gem_nine_front {
+                    transform: rotateY(180deg);
+                    visibility: hidden;
+                }
+
+                .gem_card:hover .gem_nine_backface {
+                    transform: rotateY(360deg);
+                }
+
+                .gem_ten_front {                    
+                    width: 100%;
+                    height: 100%;  
+                    background-color: #ce0056;
+                    cursor: pointer;
+                    border-radius: 20px;             
+                    box-sizing: border-box;                     
+                    transform: rotateY(0deg);
+                    transition-duration: 0.5s;
+                } 
+                
+                .gem_ten_backface {
+                    width: 100%;
+                    height: 100%;  
+                    background-image: url('./references/3_gems/gem_red.svg');
+                    cursor: pointer;   
+                    border-radius: 20px;                     
+                    box-sizing: border-box;
+                    transform: rotateY(180deg);
+                    transition-duration: 0.5s;
+                    backface-visibility: hidden;                    
+                }
+
+                .gem_card:hover .gem_ten_front {
+                    transform: rotateY(180deg);
+                    visibility: hidden;
+                }
+
+                .gem_card:hover .gem_ten_backface {
+                    transform: rotateY(360deg);
+                }
             
+                .gem_eleven_front {                    
+                    width: 100%;
+                    height: 100%;  
+                    background-color: #ce0056;
+                    cursor: pointer;
+                    border-radius: 20px;             
+                    box-sizing: border-box;                     
+                    transform: rotateY(0deg);
+                    transition-duration: 0.5s;
+                } 
+                
+                .gem_eleven_backface {
+                    width: 100%;
+                    height: 100%;  
+                    background-image: url('./references/3_gems/gem_pink_heart.svg');
+                    cursor: pointer;   
+                    border-radius: 20px;                     
+                    box-sizing: border-box;
+                    transform: rotateY(180deg);
+                    transition-duration: 0.5s;
+                    backface-visibility: hidden;                    
+                }
+
+                .gem_card:hover .gem_eleven_front {
+                    transform: rotateY(180deg);
+                    visibility: hidden;
+                }
+
+                .gem_card:hover .gem_eleven_backface {
+                    transform: rotateY(360deg);
+                }
+
+                .gem_twelve_front {                    
+                    width: 100%;
+                    height: 100%;  
+                    background-color: #ce0056;
+                    cursor: pointer;
+                    border-radius: 20px;             
+                    box-sizing: border-box;                     
+                    transform: rotateY(0deg);
+                    transition-duration: 0.5s;
+                } 
+                
+                .gem_twelve_backface {
+                    width: 100%;
+                    height: 100%;  
+                    background-image: url('./references/3_gems/gem_red_rhombus.svg'); 
+                    cursor: pointer;   
+                    border-radius: 20px;                     
+                    box-sizing: border-box;
+                    transform: rotateY(180deg);
+                    transition-duration: 0.5s;
+                    backface-visibility: hidden;                    
+                }
+
+                .gem_card:hover .gem_twelve_front {
+                    transform: rotateY(180deg);
+                    visibility: hidden;
+                }
+
+                .gem_card:hover .gem_twelve_backface {
+                    transform: rotateY(360deg);
+                }
+            
+                .gem_thirteen_front {                    
+                    width: 100%;
+                    height: 100%;  
+                    background-color: #ce0056;
+                    cursor: pointer;
+                    border-radius: 20px;             
+                    box-sizing: border-box;                     
+                    transform: rotateY(0deg);
+                    transition-duration: 0.5s;
+                } 
+                
+                .gem_thirteen_backface {
+                    width: 100%;
+                    height: 100%;  
+                    background-image: url('./references/3_gems/gem_yellow_curvy_triangle.svg'); 
+                    cursor: pointer;   
+                    border-radius: 20px;                     
+                    box-sizing: border-box;
+                    transform: rotateY(180deg);
+                    transition-duration: 0.5s;
+                    backface-visibility: hidden;                    
+                }
+
+                .gem_card:hover .gem_thirteen_front {
+                    transform: rotateY(180deg);
+                    visibility: hidden;
+                }
+
+                .gem_card:hover .gem_thirteen_backface {
+                    transform: rotateY(360deg);
+                }
+
+                .gem_fourteen_front {                    
+                    width: 100%;
+                    height: 100%;  
+                    background-color: #ce0056;
+                    cursor: pointer;
+                    border-radius: 20px;             
+                    box-sizing: border-box;                     
+                    transform: rotateY(0deg);
+                    transition-duration: 0.5s;
+                } 
+                
+                .gem_fourteen_backface {
+                    width: 100%;
+                    height: 100%;  
+                    background-image: url('./references/3_gems/necklace-amethyst.svg'); 
+                    cursor: pointer;   
+                    border-radius: 20px;                     
+                    box-sizing: border-box;
+                    transform: rotateY(180deg);
+                    transition-duration: 0.5s;
+                    backface-visibility: hidden;                    
+                }
+
+                .gem_card:hover .gem_fourteen_front {
+                    transform: rotateY(180deg);
+                    visibility: hidden;
+                }
+
+                .gem_card:hover .gem_fourteen_backface {
+                    transform: rotateY(360deg);
+                }            
 
         .shapes {            
             width: 1150px;
@@ -1718,23 +2024,24 @@ body {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            column-gap: 60px;            
+            column-gap: 60px; 
+            cursor: pointer;           
         }
         
-            .shape_one {
+            /*.shape_one {
                 width: 100px;
                 height: 100px;                
                 background-image: url('./references/3_gems/shape_blue_green_crystal.svg'); 
                 cursor: pointer;                
-                /*opacity: 0;                
+                opacity: 0;                
                 animation-name:  shape_one_anim;
                 animation-duration: 3s;
                 animation-iteration-count: forwards;  
-                animation-delay: 5s;*/        
+                animation-delay: 5s;        
                 backface-visibility: hidden;   
             }
 
-            /*@keyframes shape_one_anim {
+            @keyframes shape_one_anim {
                 from {
                     opacity: 0;        
                 }
@@ -1745,6 +2052,39 @@ body {
                     opacity: 1;        
                 }
             }*/
+
+            .shape_one_front {                    
+                width: 100%;
+                height: 100%;  
+                background-color: #f04d91;
+                cursor: pointer;
+                border-radius: 20px;             
+                box-sizing: border-box;                     
+                transform: rotateY(0deg);
+                transition-duration: 0.5s;
+            } 
+            
+            .shape_one_backface {
+                width: 100%;
+                height: 100%;  
+                background-image: url('./references/3_gems/shape_blue_green_crystal.svg'); 
+                cursor: pointer;   
+                border-radius: 20px;                     
+                box-sizing: border-box;
+                transform: rotateY(180deg);
+                transition-duration: 0.5s;
+                backface-visibility: hidden;                    
+            }
+
+            .shape_card:hover .shape_one_front {
+                transform: rotateY(180deg);
+                visibility: hidden;
+            }
+
+            .shape_card:hover .shape_one_backface {
+                transform: rotateY(360deg);
+            }            
+
 
             .shape_two {
                 width: 100px;
