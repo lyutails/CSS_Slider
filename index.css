@@ -186,6 +186,12 @@ input[type="radio"] {
     transform: translateX(-400%);
 }
 
+#game_two:checked ~ .pagination_logic .slide_three {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(300%);
+}
+
 #game_four:checked ~ .pagination_logic .slide_four {
     display: block;
     transition: 1s ease-in-out;
@@ -196,6 +202,12 @@ input[type="radio"] {
     display: block;
     transition: 1s ease-in-out;
     transform: translateX(-500%);
+}
+
+#game_three:checked ~ .pagination_logic .slide_four {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(400%);
 }
 
 #game_five:checked ~ .pagination_logic .slide_five {
@@ -210,6 +222,12 @@ input[type="radio"] {
     transform: translateX(-600%);
 }
 
+#game_four:checked ~ .pagination_logic .slide_five {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(500%);
+}
+
 #game_six:checked ~ .pagination_logic .slide_six {
     display: block;
     transition: 1s ease-in-out;
@@ -220,6 +238,12 @@ input[type="radio"] {
     display: block;
     transition: 1s ease-in-out;
     transform: translateX(-700%);
+}
+
+#game_five:checked ~ .pagination_logic .slide_six {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(600%);
 }
 
 #game_seven:checked ~ .pagination_logic .slide_seven {
@@ -1534,19 +1558,81 @@ body {
             column-gap: 60px;
         }
 
-            .gem_one {
+            .gem_card {
                 width: 100px;
-                height: 100px;  
-                background-image: url('./references/3_gems/gem_amethyst.svg'); 
-                cursor: pointer;                            
-            }
+                height: 100px;                 
+                display: flex;                
+                flex-shrink: 0;
+                padding: 0px;
+                cursor: pointer; 
+                perspective: 350px;
+                perspective-origin: 50% 50%;             
+            }              
 
-            .gem_two {
-                width: 100px;
-                height: 100px;  
-                background-image: url('./references/3_gems/gem_blue_crystal.svg');
-                cursor: pointer;              
-            }
+                .gem_one_front {                    
+                    width: 100%;
+                    height: 100%;  
+                    background-color: #ce0056;
+                    cursor: pointer;
+                    border-radius: 20px;             
+                    box-sizing: border-box;                     
+                    transform: rotateY(0deg);
+                    transition-duration: 0.5s;
+                } 
+                
+                .gem_one_backface {
+                    width: 100%;
+                    height: 100%;  
+                    background-image: url('./references/3_gems/gem_amethyst.svg'); 
+                    cursor: pointer;   
+                    border-radius: 20px;                     
+                    box-sizing: border-box;
+                    transform: rotateY(180deg);
+                    transition-duration: 0.5s;
+                    backface-visibility: hidden;                    
+                }
+
+                .gem_card:hover .gem_one_front {
+                    transform: rotateY(180deg);
+                    visibility: hidden;
+                }
+    
+                .gem_card:hover .gem_one_backface {
+                    transform: rotateY(360deg);
+                }           
+
+
+                .gem_two_front {                    
+                    width: 100%;
+                    height: 100%;  
+                    background-color: #ce0056;
+                    cursor: pointer;
+                    border-radius: 20px;             
+                    box-sizing: border-box;                     
+                    transform: rotateY(0deg);
+                    transition-duration: 0.5s;
+                } 
+                
+                .gem_two_backface {
+                    width: 100%;
+                    height: 100%;  
+                    background-image: url('./references/3_gems/gem_blue_crystal.svg');
+                    cursor: pointer;   
+                    border-radius: 20px;                     
+                    box-sizing: border-box;
+                    transform: rotateY(180deg);
+                    transition-duration: 0.5s;
+                    backface-visibility: hidden;                    
+                }
+
+                .gem_card:hover .gem_two_front {
+                    transform: rotateY(180deg);
+                    visibility: hidden;
+                }
+
+                .gem_card:hover .gem_two_backface {
+                    transform: rotateY(360deg);
+                }
 
             .gem_three {
                 width: 100px;
@@ -1640,14 +1726,15 @@ body {
                 height: 100px;                
                 background-image: url('./references/3_gems/shape_blue_green_crystal.svg'); 
                 cursor: pointer;                
-                opacity: 0;                
+                /*opacity: 0;                
                 animation-name:  shape_one_anim;
                 animation-duration: 3s;
                 animation-iteration-count: forwards;  
-                animation-delay: 5s;           
+                animation-delay: 5s;*/        
+                backface-visibility: hidden;   
             }
 
-            @keyframes shape_one_anim {
+            /*@keyframes shape_one_anim {
                 from {
                     opacity: 0;        
                 }
@@ -1657,7 +1744,7 @@ body {
                 to {
                     opacity: 1;        
                 }
-            }
+            }*/
 
             .shape_two {
                 width: 100px;
@@ -1761,34 +1848,8 @@ body {
                 animation-duration: 60s;
                 animation-iteration-count: infinite;
                 animation-timing-function: linear;
-            }            
-                           
-            .fly_button_placement {
-                position: relative;
-                width: 100%;
-                height: 100px;
-                display: flex;
-                justify-content: center;                             
-            }
-
-                .fly_button {
-                    width: 200px;
-                    height: 50px;
-                    cursor: pointer;
-                    background: #fff;
-                    left: calc(50% - 75px);
-                    top: calc(50% - 25px);
-                    font-size: 30px;
-                    font-family: 'Arial';
-                    color: #8b669a;
-                    border-radius: 10px;            
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    cursor: pointer; 
-                    display: none;                   
-                }
-
+            }                                   
+          
 
 /*potions*/
 
@@ -2267,12 +2328,8 @@ body {
                 width: 80px;
                 height: 80px;
                 background-image: url('./references/4_potions/sushi.svg');
-                cursor: pointer;
-                animation-name: sushi_anim;
-                animation-duration: 1s;
-                transition: ease-in-out;
-                animation-iteration-count: 1;
-                animation-timing-function: linear;                
+                cursor: pointer;                
+                transition: ease-in-out;                                
             }
 
             .blueberries {
@@ -2489,6 +2546,14 @@ body {
                 display: inline-block;
             }
 
+            .sushi_label_style {
+                width: 80px;
+                height: 80px;                
+                opacity: 0;
+                display: inline-block;
+                background-image: url('./references/4_potions/sushi.svg');
+            }
+
             .cat_label {
                 width: 200px;
                 height: 200px;
@@ -2496,10 +2561,20 @@ body {
                 opacity: 0;
                 display: inline-block;
             }
+
+            .cat_label_style {
+                width: 200px;
+                height: 200px;
+                background-image: url('./references/4_potions/black-cat_after_sushi.svg');
+                opacity: 0;
+                display: inline-block;
+            }
+
             
             #eat_sushi:checked ~ .title_4_wrapper .sushi {
-                animation-name: sushi_anim;
-                animation-iteration-count: forwards;
+                animation-name: sushi_anim;                
+                animation-iteration-count: 1;
+                animation-timing-function: linear;
                 animation-duration: 1s;
             }
 
@@ -2514,7 +2589,7 @@ body {
 
             #eat_sushi:checked ~ .title_4_wrapper .cat {                
                 animation-duration: 1s;
-                animation-iteration-count: forwards;
+                animation-iteration-count: 1;
                 animation-name: cat_anim_1;
             }
 
@@ -2530,15 +2605,7 @@ body {
             .sushi:hover {
                 box-shadow: 0 0 30px #e3d961;
                 transition: ease-in-out 0.1s;
-            }
-
-            .sushi_label_style {
-                width: 80px;
-                height: 80px;                
-                opacity: 0;
-                display: inline-block;
-                background-image: url('./references/4_potions/sushi.svg');
-            }
+            }           
 
 
 
