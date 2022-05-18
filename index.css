@@ -3750,6 +3750,7 @@ body {
             height: 100px;
             background-image: url('./references/6_hedgehog/hedgehog1.svg');
             animation-name: hedgehog_anim;
+            z-index: 100;
         }
 
         .apple {
@@ -3830,20 +3831,24 @@ body {
             display: none;
         }
 
-        @keyframes hedgehog_anim {
+        /* hedgehog gathering apple */
+
+        @keyframes hedgehog_anim_apple {
             from {
                 transform: translateX(0px);
             }          
             to {
-                transform: translateX(150px);
+                transform: translateX(180px);
+                display: none;
             }                                    
         }
 
         #apple_radio:checked ~ .main_6_wrapper .hedgehog {
-            animation-name: hedgehog_anim;
-            animation-duration: 5s;
+            animation-name: hedgehog_anim_apple;
+            animation-duration: 3s;
             animation-iteration-count: 1;
-            animation-timing-function: linear;            
+            animation-timing-function: linear; 
+            animation-fill-mode: forwards;           
         }
 
         .radio_for_apple {
@@ -3857,8 +3862,297 @@ body {
             height: 100px;
             background-image: url('./references/6_hedgehog/apple-svgrepo-com.svg');
             display: inline-block;
+            display: hidden;
         }
+
+        #apple_radio:checked ~ .main_6_wrapper .apple {
+            animation-name: apple_anim;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear; 
+            animation-fill-mode: forwards; 
+        }
+
+        @keyframes apple_anim {
+            from {
+                opacity: 1;
+            } 
+            99% {
+                opacity: 1;
+            }         
+            to {
+                opacity: 0;
+            }                                    
+        }
+
+        /* hedgehog gathering mushrooms */
+
+        @keyframes hedgehog_anim_mushrooms {
+            from {
+                transform: translateX(180px);
+            }          
+            to {
+                transform: translateX(360px);
+            }                                    
+        }
+        
+        #mushrooms_radio:checked ~ .main_6_wrapper .hedgehog {
+            animation-name: hedgehog_anim_mushrooms;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear; 
+            animation-fill-mode: forwards;           
+        }
+
+        .radio_for_mushrooms {
+            width: 100px;
+            height: 100px; 
+            display: inline-block;                       
+        }
+
+        .mushrooms_label_style {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/mushrooms-mushroom-svgrepo-com.svg');
+            display: inline-block;
+            display: hidden;
+        }
+
+        #mushrooms_radio:checked ~ .main_6_wrapper .mushrooms {
+            animation-name: mushrooms_anim;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear; 
+            animation-fill-mode: forwards; 
+        }
+
+        @keyframes mushrooms_anim {
+            from {
+                opacity: 1;
+            } 
+            99% {
+                opacity: 1;
+            }         
+            to {
+                opacity: 0;
+            }                                    
+        }
+
+    /* hedgehog gathering maple */
+
+    @keyframes hedgehog_anim_maple {
+        from {
+            transform: translateX(360px);
+        }          
+        to {
+            transform: translateX(540px);
+        }                                    
+    }
+
+    #maple_radio:checked ~ .main_6_wrapper .hedgehog {
+        animation-name: hedgehog_anim_maple;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear; 
+        animation-fill-mode: forwards;           
+    }
+
+    .radio_for_maple {
+        width: 100px;
+        height: 100px; 
+        display: inline-block;                       
+    }
+
+    .maple_label_style {
+        width: 100px;
+        height: 100px;
+        background-image: url('./references/6_hedgehog/maple-leaf_smaller.svg');
+        display: inline-block;
+        display: hidden;
+    }
+
+    #maple_radio:checked ~ .main_6_wrapper .maple {
+        animation-name: maple_anim;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear; 
+        animation-fill-mode: forwards; 
+    }
+
+    @keyframes maple_anim {
+        from {
+            opacity: 1;
+        } 
+        99% {
+            opacity: 1;
+        }         
+        to {
+            opacity: 0;
+        }                                    
+    }
     
+    /* hedgehog gathering marshmallow */
+
+    @keyframes hedgehog_anim_marshmallow {
+        from {
+            transform: translateX(540px);
+        }          
+        to {
+            transform: translateX(700px);
+        }                                    
+    }
+
+    #marshmallow_radio:checked ~ .main_6_wrapper .hedgehog {
+        animation-name: hedgehog_anim_marshmallow;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear; 
+        animation-fill-mode: forwards;           
+    }
+
+    .radio_for_marshmallow {
+        width: 100px;
+        height: 100px; 
+        display: inline-block;                       
+    }
+
+    .marshmallow_label_style {
+        width: 100px;
+        height: 100px;
+        background-image: url('./references/6_hedgehog/marshmallow-svgrepo-com.svg');
+        display: inline-block;
+        display: hidden;
+    }
+
+    #marshmallow_radio:checked ~ .main_6_wrapper .marshmallow {
+        animation-name: marshmallow_anim;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear; 
+        animation-fill-mode: forwards; 
+    }
+
+    @keyframes marshmallow_anim {
+        from {
+            opacity: 1;
+        } 
+        99% {
+            opacity: 1;
+        }         
+        to {
+            opacity: 0;
+        }                                    
+    }
+
+    /* hedgehog gathering sock */
+
+    @keyframes hedgehog_anim_sock {
+        from {
+            transform: translateX(700px);
+        }          
+        to {
+            transform: translateX(860px);
+        }                                    
+    }
+
+    #sock_radio:checked ~ .main_6_wrapper .hedgehog {
+        animation-name: hedgehog_anim_sock;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear; 
+        animation-fill-mode: forwards;           
+    }
+
+    .radio_for_sock {
+        width: 100px;
+        height: 100px; 
+        display: inline-block;                       
+    }
+
+    .sock_label_style {
+        width: 100px;
+        height: 100px;
+        background-image: url('./references/6_hedgehog/sock-svgrepo-com.svg');
+        display: inline-block;
+        display: hidden;
+    }
+
+    #sock_radio:checked ~ .main_6_wrapper .sock {
+        animation-name: sock_anim;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear; 
+        animation-fill-mode: forwards; 
+    }
+
+    @keyframes sock_anim {
+        from {
+            opacity: 1;
+        } 
+        99% {
+            opacity: 1;
+        }         
+        to {
+            opacity: 0;
+        }                                    
+    }
+
+     /* hedgehog gathering acorn */
+
+     @keyframes hedgehog_anim_acorn {
+        from {
+            transform: translateX(860px);
+        }          
+        to {
+            transform: translateX(1050px);
+        }                                    
+    }
+
+    #acorn_radio:checked ~ .main_6_wrapper .hedgehog {
+        animation-name: hedgehog_anim_acorn;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear; 
+        animation-fill-mode: forwards;           
+    }
+
+    .radio_for_acorn {
+        width: 100px;
+        height: 100px; 
+        display: inline-block;                       
+    }
+
+    .acorn_label_style {
+        width: 100px;
+        height: 100px;
+        background-image: url('./references/6_hedgehog/acorn-svgrepo-com.svg');
+        display: inline-block;
+        display: hidden;
+    }
+
+    #acorn_radio:checked ~ .main_6_wrapper .acorn {
+        animation-name: sock_anim;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear; 
+        animation-fill-mode: forwards; 
+    }
+
+    @keyframes acorn_anim {
+        from {
+            opacity: 1;
+        } 
+        99% {
+            opacity: 1;
+        }         
+        to {
+            opacity: 0;
+        }                                    
+    }
+
+
+
+
     .grass {
         width: 1200px;
         height: 55px;
