@@ -2054,8 +2054,8 @@ body {
             }*/
 
             .shape_one_front {                    
-                width: 100%;
-                height: 100%;  
+                width: 100px;
+                height: 100px;  
                 background-color: #f04d91;
                 cursor: pointer;
                 border-radius: 20px;             
@@ -2065,8 +2065,8 @@ body {
             } 
             
             .shape_one_backface {
-                width: 100%;
-                height: 100%;  
+                width: 100px;
+                height: 100px;  
                 background-image: url('./references/3_gems/shape_blue_green_crystal.svg'); 
                 cursor: pointer;   
                 border-radius: 20px;                     
@@ -2085,110 +2085,421 @@ body {
                 transform: rotateY(360deg);
             }            
 
-
-            .shape_two {
+            .shape_two_front {                    
                 width: 100px;
                 height: 100px;  
-                background-image: url('./references/3_gems/shape_diamond.svg');
+                background-color: #f04d91;
                 cursor: pointer;
-                animation-delay: 4s;              
+                border-radius: 20px;             
+                box-sizing: border-box;                     
+                transform: rotateY(0deg);
+                transition-duration: 0.5s;
+            } 
+            
+            .shape_two_backface {
+                width: 100px;
+                height: 100px;                  
+                background-image: url('./references/3_gems/necklace-amethyst_shape.svg');
+                cursor: pointer;   
+                border-radius: 20px;                     
+                box-sizing: border-box;
+                transform: rotateY(180deg);
+                transition-duration: 0.5s;
+                backface-visibility: hidden;                    
             }
 
-            .shape_three {
+            .shape_card:hover .shape_two_front {
+                transform: rotateY(180deg);
+                visibility: hidden;
+            }
+
+            .shape_card:hover .shape_two_backface {
+                transform: rotateY(360deg);
+            }  
+
+            .shape_three_front {                    
+                width: 100px;
+                height: 100px;  
+                background-color: #f04d91;
+                cursor: pointer;
+                border-radius: 20px;             
+                box-sizing: border-box;                     
+                transform: rotateY(0deg);
+                transition-duration: 0.5s;
+            } 
+            
+            .shape_three_backface {
                 width: 100px;
                 height: 100px;  
                 background-image: url('./references/3_gems/shape_pink_heart.svg');
-                cursor: pointer;
-                animation-delay: 6s;              
+                cursor: pointer;   
+                border-radius: 20px;                     
+                box-sizing: border-box;
+                transform: rotateY(180deg);
+                transition-duration: 0.5s;
+                backface-visibility: hidden;                    
             }
 
-            .shape_four {
+            .shape_card:hover .shape_three_front {
+                transform: rotateY(180deg);
+                visibility: hidden;
+            }
+
+            .shape_card:hover .shape_three_backface {
+                transform: rotateY(360deg);
+            }             
+
+            .shape_four_front {                    
                 width: 100px;
-                height: 100px;                
+                height: 100px;  
+                background-color: #f04d91;
+                cursor: pointer;
+                border-radius: 20px;             
+                box-sizing: border-box;                     
+                transform: rotateY(0deg);
+                transition-duration: 0.5s;
+            } 
+            
+            .shape_four_backface {
+                width: 100px;
+                height: 100px;  
                 background-image: url('./references/3_gems/shape_red_rhombus.svg');
-                cursor: pointer;
-                animation-delay: 8s;              
+                cursor: pointer;   
+                border-radius: 20px;                     
+                box-sizing: border-box;
+                transform: rotateY(180deg);
+                transition-duration: 0.5s;
+                backface-visibility: hidden;                    
             }
 
-            .shape_five {
+            .shape_card:hover .shape_four_front {
+                transform: rotateY(180deg);
+                visibility: hidden;
+            }
+
+            .shape_card:hover .shape_four_backface {
+                transform: rotateY(360deg);
+            } 
+
+            .shape_five_front {                    
                 width: 100px;
-                height: 100px;                 
+                height: 100px;  
+                background-color: #f04d91;
+                cursor: pointer;
+                border-radius: 20px;             
+                box-sizing: border-box;                     
+                transform: rotateY(0deg);
+                transition-duration: 0.5s;
+            } 
+            
+            .shape_five_backface {
+                width: 100px;
+                height: 100px;  
                 background-image: url('./references/3_gems/shape_green_emerald.svg');
-                cursor: pointer;
-                animation-delay: 10s;              
+                cursor: pointer;   
+                border-radius: 20px;                     
+                box-sizing: border-box;
+                transform: rotateY(180deg);
+                transition-duration: 0.5s;
+                backface-visibility: hidden;                    
             }
 
-            .shape_six {
+            .shape_card:hover .shape_five_front {
+                transform: rotateY(180deg);
+                visibility: hidden;
+            }
+
+            .shape_card:hover .shape_five_backface {
+                transform: rotateY(360deg);
+            }             
+
+            .shape_six_front {                    
                 width: 100px;
-                height: 100px;                
+                height: 100px;  
+                background-color: #f04d91;
+                cursor: pointer;
+                border-radius: 20px;             
+                box-sizing: border-box;                     
+                transform: rotateY(0deg);
+                transition-duration: 0.5s;
+            } 
+            
+            .shape_six_backface {
+                width: 100px;
+                height: 100px;  
                 background-image: url('./references/3_gems/shape_red.svg');
-                cursor: pointer; 
-                animation-delay: 12s;             
+                cursor: pointer;   
+                border-radius: 20px;                     
+                box-sizing: border-box;
+                transform: rotateY(180deg);
+                transition-duration: 0.5s;
+                backface-visibility: hidden;                    
             }
 
-            .shape_seven {
+            .shape_card:hover .shape_six_front {
+                transform: rotateY(180deg);
+                visibility: hidden;
+            }
+
+            .shape_card:hover .shape_six_backface {
+                transform: rotateY(360deg);
+            } 
+
+            .shape_seven_front {                    
+                width: 100px;
+                height: 100px;  
+                background-color: #f04d91;
+                cursor: pointer;
+                border-radius: 20px;             
+                box-sizing: border-box;                     
+                transform: rotateY(0deg);
+                transition-duration: 0.5s;
+            } 
+            
+            .shape_seven_backface {
                 width: 100px;
                 height: 100px;  
                 background-image: url('./references/3_gems/shape_amethyst.svg');
-                cursor: pointer;
-                animation-delay: 14s;              
+                cursor: pointer;   
+                border-radius: 20px;                     
+                box-sizing: border-box;
+                transform: rotateY(180deg);
+                transition-duration: 0.5s;
+                backface-visibility: hidden;                    
             }
 
-            .shape_eight {
+            .shape_card:hover .shape_seven_front {
+                transform: rotateY(180deg);
+                visibility: hidden;
+            }
+
+            .shape_card:hover .shape_seven_backface {
+                transform: rotateY(360deg);
+            } 
+
+            .shape_eight_front {                    
                 width: 100px;
-                height: 100px;                
+                height: 100px;  
+                background-color: #f04d91;
+                cursor: pointer;
+                border-radius: 20px;             
+                box-sizing: border-box;                     
+                transform: rotateY(0deg);
+                transition-duration: 0.5s;
+            } 
+            
+            .shape_eight_backface {
+                width: 100px;
+                height: 100px;  
                 background-image: url('./references/3_gems/shape_dark_purple_piramid.svg');
-                cursor: pointer;
-                animation-delay: 16s;              
+                cursor: pointer;   
+                border-radius: 20px;                     
+                box-sizing: border-box;
+                transform: rotateY(180deg);
+                transition-duration: 0.5s;
+                backface-visibility: hidden;                    
             }
 
-            .shape_nine {
+            .shape_card:hover .shape_eight_front {
+                transform: rotateY(180deg);
+                visibility: hidden;
+            }
+
+            .shape_card:hover .shape_eight_backface {
+                transform: rotateY(360deg);
+            } 
+
+            .shape_nine_front {                    
                 width: 100px;
-                height: 100px;                  
-                background-image: url('./references/3_gems/shape_orange.svg');
+                height: 100px;  
+                background-color: #f04d91;
                 cursor: pointer;
-                animation-delay: 18s;              
+                border-radius: 20px;             
+                box-sizing: border-box;                     
+                transform: rotateY(0deg);
+                transition-duration: 0.5s;
+            } 
+            
+            .shape_nine_backface {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_orange.svg');
+                cursor: pointer;   
+                border-radius: 20px;                     
+                box-sizing: border-box;
+                transform: rotateY(180deg);
+                transition-duration: 0.5s;
+                backface-visibility: hidden;                    
             }
 
-            .shape_ten {
+            .shape_card:hover .shape_nine_front {
+                transform: rotateY(180deg);
+                visibility: hidden;
+            }
+
+            .shape_card:hover .shape_nine_backface {
+                transform: rotateY(360deg);
+            } 
+
+            .shape_ten_front {                    
+                width: 100px;
+                height: 100px;  
+                background-color: #f04d91;
+                cursor: pointer;
+                border-radius: 20px;             
+                box-sizing: border-box;                     
+                transform: rotateY(0deg);
+                transition-duration: 0.5s;
+            } 
+            
+            .shape_ten_backface {
                 width: 100px;
                 height: 100px;  
                 background-image: url('./references/3_gems/shape_green_round_emerald.svg');
-                cursor: pointer;
-                animation-delay: 20s;              
+                cursor: pointer;   
+                border-radius: 20px;                     
+                box-sizing: border-box;
+                transform: rotateY(180deg);
+                transition-duration: 0.5s;
+                backface-visibility: hidden;                    
             }
 
-            .shape_eleven {
+            .shape_card:hover .shape_ten_front {
+                transform: rotateY(180deg);
+                visibility: hidden;
+            }
+
+            .shape_card:hover .shape_ten_backface {
+                transform: rotateY(360deg);
+            }            
+
+            .shape_eleven_front {                    
                 width: 100px;
                 height: 100px;  
-                background-image: url('./references/3_gems/shape_yellow_curvy_triangle.svg'); 
-                cursor: pointer; 
-                animation-delay: 22s;            
+                background-color: #f04d91;
+                cursor: pointer;
+                border-radius: 20px;             
+                box-sizing: border-box;                     
+                transform: rotateY(0deg);
+                transition-duration: 0.5s;
+            } 
+            
+            .shape_eleven_backface {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_yellow_curvy_triangle.svg');
+                cursor: pointer;   
+                border-radius: 20px;                     
+                box-sizing: border-box;
+                transform: rotateY(180deg);
+                transition-duration: 0.5s;
+                backface-visibility: hidden;                    
             }
 
-            .shape_twelve {
+            .shape_card:hover .shape_eleven_front {
+                transform: rotateY(180deg);
+                visibility: hidden;
+            }
+
+            .shape_card:hover .shape_eleven_backface {
+                transform: rotateY(360deg);
+            } 
+
+            .shape_twelve_front {                    
+                width: 100px;
+                height: 100px;  
+                background-color: #f04d91;
+                cursor: pointer;
+                border-radius: 20px;             
+                box-sizing: border-box;                     
+                transform: rotateY(0deg);
+                transition-duration: 0.5s;
+            } 
+            
+            .shape_twelve_backface {
                 width: 100px;
                 height: 100px;  
                 background-image: url('./references/3_gems/shape_dark_blue_circle.svg'); 
-                cursor: pointer;
-                animation-delay: 24s;             
+                cursor: pointer;   
+                border-radius: 20px;                     
+                box-sizing: border-box;
+                transform: rotateY(180deg);
+                transition-duration: 0.5s;
+                backface-visibility: hidden;                    
             }
 
-            .shape_thirteen {
+            .shape_card:hover .shape_twelve_front {
+                transform: rotateY(180deg);
+                visibility: hidden;
+            }
+
+            .shape_card:hover .shape_twelve_backface {
+                transform: rotateY(360deg);
+            } 
+
+            .shape_thirteen_front {                    
+                width: 100px;
+                height: 100px;  
+                background-color: #f04d91;
+                cursor: pointer;
+                border-radius: 20px;             
+                box-sizing: border-box;                     
+                transform: rotateY(0deg);
+                transition-duration: 0.5s;
+            } 
+            
+            .shape_thirteen_backface {
                 width: 100px;
                 height: 100px;  
                 background-image: url('./references/3_gems/shape_blue_crystal.svg');
-                cursor: pointer; 
-                animation-delay: 26s;
-                opacity: 1;              
+                cursor: pointer;   
+                border-radius: 20px;                     
+                box-sizing: border-box;
+                transform: rotateY(180deg);
+                transition-duration: 0.5s;
+                backface-visibility: hidden;                    
             }
+
+            .shape_card:hover .shape_thirteen_front {
+                transform: rotateY(180deg);
+                visibility: hidden;
+            }
+
+            .shape_card:hover .shape_thirteen_backface {
+                transform: rotateY(360deg);
+            }              
             
-            .shapes ~ .shape {
-                animation-name: shapes_anim;
-                animation-duration: 60s;
-                animation-iteration-count: infinite;
-                animation-timing-function: linear;
-            }                                   
+            .shape_fourteen_front {                    
+                width: 100px;
+                height: 100px;  
+                background-color: #f04d91;
+                cursor: pointer;
+                border-radius: 20px;             
+                box-sizing: border-box;                     
+                transform: rotateY(0deg);
+                transition-duration: 0.5s;
+            } 
+            
+            .shape_fourteen_backface {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_diamond.svg');
+                cursor: pointer;   
+                border-radius: 20px;                     
+                box-sizing: border-box;
+                transform: rotateY(180deg);
+                transition-duration: 0.5s;
+                backface-visibility: hidden;                    
+            }
+
+            .shape_card:hover .shape_fourteen_front {
+                transform: rotateY(180deg);
+                visibility: hidden;
+            }
+
+            .shape_card:hover .shape_fourteen_backface {
+                transform: rotateY(360deg);
+            } 
           
 
 /*potions*/
