@@ -3749,6 +3749,7 @@ body {
             width: 100px;
             height: 100px;
             background-image: url('./references/6_hedgehog/hedgehog1.svg');
+            animation-name: hedgehog_anim;
         }
 
         .apple {
@@ -3828,6 +3829,35 @@ body {
             background-image: url('./references/6_hedgehog/house.svg');
             display: none;
         }
+
+        @keyframes hedgehog_anim {
+            from {
+                transform: translateX(0px);
+            }          
+            to {
+                transform: translateX(150px);
+            }                                    
+        }
+
+        #apple_radio:checked ~ .main_6_wrapper .hedgehog {
+            animation-name: hedgehog_anim;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;            
+        }
+
+        .radio_for_apple {
+            width: 100px;
+            height: 100px; 
+            display: inline-block;                       
+        }
+
+        .apple_label_style {
+            width: 100px;
+            height: 100px;
+            background-image: url('./references/6_hedgehog/apple-svgrepo-com.svg');
+            display: inline-block;
+        }
     
     .grass {
         width: 1200px;
@@ -3870,12 +3900,11 @@ body {
     }
 
     .name_heart {
-        width: 300px;
+        width: 180px;
         height: 100px;
         display: inline-block;
         font-size: 30px;
-        font-family: 'Royal Kingdom';
-        margin: 0px 0px 0px 130px;        
+        font-family: 'Royal Kingdom';                
     }
 
     .name_heart::first-letter {
