@@ -228,7 +228,17 @@ input[type="radio"] {
     transform: translateX(-600%);
 }
 
+#game_one:checked ~ .pagination_logic .slide_seven {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(700%);
+}
 
+#game_six:checked ~ .pagination_logic .slide_seven {
+    display: block;
+    transition: 1s ease-in-out;
+    transform: translateX(700%);
+}
 
 
 /*dino*/
@@ -3878,10 +3888,15 @@ body {
         width: 1200px;
         height: 800px;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;        
     }
 
+    /*
+    
+    heart animation svg
+    
     .heart {
         width: 800px;
         height: 800px;
@@ -3930,7 +3945,67 @@ body {
             from {
                 transform: scale(1);
             }
+        }*/
+
+        .name_in_heart {
+            width: 500px;
+            height: 100px;
+            font-family: 'Princess Lulu';
+            font-size: 80px;
+            color: rgb(179, 93, 93);            
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
+    .heart_shape {
+        width: 100px;
+        height: 100px; 
+        background-color: #f7867d;        
+        transform: rotate(-45deg);
+        box-shadow: -10px 10px 90px #f7867d;
+        animation-name: heartbeat_anim;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        transform: scale(4);
+        margin: 300px 0px 0px 0px;
+    }
+
+    @keyframes heartbeat_anim {
+        from {
+            transform: rotate(-45deg) scale(4.07);
+        }
+        80% {
+            transform: rotate(-45deg) scale(4.0);
+        }
+        to {
+            transform: rotate(-45deg) scale(3.8);
+        }
+    }
+
+    .heart_shape:before {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: #f7867d;
+        top: -50%;
+        border-radius: 50px;
+        box-shadow: -10px -10px 90px #f7867d;        
+    }
+
+    .heart_shape:after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: #f7867d;
+        right: -50%;
+        border-radius: 50px;
+        box-shadow: 10px 10px 90px #f7867d;
+    }
+    
 
 /*about*/
 
