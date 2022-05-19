@@ -11869,8 +11869,8 @@ label {
             }        
     
             .gems {
-                width: 750px;
-                height: 150px;
+                width: 320px;
+                height: 200px;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
@@ -11878,8 +11878,8 @@ label {
             }
     
                 .gem_card {
-                    width: 70px;
-                    height: 70px;                 
+                    width: 50px;
+                    height: 50px;                 
                     display: flex;                
                     flex-shrink: 0;
                     padding: 0px;
@@ -12338,8 +12338,8 @@ label {
                     }            
     
             .shapes {            
-                width: 750px;
-                height: 150px;
+                width: 320px;
+                height: 200px;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
@@ -12373,8 +12373,8 @@ label {
                 }*/
     
             .shape_card {
-                width: 70px;
-                height: 70px;                 
+                width: 50px;
+                height: 50px;                 
                 display: flex;                
                 flex-shrink: 0;
                 padding: 0px;
@@ -12835,13 +12835,13 @@ label {
     /*potions*/
     
     .slide_four {
-        width: 768px;
+        width: 320px;
         height: 500px;
     }
     
         .title_4_wrapper {
-            width: 768px;
-            height: 150px;
+            width: 320px;
+            height: 100px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -12851,13 +12851,13 @@ label {
         }    
         
             .recipe_scroll_empty {
-                width: 150px;
-                height: 150px;
+                width: 100px;
+                height: 100px;
                 background-image: url('./references/4_potions/recipe_scroll.png');                        
             }
     
             .recipe_wrapper {
-                width: 150px;
+                width: 100px;
                 height: 100px;
                 display: flex;
                 flex-direction: column;
@@ -12953,8 +12953,8 @@ label {
                 }
                 
             .game_name_potions {
-                width: 150px;
-                height: 150px;            
+                width: 100px;
+                height: 100px;            
             }      
     
                 .name_potions {
@@ -12992,7 +12992,7 @@ label {
                     }
     
                 .window {
-                    width: 300px;
+                    width: 320px;
                     height: 200px;                
                     background-color: transparent;
                     overflow: hidden;
@@ -13156,33 +13156,34 @@ label {
                 }                      
     
             .main_potions_wrapper {
-                width: 768px;
-                height: 350px; 
+                width: 320px;
+                height: 400px; 
                 display: flex;
                 justify-content: center;
                 background-color: #303030;    
             }
     
             .everything {
-                width: 768px;
-                height: 350px;           
+                width: 320px;
+                height: 400px;           
             }
     
             .broom {
                 z-index: 2;
-                width: 200px;
-                height: 200px;
+                width: 100px;
+                height: 100px;
                 background-image: url('./references/4_potions/broom.svg');
                 opacity: 0.8;
                 display: inline-block;
             }
         
             .fourth_game_potions {
-                width: 768px;
-                height: 350px;
-                display: flex;                       
+                width: 320px;
+                height: 400px;
+                display: flex;  
+                flex-direction: column;                     
                 justify-content: space-between;
-                align-items: flex-end;
+                align-items: center;
                 background-color: #7d6086;
                 border-radius: 0px 0px 30px 30px;    
                 overflow: hidden;        
@@ -13190,11 +13191,11 @@ label {
             
             
             .game_stuff {
-                width: 768px;
-                height: 350px;
-                display: flex;                       
+                width: 320px;
+                height: 400px;
+                flex-direction: column;                     
                 justify-content: space-between;
-                align-items: flex-end;
+                align-items: center;
                 background-color: #7d6086;
                 border-radius: 0px 0px 30px 30px;    
                 overflow: hidden;
@@ -13202,8 +13203,8 @@ label {
     
             .inventory {
                 z-index: 5;
-                width: 500px;
-                height: 350px;
+                width: 320px;
+                height: 200px;
                 display: flex;
                 flex-wrap: wrap;
                 column-gap: 3px;
@@ -13212,50 +13213,50 @@ label {
             }
     
                 .beer {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/beer_pint.svg');
                     cursor: pointer;
                 }
     
                 .eggplant {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/aubergine.svg');
                     cursor: pointer;
                 }
     
                 .shard {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/crystal-shard.svg');
                     cursor: pointer;
                 }
     
                 .mushroom {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/mushroom2.svg');
                     cursor: pointer;
                 }
     
                 .broccoli {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/broccoli.svg');
                     cursor: pointer;
                 }
     
                 .star {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/star_dust.svg');
                     cursor: pointer;
                 }
     
                 .pumpkin {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/pumpkin_yellow.svg');
                     animation-name: pumpkin_anim;
                     animation-duration: 10s;
@@ -13276,142 +13277,143 @@ label {
                 }
     
                 .cookies {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/cookies.svg');
                     cursor: pointer;
                 }
     
                 .steak {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/steak.svg');
                     cursor: pointer;
                 }
     
                 .potions_apple {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/apple.svg');
                     cursor: pointer;
                 }
     
                 .carrot {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/carrot.svg');
                     cursor: pointer;
                 }
     
                 .sushi {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/sushi.svg');
                     cursor: pointer;                
                     transition: ease-in-out;                                
                 }
     
                 .blueberries {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/blueberries.svg');
                     cursor: pointer;
                 }
     
                 .pink_water {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/water_pink.svg');
                 }
     
                 .grapes {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/grapes.svg');
                     cursor: pointer;
                 }
     
                 .pink_water {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/water_pink.svg');
                     cursor: pointer;
                 }
     
                 .unicorn {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/unicorn2.svg');
                     cursor: pointer;
                 }
     
                 .garlic {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/garlic1_smaller.svg');
                     cursor: pointer;
                 }
     
                 .salad {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/salad.svg');
                     cursor: pointer;
                 }
     
                 .tulip {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/tulip2.svg');
                     cursor: pointer;
                 }
     
                 .love_potion {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/love_potion.svg');
                     cursor: pointer;
                 }
     
                 .potions_acorn {
-                    width: 60px;
-                    height: 60px;
+                    width: 40px;
+                    height: 40px;
                     background-image: url('./references/4_potions/acorn1.svg');
                     cursor: pointer;
                 }
     
             .shelf_cauldron_cat {
-                width: 268px;
-                height: 300px;
+                width: 320px;
+                height: 150px;
                 display: flex;
-                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
             }
     
             .upper_shelf {
-                width: 268px;
-                height: 100px;
-                display: flex;
-                justify-content: center;
-                align-items: flex-end;
+                width: 50px;
+                height: 150px;
+                display: flex;                
+                justify-content: space-between;
+                align-items: center;
             }
     
             .potion {
-                width: 80px;
-                height: 80px;
+                width: 50px;
+                height: 50px;
                 background-image: url('./references/4_potions/potion_green.svg');
                 margin: 0px 0px 10px 0px;            
             }
     
             .candle {
-                width: 80px;
-                height: 80px;
+                width: 50px;
+                height: 50px;
                 background-image: url('./references/4_potions/candle.svg');
                 margin: 0px 0px 20px 0px;            
             }
     
             .candle_light {
-                width: 80px;
-                height: 80px;
+                width: 50px;
+                height: 50px;
                 background-image: url('./references/4_potions/candle_light.svg');            
                 opacity: 0.6;
                 filter: blur(10px);
@@ -13422,8 +13424,8 @@ label {
             }
     
             .witch_hat {
-                width: 100px;
-                height: 100px;
+                width: 50px;
+                height: 50px;
                 background-image: url('./references/4_potions/witch_hat_2.svg');
             }
             
@@ -13440,16 +13442,16 @@ label {
             }
     
             .cauldron_cat {
-                width: 300px;
-                height: 250px;
+                width: 320px;
+                height: 200px;
                 display: flex;
                 align-items: flex-end;
             }
     
                 .cauldron {
                     z-index: 5;
-                    width: 150px;
-                    height: 150px;
+                    width: 100px;
+                    height: 100px;
                     background-image: url('./references/4_potions/cauldron_green.svg');
                     display: flex;
                     flex-direction: column;
@@ -13511,39 +13513,39 @@ label {
     
                 .cat {
                     z-index: 5;
-                    width: 120px;
-                    height: 120px;
+                    width: 100px;
+                    height: 100px;
                     background-image: url('./references/4_potions/black-cat_mouth.svg');
                     animation-name: cat_anim_1;                
                 } 
                 
                 .sushi_label {
-                    width: 70px;
-                    height: 70px;
+                    width: 50px;
+                    height: 50px;
                     background-color: #07b39b;
                     opacity: 0;
                     display: inline-block;
                 }
     
                 .sushi_label_style {
-                    width: 70px;
-                    height: 70px;                
+                    width: 50px;
+                    height: 50px;                
                     opacity: 0;
                     display: inline-block;
                     background-image: url('./references/4_potions/sushi.svg');
                 }
     
                 .cat_label {
-                    width: 120px;
-                    height: 120px;
+                    width: 100px;
+                    height: 100px;
                     background-color: #07b39b;
                     opacity: 0;
                     display: inline-block;
                 }
     
                 .cat_label_style {
-                    width: 120px;
-                    height: 120px;
+                    width: 100px;
+                    height: 100px;
                     background-image: url('./references/4_potions/black-cat_after_sushi.svg');
                     opacity: 0;
                     display: inline-block;
@@ -13591,12 +13593,12 @@ label {
     /*tree*/
     
     .slide_five {
-        width: 768px;
+        width: 320px;
         height: 500px;
     }
     
         .trees_wrapper {
-            width: 768px;
+            width: 320px;
             height: 500px;
             display: flex;
             justify-content: space-between;
@@ -13608,14 +13610,14 @@ label {
         }
     
         .moving_branch {
-            width: 400px;
-            height: 500px;
+            width: 150px;
+            height: 120px;
         }
     
             .sakura_branch {
-                width: 450px;
-                height: 253px;
-                background-image: url('./references/5_tree/pngwing11.png');
+                width: 150px;
+                height: 150px;
+                background-image: url('./references/5_tree/pngwing31.png');
                 animation-name: sakura_anim;
                 animation-duration: 10s;
                 animation-timing-function: linear;
@@ -13660,8 +13662,8 @@ label {
             }
     
             .leaves {
-                width: 800px;
-                height: 447px;
+                width: 320px;
+                height: 350px;
                 display: flex;            
                 flex-wrap: wrap;            
             }
@@ -14354,7 +14356,7 @@ label {
             }
        
         .tree_with_hand {
-            width: 240px;
+            width: 200px;
             height: 500px;
             background-image: url('./references/5_tree/tree_for_hand_cut_smaller.png');
             display: flex;
@@ -14369,7 +14371,7 @@ label {
             background-image: url('./references/5_tree/hand_for_tree_smaller.png');
             display: inline-block;
             opacity: 0.4;
-            margin: 140px 0px 0px 80px;
+            margin: 120px 0px 0px 80px;
             cursor: pointer;
         }
     
@@ -14498,12 +14500,12 @@ label {
     /*hedgehog*/
     
     .slide_six {
-        width: 768px;
+        width: 320px;
         height: 500px;
     }
     
         .main_6_wrapper {
-            width: 768px;
+            width: 320px;
             height: 500px;
             display: flex;
             flex-direction: column;
@@ -14514,7 +14516,7 @@ label {
         }
     
         .top_wrapper {
-            width: 768px;
+            width: 320px;
             height: 150px;
             display: flex;        
             justify-content: space-around; 
@@ -14522,8 +14524,8 @@ label {
         }
     
         .kite {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             background-image: url('./references/6_hedgehog/kite1.svg');
             animation-name: kite_anim;
             animation-duration: 3s;
@@ -14553,23 +14555,23 @@ label {
         }
     
         .name_hedgehog {
-            width: 200px;
+            width: 150px;
             height: 80px;
             display: inline-block;
-            font-size: 20px;
+            font-size: 15px;
             font-family: 'Royal Kingdom';
             margin: 0px 0px 0px 130px;        
         }
     
         .name_hedgehog::first-letter {
-            font-size: 50px;
+            font-size: 30px;
             font-family: 'Black Chancery';
             color: red;
         }
     
         .hive {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             background-image: url('./references/6_hedgehog/hive_without_bees.svg');
         }
     
@@ -14698,22 +14700,22 @@ label {
     
     
         .puzzle {
-            width: 768px;
-            height: 300px;
+            width: 320px;
+            height: 280px;
             display: flex;
             justify-content: space-between;
             
         }
     
         .puzzle_pic {
-            width: 500px;
+            width: 200px;
             height: 280px;
             background-color: aquamarine;
             border-radius: 20px;        
         }
     
             .details_left {
-                width: 100px;
+                width: 80px;
                 height: 280px;
                 display: flex;
                 flex-direction: column;
@@ -14722,37 +14724,37 @@ label {
             }
     
                 .detail_l1 {
-                    width: 50px;
-                    height: 50px;
+                    width: 40px;
+                    height: 40px;
                     background-color: coral;
                 }
     
                 .detail_l2 {
-                    width: 50px;
-                    height: 50px;
+                    width: 40px;
+                    height: 40px;
                     background-color: coral;
                 }
     
                 .detail_l3 {
-                    width: 50px;
-                    height: 50px;
+                    width: 40px;
+                    height: 40px;
                     background-color: coral;
                 }
     
                 .detail_l4 {
-                    width: 50px;
-                    height: 50px;
+                    width: 40px;
+                    height: 40px;
                     background-color: coral;
                 }
     
                 .detail_l5 {
-                    width: 50px;
-                    height: 50px;
+                    width: 40px;
+                    height: 40px;
                     background-color: coral;
                 }
     
             .details_right {
-                width: 100px;
+                width: 80px;
                 height: 280px;
                 display: flex;
                 flex-direction: column;
@@ -14761,37 +14763,37 @@ label {
             }
     
                 .detail_r1 {
-                    width: 50px;
-                    height: 50px;
+                    width: 40px;
+                    height: 40px;
                     background-color: coral;
                 }
     
                 .detail_r2 {
-                    width: 50px;
-                    height: 50px;
+                    width: 40px;
+                    height: 40px;
                     background-color: coral;
                 }
     
                 .detail_r3 {
-                    width: 50px;
-                    height: 50px;
+                    width: 40px;
+                    height: 40px;
                     background-color: coral;
                 }
     
                 .detail_r4 {
-                    width: 50px;
-                    height: 50px;
+                    width: 40px;
+                    height: 40px;
                     background-color: coral;
                 }
     
                 .detail_r5 {
-                    width: 50px;
-                    height: 50px;
+                    width: 40px;
+                    height: 40px;
                     background-color: coral;
                 }
     
         .hedgehog_wrapper {
-            width: 768px;
+            width: 320px;
             height: 100px;
             display: flex;
             justify-content: space-between;
@@ -14799,87 +14801,87 @@ label {
         }
     
             .hedgehog {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 background-image: url('./references/6_hedgehog/hedgehog1.svg');
                 animation-name: hedgehog_anim;
                 z-index: 100;
             }
     
             .apple {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 background-image: url('./references/6_hedgehog/apple-svgrepo-com.svg');
             }
     
             .mushrooms {
-                width: 50px;
-                height: 50px;;
+                width: 30px;
+                height: 30px;
                 background-image: url('./references/6_hedgehog/mushrooms-mushroom-svgrepo-com.svg');
             }
     
             .maple_leaf {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 background-image: url('./references/6_hedgehog/maple-leaf_smaller.svg');
             }
     
             .marshmallow {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 background-image: url('./references/6_hedgehog/marshmallow-svgrepo-com.svg');
             }
     
             .sock {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 background-image: url('./references/6_hedgehog/sock-svgrepo-com.svg');
             }
     
             .acorn {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 background-image: url('./references/6_hedgehog/acorn-svgrepo-com.svg');
             }
     
             .muhomor {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 background-image: url('./references/6_hedgehog/mushrooms-mushroom-svgrepo-com.svg');
                 display: none;
             }
     
             .oak_leaf {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 background-image: url('./references/6_hedgehog/oak_leaf.svg');
                 display: none;
             }
     
             .pear {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 background-image: url('./references/6_hedgehog/pear-svgrepo-com.svg');
                 display: none;
             }
     
             .umbrella {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 background-image: url('./references/6_hedgehog/umbrella-svgrepo-com.svg');
                 display: none;
             }
     
             .broom {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 background-image: url('./references/6_hedgehog/broom-svgrepo-com.svg');
                 display: none;
             }
     
             .house {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 background-image: url('./references/6_hedgehog/house.svg');
                 display: none;
             }
@@ -14905,14 +14907,14 @@ label {
             }
     
             .radio_for_apple {
-                width: 50px;
-                height: 50px; 
+                width: 30px;
+                height: 30px; 
                 display: inline-block;                       
             }
     
             .apple_label_style {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 background-image: url('./references/6_hedgehog/apple-svgrepo-com.svg');
                 display: inline-block;
                 display: hidden;
@@ -14958,14 +14960,14 @@ label {
             }
     
             .radio_for_mushrooms {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 display: inline-block;                       
             }
     
             .mushrooms_label_style {
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
                 background-image: url('./references/6_hedgehog/mushrooms-mushroom-svgrepo-com.svg');
                 display: inline-block;
                 display: hidden;
@@ -15011,14 +15013,14 @@ label {
         }
     
         .radio_for_maple_leaf {
-            width: 50px;
-            height: 50px; 
+            width: 30px;
+            height: 30px; 
             display: inline-block;                       
         }
     
         .maple_label_style {
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
             background-image: url('./references/6_hedgehog/maple-leaf_smaller.svg');
             display: inline-block;
             display: hidden;
@@ -15064,14 +15066,14 @@ label {
         }
     
         .radio_for_marshmallow {
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
             display: inline-block;                       
         }
     
         .marshmallow_label_style {
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
             background-image: url('./references/6_hedgehog/marshmallow-svgrepo-com.svg');
             display: inline-block;
             display: hidden;
@@ -15117,14 +15119,14 @@ label {
         }
     
         .radio_for_sock {
-            width: 50px;
-            height: 50px; 
+            width: 30px;
+            height: 30px; 
             display: inline-block;                       
         }
     
         .sock_label_style {
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
             background-image: url('./references/6_hedgehog/sock-svgrepo-com.svg');
             display: inline-block;
             display: hidden;
@@ -15170,14 +15172,14 @@ label {
         }
     
         .radio_for_acorn {
-            width: 50px;
-            height: 50px; 
+            width: 30px;
+            height: 30px; 
             display: inline-block;                       
         }
     
         .acorn_label_style {
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
             background-image: url('./references/6_hedgehog/acorn-svgrepo-com.svg');
             display: inline-block;
             display: hidden;
@@ -15222,7 +15224,7 @@ label {
     
     
         .grass {
-            width: 768px;
+            width: 320px;
             height: 45px;
             background-image: url('./references/6_hedgehog/grass_long.svg');
             border-radius: 30px;
@@ -15232,12 +15234,12 @@ label {
     /*heart*/
     
     .slide_seven {
-        width: 768px;
+        width: 320px;
         height: 500px;
     }
     
         .main_7_wrapper {
-            width: 768px;
+            width: 320px;
             height: 500px;
             display: flex;
             flex-direction: column;
@@ -15249,7 +15251,7 @@ label {
         }
     
         .top_7_wrapper {
-            width: 768px;
+            width: 320px;
             height: 100px;
             display: flex;        
             justify-content: space-between; 
@@ -15265,18 +15267,18 @@ label {
             width: 100px;
             height: 80px;
             display: inline-block;
-            font-size: 20px;
+            font-size: 15px;
             font-family: 'Royal Kingdom';                
         }
     
         .name_heart::first-letter {
-            font-size: 50px;
+            font-size: 30px;
             font-family: 'Black Chancery';
             color: red;
         }
         
         .labyrinth {
-            width: 768px;
+            width: 320px;
             height: 400px;
             display: flex;
             flex-direction: column;
@@ -15340,7 +15342,7 @@ label {
     
             .name_in_heart {
                 width: 500px;
-                height: 50px;
+                height: 30px;
                 font-family: 'Princess Lulu';
                 font-size: 40px;
                 color: rgb(179, 93, 93);            
@@ -15350,8 +15352,8 @@ label {
             }
     
         .heart_shape {
-            width: 60px;
-            height: 60px; 
+            width: 40px;
+            height: 40px; 
             background-color: #f7867d;        
             transform: rotate(-45deg);
             box-shadow: -10px 10px 90px #f7867d;
@@ -15360,7 +15362,7 @@ label {
             animation-timing-function: linear;
             animation-iteration-count: infinite;
             transform: scale(4);
-            margin: 100px 0px 0px 0px;
+            margin: 150px 0px 0px 0px;
         }
     
         @keyframes heartbeat_anim {
@@ -15378,8 +15380,8 @@ label {
         .heart_shape:before {
             content: '';
             position: absolute;
-            width: 60px;
-            height: 60px; 
+            width: 40px;
+            height: 40px;
             background: #f7867d;
             top: -50%;
             border-radius: 50px;
@@ -15389,8 +15391,8 @@ label {
         .heart_shape:after {
             content: '';
             position: absolute;
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
             background: #f7867d;
             right: -50%;
             border-radius: 50px;
