@@ -5502,7 +5502,8 @@ label {
                 font-size: 20px;
                 font-family: 'Royal Kingdom';
                 letter-spacing: 4px;
-                color: #303030;                                                           
+                color: #303030;
+                margin: 20px 0px 0px 0px;                                                           
             }
 
             .name::first-letter {
@@ -5581,22 +5582,23 @@ label {
 
     .dino_game_items {
         width: 768px;
-        height: 120px;
+        height: 250px;
         display: flex;
         flex-direction: row;
-        align-items: space-between;                         
+        align-items: space-between;
+        align-items: flex-end;                         
     }
 
         .obstacle_wrapper { 
             width: 768px;               
-            height: 120px;
+            height: 100px;
             display: flex;            
             align-items: flex-end;            
             overflow: hidden;                                                                              
         }  
 
             .obstacle_course {                
-                --obs_width: 120px;
+                --obs_width: 100px;
                 --obs_length: calc(100px + 100px + 400px + 100px + 600px);
                 position: relative;
                 left: calc(0px - var(--obs_length));
@@ -5645,7 +5647,7 @@ label {
 
             .obstacles_move {                
                 position: absolute;
-                width: 100px;
+                width: 10px;
                 height: 50px;
                 overflow: hidden;
                 display: flex;
@@ -5795,8 +5797,8 @@ label {
             }
 
                 .dino_pic {                    
-                    height: 120px;
-                    width: 120px;
+                    height: 100px;
+                    width: 100px;
                     background-image: url('./references/1_dino_pics/dino.svg');
                     cursor: pointer;
                 }            
@@ -5811,7 +5813,7 @@ label {
             }
 
             .both_buttons {
-                width: 200px;
+                width: 300px;
                 height: 50px;
                 display: flex;
                 justify-content: space-between;
@@ -5913,7 +5915,7 @@ label {
                         overflow: hidden;
                         box-sizing: content-box;
                         display: inline-flex;
-                        margin: 0px 0px 40px 0px;
+                        margin: 0px 0px 0px 0px;
                     }
 
                     .wavy::before {
