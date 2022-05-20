@@ -1136,13 +1136,13 @@ input[type="checkbox"] {
                 transform: scale(0.9);
                 animation-name: move_anim;
                 animation-duration: 10s;  
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');                                                            
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');                                                            
             }            
 
             .firefly_one:hover {
                 background-image: url('./references/2_firefly_pics/firefly_red.svg');                
                 transition: 0.5s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;                    
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;                    
             }
 
             .firefly_two {
@@ -1154,13 +1154,13 @@ input[type="checkbox"] {
                 transform: scale(0.8);
                 animation-name: move_anim;
                 animation-duration: 10s; 
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');               
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');               
             }
 
             .firefly_two:hover {
                 background-image: url('./references/2_firefly_pics/firefly_orange.svg');                
                 transition: 0.5s;                
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;
             }
 
             .firefly_three {
@@ -1172,13 +1172,13 @@ input[type="checkbox"] {
                 transform: scale(1.2);
                 animation-name: move_anim;
                 animation-duration: 10s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');                 
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');                 
             }
 
             .firefly_three:hover {
                 background-image: url('./references/2_firefly_pics/firefly_yellow.svg');
                 transition: 0.5s;                
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;
             }
 
             .firefly_four {
@@ -1190,13 +1190,13 @@ input[type="checkbox"] {
                 transform: scale(0.7);
                 animation-name: move_anim;
                 animation-duration: 10s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');                   
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');                   
             }
 
             .firefly_four:hover {
                 background-image: url('./references/2_firefly_pics/firefly_green.svg');                
                 transition: 0.5s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;
             }
 
             .firefly_five {
@@ -1208,13 +1208,13 @@ input[type="checkbox"] {
                 transform: scale(1.1);
                 animation-name: move_anim;
                 animation-duration: 10s; 
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');               
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');               
             }
             
             .firefly_five:hover {
                 background-image: url('./references/2_firefly_pics/firefly_blue.svg');                
                 transition: 0.5s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;                
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;                
             }
 
             .firefly_six {
@@ -1227,13 +1227,13 @@ input[type="checkbox"] {
                 transform: scale(0.5);
                 animation-name: move_anim;
                 animation-duration: 10s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');
             }
 
             .firefly_six:hover {
                 background-image: url('./references/2_firefly_pics/firefly_navy_blue.svg');                
                 transition: 0.5s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer; 
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer; 
             }
 
             .firefly_seven {
@@ -1246,13 +1246,13 @@ input[type="checkbox"] {
                 transform: scale(0.6);
                 animation-name: move_anim;
                 animation-duration: 10s;  
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');
             }
 
             .firefly_seven:hover {
                 background-image: url('./references/2_firefly_pics/firefly_purple.svg');                
                 transition: 0.5s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;                 
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;                 
             }
 
             @keyframes move_anim {
@@ -6339,7 +6339,7 @@ label {
             .firefly_one:hover {
                 background-image: url('./references/2_firefly_pics/firefly_red.svg');                
                 transition: 0.5s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;                    
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;                    
             }
 
             .firefly_two {
@@ -6351,13 +6351,13 @@ label {
                 transform: scale(1.1);
                 animation-name: move_anim;
                 animation-duration: 10s; 
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');               
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');               
             }
 
             .firefly_two:hover {
                 background-image: url('./references/2_firefly_pics/firefly_orange.svg');                
                 transition: 0.5s;                
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;
             }
 
             .firefly_three {
@@ -6369,13 +6369,13 @@ label {
                 transform: scale(1.4);
                 animation-name: move_anim;
                 animation-duration: 10s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');                 
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');                 
             }
 
             .firefly_three:hover {
                 background-image: url('./references/2_firefly_pics/firefly_yellow.svg');
                 transition: 0.5s;                
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;
             }
 
             .firefly_four {
@@ -6387,13 +6387,13 @@ label {
                 transform: scale(1.2);
                 animation-name: move_anim;
                 animation-duration: 10s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');                   
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');                   
             }
 
             .firefly_four:hover {
                 background-image: url('./references/2_firefly_pics/firefly_green.svg');                
                 transition: 0.5s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;
             }
 
             .firefly_five {
@@ -6405,13 +6405,13 @@ label {
                 transform: scale(1.3);
                 animation-name: move_anim;
                 animation-duration: 10s; 
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');               
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');               
             }
             
             .firefly_five:hover {
                 background-image: url('./references/2_firefly_pics/firefly_blue.svg');                
                 transition: 0.5s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;                
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;                
             }
 
             .firefly_six {
@@ -6424,13 +6424,13 @@ label {
                 transform: scale(0.8);
                 animation-name: move_anim;
                 animation-duration: 10s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');
             }
 
             .firefly_six:hover {
                 background-image: url('./references/2_firefly_pics/firefly_navy_blue.svg');                
                 transition: 0.5s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer; 
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer; 
             }
 
             .firefly_seven {
@@ -6443,13 +6443,13 @@ label {
                 transform: scale(0.9);
                 animation-name: move_anim;
                 animation-duration: 10s;  
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');
             }
 
             .firefly_seven:hover {
                 background-image: url('./references/2_firefly_pics/firefly_purple.svg');                
                 transition: 0.5s;
-                cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;                 
+                cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;                 
             }
 
             @keyframes move_anim {
@@ -11162,10 +11162,10 @@ label {
         }
     
             .star_two {
-                width: 15px;
-                height: 15px;
+                width: 10px;
+                height: 10px;
                 background-image: url('./references/2_firefly_pics/star.svg');
-                margin: 30px 0px 0px 50px;
+                margin: 10px 0px 0px 20px;
                 opacity: 1;
                 animation-name: star_two_anim;
                 animation-duration: 5s;
@@ -11185,10 +11185,10 @@ label {
             }
     
             .star_four {
-                width: 8px;
-                height: 8px;
+                width: 5px;
+                height: 5px;
                 background-image: url('./references/2_firefly_pics/star.svg');
-                margin: 160px 0px 0px 0px;
+                margin: 40px 0px 0px 0px;
                 opacity: 0.4;
                 animation-name: star_four_anim;
                 animation-delay: 0.5s;
@@ -11223,9 +11223,9 @@ label {
                     width: 100px;
                     height: 30px;             
                     font-size: 10px;
-                    font-family: 'Royal Kingdom';
-                    letter-spacing: 4px;
-                    color: #303030;                                                           
+                    font-family: 'Royal Kingdom';                    
+                    color: #303030; 
+                    margin: 28px 0px 0px 0px;                                                          
                 }
     
                 .name_second_game::first-letter {
@@ -11253,10 +11253,10 @@ label {
             }
     
             .star_five {
-                width: 11px;
-                height: 11px;
+                width: 9px;
+                height: 9px;
                 background-image: url('./references/2_firefly_pics/star.svg');
-                margin: 60px 0px 0px 0px;
+                margin: 30px 0px 0px 0px;
                 opacity: 0.7;
                 animation-name: star_five_anim;
                 animation-delay: 0.1s;
@@ -11284,10 +11284,10 @@ label {
     
     
             .star_six {
-                width: 11px;
-                height: 11px;
+                width: 9px;
+                height: 9px;
                 background-image: url('./references/2_firefly_pics/star.svg');
-                margin: 80px 0px 0px 0px;
+                margin: 60px 0px 0px 0px;
                 opacity: 0.4;
                 animation-name: star_six_anim;            
                 animation-duration: 15s;
@@ -11313,10 +11313,10 @@ label {
             }
     
             .star_seven {
-                width: 6px;
-                height: 6px;
+                width: 4px;
+                height: 4px;
                 background-image: url('./references/2_firefly_pics/star.svg');
-                margin: 50px 0px 0px 0px;
+                margin: 30px 0px 0px 0px;
                 opacity: 0.6;
                 animation-name: star_seven_anim;            
                 animation-duration: 10s;
@@ -11342,8 +11342,8 @@ label {
             }
     
             .star_one {
-                width: 10px;
-                height: 10px;
+                width: 8px;
+                height: 8px;
                 background-image: url('./references/2_firefly_pics/star.svg');
                 margin: 10px 0px 0px 0px;
                 opacity: 0.8;
@@ -11365,10 +11365,10 @@ label {
             }
             
             .star_three {
-                width: 20px;
-                height: 20px;
+                width: 14px;
+                height: 14px;
                 background-image: url('./references/2_firefly_pics/star.svg');
-                margin: 100px 10px 0px 0px;
+                margin: 50px 10px 0px 0px;
                 opacity: 0.5;
                 animation-name: star_five_anim;            
                 animation-duration: 10s;
@@ -11423,18 +11423,18 @@ label {
             }
     
             .branch_jar {
-                min-width: 100px;
+                min-width: 50px;
                 height: 160px;
                 display: flex;
                 justify-content: flex-end;
             }
     
                 .branch_jar_wrapper {
-                    min-width: 100px;
+                    min-width: 50px;
                     height: 160px;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
+                    justify-content: center;
                     align-items: center;
                 }
     
@@ -11448,7 +11448,7 @@ label {
                         /*animation-duration: 20s;
                         animation-iteration-count: infinite;*/
                         transform-origin: bottom center;
-                        margin: 0px 0px 0px 50px;                   
+                        margin: 0px 0px 0px 0px;                   
                     }               
     
                     @keyframes branch_anim {
@@ -11532,90 +11532,90 @@ label {
                     width: 50px;
                     height: 50px;
                     background-image: url('./references/2_firefly_pics/firefly_without_light.svg'); 
-                    margin: 50px 10px 20px 30px;                
+                    margin: 25px 5px 10px 5px;                
                     animation-delay: -2s !important;
-                    transform: scale(1);
+                    transform: scale(0.8);
                     animation-name: move_anim;
                     animation-duration: 10s;  
-                    cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');                                                            
+                    cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');                                                            
                 }            
     
                 .firefly_one:hover {
                     background-image: url('./references/2_firefly_pics/firefly_red.svg');                
                     transition: 0.5s;
-                    cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;                    
+                    cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;                    
                 }
     
                 .firefly_two {
                     width: 50px;
                     height: 50px;
                     background-image: url('./references/2_firefly_pics/firefly_without_light.svg');
-                    margin: 0px 80px 30px 20px;                
+                    margin: 0px 40px 15px 10px;                
                     animation-delay: -1s !important;
-                    transform: scale(0.9);
+                    transform: scale(0.7);
                     animation-name: move_anim;
                     animation-duration: 10s; 
-                    cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');               
+                    cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');               
                 }
     
                 .firefly_two:hover {
                     background-image: url('./references/2_firefly_pics/firefly_orange.svg');                
                     transition: 0.5s;                
-                    cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;
+                    cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;
                 }
     
                 .firefly_three {
                     width: 50px;
                     height: 50px;
                     background-image: url('./references/2_firefly_pics/firefly_without_light.svg'); 
-                    margin: 10px 30px 100px 60px;                
+                    margin: 5px 15px 20px 10px;                
                     animation-delay: -3s !important;
-                    transform: scale(1.2);
+                    transform: scale(1);
                     animation-name: move_anim;
                     animation-duration: 10s;
-                    cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');                 
+                    cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');                 
                 }
     
                 .firefly_three:hover {
                     background-image: url('./references/2_firefly_pics/firefly_yellow.svg');
                     transition: 0.5s;                
-                    cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;
+                    cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;
                 }
     
                 .firefly_four {
                     width: 50px;
                     height: 50px;
                     background-image: url('./references/2_firefly_pics/firefly_without_light.svg');
-                    margin: 100px 50px 0px 50px;                
+                    margin: 30px 15px 0px 15px;                
                     animation-delay: -6s !important;
-                    transform: scale(1);
+                    transform: scale(0.6);
                     animation-name: move_anim;
                     animation-duration: 10s;
-                    cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');                   
+                    cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');                   
                 }
     
                 .firefly_four:hover {
                     background-image: url('./references/2_firefly_pics/firefly_green.svg');                
                     transition: 0.5s;
-                    cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;
+                    cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;
                 }
     
                 .firefly_five {
                     width: 50px;
                     height: 50px;
                     background-image: url('./references/2_firefly_pics/firefly_without_light.svg'); 
-                    margin: 100px 50px 0px 50px;                 
+                    margin: 20px 15px 0px 10px;                 
                     animation-delay: -4s !important;
-                    transform: scale(1.1);
+                    transform: scale(0.9);
                     animation-name: move_anim;
                     animation-duration: 10s; 
-                    cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');               
+                    cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');               
                 }
                 
                 .firefly_five:hover {
                     background-image: url('./references/2_firefly_pics/firefly_blue.svg');                
                     transition: 0.5s;
-                    cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;                
+                    cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;                
                 }
     
                 .firefly_six {
@@ -11625,16 +11625,16 @@ label {
                     box-sizing: border-box;
                     display: inline-flex;                
                     animation-delay: -6s !important;
-                    transform: scale(0.6);
+                    transform: scale(0.4);
                     animation-name: move_anim;
                     animation-duration: 10s;
-                    cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');
+                    cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');
                 }
     
                 .firefly_six:hover {
                     background-image: url('./references/2_firefly_pics/firefly_navy_blue.svg');                
                     transition: 0.5s;
-                    cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer; 
+                    cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer; 
                 }
     
                 .firefly_seven {
@@ -11644,33 +11644,33 @@ label {
                     box-sizing: border-box;
                     display: inline-flex;                
                     animation-delay: -1s !important;
-                    transform: scale(0.7);
+                    transform: scale(0.6);
                     animation-name: move_anim;
                     animation-duration: 10s;  
-                    cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png');
+                    cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png');
                 }
     
                 .firefly_seven:hover {
                     background-image: url('./references/2_firefly_pics/firefly_purple.svg');                
                     transition: 0.5s;
-                    cursor: url('./references/2_firefly_pics/magic_wand_2_cursor.png'), pointer;                 
+                    cursor: url('./references/2_firefly_pics/magic_wand_3_cursor.png'), pointer;                 
                 }
     
                 @keyframes move_anim {
                     0% {
-                        transform: translate(60vw, 6vh);
+                        transform: translate(30vw, 3vh);
                     }
                     20% {
-                        transform: translate(20vw, 10vh);
+                        transform: translate(10vw, 5vh);
                     }
                     40% {
-                        transform: translate(0vw, 1vh);
+                        transform: translate(-5vw, 1vh);
                     }
                     60% {
-                        transform: translate(40vw, 12vh);
+                        transform: translate(10vw, 3vh);
                     }
                     80% {
-                        transform: translate(30vw, 2vh);
+                        transform: translate(15vw, 1vh);
                     }
                     100% {
                         top: 30%;
@@ -11699,6 +11699,7 @@ label {
     .input_circle5:not(:checked) ~ .firefly_five,
     .input_circle6:not(:checked) ~ .firefly_six,
     .input_circle7:not(:checked) ~ .firefly_seven
+
     {
         opacity: 1;
     }
