@@ -6019,9 +6019,9 @@ label {
                 width: 180px;
                 height: 50px;             
                 font-size: 15px;
-                font-family: 'Royal Kingdom';
-                letter-spacing: 4px;
-                color: #303030;                                                           
+                font-family: 'Royal Kingdom';                
+                color: #303030;  
+                margin: 40px 0px 0px 50px;                                                         
             }
 
             .name_second_game::first-letter {
@@ -6521,20 +6521,20 @@ body {
 
             .fly_button_placement {
                 position: relative;
-                width: 1200px;
+                width: 768px;
                 height: 100px;
                 display: flex;
                 justify-content: center; 
-                align-items: flex-start;                            
+                align-items: center;                            
             }
 
             .one_more_fly_button {
                 width: 150px;
-                height: 30px;
+                height: 40px;
                 cursor: pointer;
                 background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-                left: calc(50% - 75px);
-                top: calc(50% - 35px);
+                left: calc(50% - 55px);
+                top: calc(50% - 25px);
                 font-size: 20px;
                 font-family: 'Arial';
                 color: #8b669a;
@@ -6550,10 +6550,10 @@ body {
                     z-index: 2;                        
                     position: absolute;
                     display: block;
-                    width: 16%;
-                    height: 85%;
-                    left: calc(50% - 95px);
-                    top: calc(50% - 55px);
+                    width: 18%;
+                    height: 75%;
+                    left: calc(50% - 55px);
+                    top: calc(50% - 25px);
                     transition: 0.3 opacity ease-in-out;
                     filter: blur(10px);                        
                     opacity: 0;
@@ -6574,16 +6574,16 @@ body {
                     content: 'Fly';                        
                     text-align: center;
                     line-height: 40px;
-                    font-size: 30px;
+                    font-size: 20px;
                     color: #e3d961;
                     z-index: 10;
                     position: absolute;
                     display: inline-block;
                     border-radius: 10px;
-                    width: 16%;
-                    height: 85%;
-                    left: calc(50% - 95px);
-                    top: calc(50% - 45px);
+                    width: 18%;
+                    height: 75%;
+                    left: calc(50% - 70px);
+                    top: calc(50% - 20px);
                     background: transparent;
                     background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82), 
                     linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); 
@@ -7737,7 +7737,7 @@ body {
                     background-image: url('./references/4_potions/caterpillar_to_right.svg');
                 }
                 50% {
-                    transform: translateX(150);
+                    transform: translateX(100);
                     background-image: url('./references/4_potions/caterpillar_to_right.svg');
                 }
                 99% {
@@ -7762,7 +7762,8 @@ body {
                 font-family: 'Royal Kingdom';                
                 color: #303030;                  
                 text-align: center; 
-                animation: glow 1s ease-in-out infinite alternate;                                                                        
+                animation: glow 1s ease-in-out infinite alternate; 
+                margin: 0px 0px 0px 20px;                                                                       
             }
 
             .name_potions::first-letter {
@@ -7781,11 +7782,11 @@ body {
             }
 
                 .klyaksa {
-                    width: 25px;
-                    height: 24px;
+                    width: 20px;
+                    height: 18px;
                     background-image: url('./references/4_potions/klyaksa.svg');
                     display: inline-block;
-                    margin: 0px 0px 0px 100px;
+                    margin: 5px 0px 80px 50px;
                     opacity: 0.6;
                 }
 
@@ -8283,15 +8284,15 @@ body {
             }
 
                 .flame {
-                    width: 30px;
-                    height: 30px;
+                    width: 50px;
+                    height: 50px;
                     background-image: url('./references/4_potions/flame.svg');
                     display: inline-block;
                     animation-name: flame_anim;
                     animation-duration: 2s;
                     animation-iteration-count: infinite;
                     animation-timing-function: linear;
-                    margin: 200px 0px 0px 0px;
+                    margin: 100px 0px 0px 0px;
                     opacity: 0.8;
                 }
 
@@ -9167,7 +9168,7 @@ body {
         background-image: url('./references/5_tree/hand_for_tree_smaller.png');
         display: inline-block;
         opacity: 0.4;
-        margin: 140px 0px 0px 80px;
+        margin: 120px 0px 0px 80px;
         cursor: pointer;
     }
 
@@ -9277,17 +9278,17 @@ body {
         }
 
     .name_tree {
-        width: 150px;
+        width: 100px;
         height: 80px;
         display: inline-block;
-        font-size: 25px;
+        font-size: 20px;
         font-family: 'Royal Kingdom';       
         opacity: 0.9;
         text-shadow: 0 0 10px #1e1b1b;        
     }
 
     .name_tree::first-letter {
-        font-size: 50px;
+        font-size: 40px;
         font-family: 'Black Chancery';
         color: red;        
     }
