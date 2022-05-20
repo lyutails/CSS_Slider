@@ -5734,13 +5734,13 @@ label {
                     transform: translate(0px, 0px);
                 }
                 25% {
-                    transform: translate(0px, -100px);
+                    transform: translate(0px, -80px);
                 }
                 50% {
-                    transform: translate(0px, -200px);
+                    transform: translate(0px, -150px);
                 }
                 75% {
-                    transform: translate(0px, -100px);
+                    transform: translate(0px, -80px);
                 }
                 100% {
                     transform: translate(0px, 0px);
@@ -5752,13 +5752,13 @@ label {
                     transform: translate(0px, 0px);
                 }
                 25% {
-                    transform: translate(0px, -100px);
+                    transform: translate(0px, -80px);
                 }
                 50% {
-                    transform: translate(0px, -200px);
+                    transform: translate(0px, -150px);
                 }
                 75% {
-                    transform: translate(0px, -100px);
+                    transform: translate(0px, -80px);
                 }
                 100% {
                     transform: translate(0px, 0px);
@@ -5806,7 +5806,7 @@ label {
                 
             .button_placement {               
                 width: 768px;
-                height: 100px;
+                height: 50px;
                 display: flex;
                 justify-content: space-evenly;
                 align-items: flex-start;                                             
@@ -5822,7 +5822,7 @@ label {
             }
 
                 .jump_button {
-                    width: 100px;
+                    width: 120px;
                     height: 50px;  
                     cursor: pointer;                  
                     background-color: #f15a24;
@@ -5838,7 +5838,7 @@ label {
                 }
 
                 .move_obstacles {
-                    width: 100px;
+                    width: 120px;
                     height: 50px;
                     cursor: pointer;
                     background-color: #98c79c;
@@ -5854,8 +5854,8 @@ label {
                 }
 
                 .dino_footprint {
-                    width: 20px;
-                    height: 30px;
+                    width: 12px;
+                    height: 16px;
                     display: inline-block;
                     background-image: url('./references/1_dino_pics/pics_obstacles/dino_footprint.svg');                                       
                 }
@@ -10705,14 +10705,15 @@ label {
                 .name {
                     width: 100px;
                     height: 40px;             
-                    font-size: 15px;
+                    font-size: 10px;
                     font-family: 'Royal Kingdom';
                     letter-spacing: 4px;
-                    color: #303030;                                                           
+                    color: #303030; 
+                    margin: 20px 0px 0px 20px;                                                          
                 }
     
                 .name::first-letter {
-                    font-size: 30px;
+                    font-size: 25px;
                     font-family: 'Black Chancery';
                     color: red;
                 }
@@ -10787,7 +10788,7 @@ label {
     
         .dino_game_items {
             width: 320px;
-            height: 100px;
+            height: 60px;
             display: flex;
             flex-direction: row;
             align-items: space-between;                         
@@ -10795,14 +10796,14 @@ label {
     
             .obstacle_wrapper { 
                 width: 320px;
-                height: 100px;
+                height: 60px;
                 display: flex;            
                 align-items: flex-end;            
                 overflow: hidden;                                                                              
             }  
     
                 .obstacle_course {                
-                    --obs_width: 80px;
+                    --obs_width: 60px;
                     --obs_length: calc(100px + 100px + 400px + 100px + 600px);
                     position: relative;
                     left: calc(0px - var(--obs_length));
@@ -10938,31 +10939,31 @@ label {
                         transform: translate(0px, 0px);
                     }
                     25% {
-                        transform: translate(0px, -100px);
+                        transform: translate(0px, -80px);
                     }
                     50% {
-                        transform: translate(0px, -200px);
+                        transform: translate(0px, -150px);
                     }
                     75% {
-                        transform: translate(0px, -100px);
+                        transform: translate(0px, -80px);
                     }
                     100% {
                         transform: translate(0px, 0px);
                     }
                 }
     
-                @keyframes player_anim1 {
+                @keyframes player_anim {
                     0% {
                         transform: translate(0px, 0px);
                     }
                     25% {
-                        transform: translate(0px, -100px);
+                        transform: translate(0px, -80px);
                     }
                     50% {
-                        transform: translate(0px, -200px);
+                        transform: translate(0px, -150px);
                     }
                     75% {
-                        transform: translate(0px, -100px);
+                        transform: translate(0px, -80px);
                     }
                     100% {
                         transform: translate(0px, 0px);
@@ -11001,8 +11002,8 @@ label {
                 }
     
                     .dino_pic {                    
-                        height: 80px;
-                        width: 80px;
+                        height: 60px;
+                        width: 60px;
                         background-image: url('./references/1_dino_pics/dino.svg');
                         cursor: pointer;
                     }            
@@ -11017,7 +11018,7 @@ label {
                 }
     
                 .both_buttons {
-                    width: 200px;
+                    width: 240px;
                     height: 50px;
                     display: flex;
                     justify-content: space-between;
@@ -11026,7 +11027,7 @@ label {
                 }
     
                     .jump_button {
-                        width: 80px;
+                        width: 100px;
                         height: 40px;  
                         cursor: pointer;                  
                         background-color: #f15a24;
@@ -11042,7 +11043,7 @@ label {
                     }
     
                     .move_obstacles {
-                        width: 80px;
+                        width: 100px;
                         height: 40px;
                         cursor: pointer;
                         background-color: #98c79c;
@@ -11118,8 +11119,7 @@ label {
                             background-color: rgb(207, 244, 244);
                             overflow: hidden;
                             box-sizing: content-box;
-                            display: inline-flex;
-                            margin: 0px 0px 40px 0px;
+                            display: inline-flex;                           
                         }
     
                         .wavy::before {
