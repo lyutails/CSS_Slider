@@ -1,0 +1,553 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Arial";
+    src: url("./references/fonts/arial/arial-black.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Royal Kingdom";
+    src: url("./references/fonts/royal-kingdom-font/AnyConv.com__RoyalKingdom1-BWdrd.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Black Chancery";
+    src: url("./references/fonts/blackchancery/AnyConv.com__BLKCHCRY.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Princess Lulu";
+    src: url("./references/fonts/princess-lulu-font/AnyConv.com__PrincessLulu-lxBe.woff") format("woff");    
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+}
+
+    .title_wrapper {
+        width: 1200px;
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #9f0040;        
+        border-radius: 30px 30px 0px 0px;              
+    } 
+    
+        .gems_chest {
+            width: 180px;
+            height: 188px;
+            background-image: url('./references/3_gems/chest.svg');
+        }
+
+            .name {
+                width: 230px;
+                height: 80px;             
+                font-size: 30px;
+                font-family: 'Royal Kingdom';
+                letter-spacing: 4px;
+                color: #303030;                  
+                text-align: center; 
+                animation: glow 1s ease-in-out infinite alternate;                                                        
+            }
+
+            .jewels {
+                width: 200px;
+                height: 200px;
+                background-image: url('./references/3_gems/gems.svg');
+            }
+
+            @keyframes glow {
+                from {
+                    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
+                    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+                } 
+                to {
+                    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6,
+                    0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+                }
+            }
+
+            .name::first-letter {
+                font-size: 80px;
+                font-family: 'Black Chancery';
+                color: red;
+            }     
+
+        .main_wrapper {
+            width: 1200px;
+            height: 600px; 
+            display: flex;
+            justify-content: center;
+            background-color: #303030;    
+        }
+    
+        .third_game_gems {
+            width: 1200px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #9f0040;
+            border-radius: 0px 0px 30px 30px;    
+            overflow: hidden;        
+        }        
+
+        .gems {
+            width: 1150px;
+            height: 300px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            column-gap: 60px;
+        }
+
+            .gem_one {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_amethyst.svg'); 
+                cursor: pointer;                            
+            }
+
+            .gem_two {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_blue_crystal.svg');
+                cursor: pointer;              
+            }
+
+            .gem_three {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_blue_green_crystal.svg');
+                cursor: pointer;              
+            }
+
+            .gem_four {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_dark_blue_circle.svg');
+                cursor: pointer;              
+            }
+
+            .gem_five {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_dark_purple_piramid.svg');
+                cursor: pointer;              
+            }
+
+            .gem_six {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_diamond.svg');
+                cursor: pointer;              
+            }
+
+            .gem_seven {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_green_emerald.svg');
+                cursor: pointer;              
+            }
+
+            .gem_eight {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_green_round_emerald.svg');
+                cursor: pointer;              
+            }
+
+            .gem_nine {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_orange.svg');
+                cursor: pointer;              
+            }
+
+            .gem_ten {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_red.svg');
+                cursor: pointer;              
+            }
+
+            .gem_eleven {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_pink_heart.svg'); 
+                cursor: pointer;             
+            }
+
+            .gem_twelve {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_red_rhombus.svg'); 
+                cursor: pointer;             
+            }
+
+            .gem_thirteen {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/gem_yellow_curvy_triangle.svg');
+                cursor: pointer;              
+            }           
+            
+
+        .shapes {            
+            width: 1150px;
+            height: 300px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            column-gap: 60px;            
+        }
+        
+            .shape_one {
+                width: 100px;
+                height: 100px;                
+                background-image: url('./references/3_gems/shape_blue_green_crystal.svg'); 
+                cursor: pointer;                
+                opacity: 0;                
+                animation-name:  shape_one_anim;
+                animation-duration: 3s;
+                animation-iteration-count: forwards;  
+                animation-delay: 5s;           
+            }
+
+            @keyframes shape_one_anim {
+                from {
+                    opacity: 0;        
+                }
+                20% {
+                    opacity: 1;
+                }
+                to {
+                    opacity: 1;        
+                }
+            }
+
+            .shape_two {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_diamond.svg');
+                cursor: pointer;
+                animation-delay: 4s;              
+            }
+
+            .shape_three {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_pink_heart.svg');
+                cursor: pointer;
+                animation-delay: 6s;              
+            }
+
+            .shape_four {
+                width: 100px;
+                height: 100px;                
+                background-image: url('./references/3_gems/shape_red_rhombus.svg');
+                cursor: pointer;
+                animation-delay: 8s;              
+            }
+
+            .shape_five {
+                width: 100px;
+                height: 100px;                 
+                background-image: url('./references/3_gems/shape_green_emerald.svg');
+                cursor: pointer;
+                animation-delay: 10s;              
+            }
+
+            .shape_six {
+                width: 100px;
+                height: 100px;                
+                background-image: url('./references/3_gems/shape_red.svg');
+                cursor: pointer; 
+                animation-delay: 12s;             
+            }
+
+            .shape_seven {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_amethyst.svg');
+                cursor: pointer;
+                animation-delay: 14s;              
+            }
+
+            .shape_eight {
+                width: 100px;
+                height: 100px;                
+                background-image: url('./references/3_gems/shape_dark_purple_piramid.svg');
+                cursor: pointer;
+                animation-delay: 16s;              
+            }
+
+            .shape_nine {
+                width: 100px;
+                height: 100px;                  
+                background-image: url('./references/3_gems/shape_orange.svg');
+                cursor: pointer;
+                animation-delay: 18s;              
+            }
+
+            .shape_ten {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_green_round_emerald.svg');
+                cursor: pointer;
+                animation-delay: 20s;              
+            }
+
+            .shape_eleven {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_yellow_curvy_triangle.svg'); 
+                cursor: pointer; 
+                animation-delay: 22s;            
+            }
+
+            .shape_twelve {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_dark_blue_circle.svg'); 
+                cursor: pointer;
+                animation-delay: 24s;             
+            }
+
+            .shape_thirteen {
+                width: 100px;
+                height: 100px;  
+                background-image: url('./references/3_gems/shape_blue_crystal.svg');
+                cursor: pointer; 
+                animation-delay: 26s;
+                opacity: 1;              
+            }
+            
+            .shapes ~ .shape {
+                animation-name: shapes_anim;
+                animation-duration: 60s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }            
+           
+input[type=checkbox] {
+    appearance: none;
+}
+
+/*input[type=radio] {
+    display: none;
+}*/
+
+/*radio*/
+
+input[type="radio"] {
+    border: 0px;
+    width: 50px;
+    height: 3em;    
+}
+
+/*input[type='radio'] {    
+    transform: scale(1.2);
+}*/
+
+.slides_logic {
+    width: 1200px;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0px 0px 0px;    
+}
+
+/* or */
+
+#l1:checked ~ .view .l1 {
+    background-color: red;    
+}
+
+#l2:checked ~ .view .l1 {
+    background-color: red;
+}
+
+#l1:checked ~ .view .l1_ {
+    background-color: red;
+}
+
+#l2:checked ~ .view .l2 {
+    background-color: red;
+}
+
+/* and */
+
+#r1:checked ~ #r2:checked ~ .view .r1 {
+    background-color: red;
+}
+
+#r1:checked ~ .view .r1_ {
+    background-color: red;
+}
+
+#r2:checked ~ .view .r2_ {
+    background-color: red;
+}
+
+/*xor*/
+
+#z1:checked ~ #n2:checked ~ .view .z1 {
+    background-color: red;
+}
+
+#z1:checked ~ .view .z1_ {
+    background-color: red;
+}
+
+#z2:checked ~ .view .z2_ {
+    background-color: red;
+}
+
+#s1:checked ~ .view .sv1 {
+    background-color: red;
+}
+
+#s2:checked ~ .view .sv2 {
+    background-color: red;
+}
+
+#s3:checked ~ .view .sv3 {
+    background-color: red;
+}
+
+#s4:checked ~ .view .sv4 {
+    background-color: red;
+}
+
+#s1:checked ~ .view .sl1 {
+    background-color: red;
+}
+
+#s4:checked ~ .view .sl4 {
+    background-color: red;
+}
+
+.sa {
+    display: none;
+}
+
+#s1:checked ~ .view .sa2 {
+    display: block;
+}
+
+#s2:checked ~ .view .sa3 {
+    display: block;
+}
+
+#s3:checked ~ .view .sa4 {
+    display: block;
+}
+
+#s4:checked ~ .view .sa1 {
+    display: block;
+}
+
+.sd {
+    display: block;
+}
+
+#s1:checked ~ .view .sd4 {
+    display: block;
+}
+
+#s2:checked ~ .view .sd1 {
+    display: block;
+}
+
+#s3:checked ~ .view .sd2 {
+    display: block;
+}
+
+#s4:checked ~ .view .sd3 {
+    display: block;
+}
+
+.arrow_container {
+    position: relative;
+    width: 20px;
+}
+
+.pagination {
+    display: flex;
+}
+
+#c1:checked ~ .view .one {
+    display: none;
+}
+
+
+                
+            .fly_button_placement {
+                position: relative;
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;                             
+            }
+
+                .fly_button {
+                    width: 200px;
+                    height: 50px;
+                    cursor: pointer;
+                    background: #fff;
+                    left: calc(50% - 75px);
+                    top: calc(50% - 25px);
+                    font-size: 30px;
+                    font-family: 'Arial';
+                    color: #8b669a;
+                    border-radius: 10px;            
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer; 
+                    display: none;                   
+                }
+
+.boom {
+    z-index: 1;
+    width: 1300px;
+    height: 1300px;
+    position: absolute;
+    top: -180px;
+    left: 10px;
+    display: none;
+}
+
+.about {
+    width: 1200px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;     
+}
+
+.creator {
+    font-family: 'Princess Lulu';
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0px 0px 0px;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Crystal_x5F_Shard" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#5B153E;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{fill:#F49FD3;}
+	.st3{fill:#A03774;}
+</style>
+<polygon class="st0" points="286.2,10 197.8,96.2 161.8,233.6 216.4,455.1 293.8,502 308,451.8 337.5,139.8 "/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="352.6107" y1="102.7458" x2="198.4702" y2="471.1151" gradientTransform="matrix(1 0 0 -1 0 512)">
+	<stop  offset="0" style="stop-color:#CC5697"/>
+	<stop  offset="1" style="stop-color:#E585BE"/>
+</linearGradient>
+<polygon class="st1" points="337.5,139.8 282.9,80.9 207.7,185.6 293.8,502 308,451.8 "/>
+<polygon class="st2" points="337.5,139.8 337.5,139.8 286.2,10 282.9,80.9 "/>
+<polygon class="st3" points="282.9,80.9 286.2,10 197.8,96.2 207.7,185.6 "/>
+<polygon class="st3" points="207.7,185.6 216.4,455.1 293.8,502 "/>
+</svg>
