@@ -11417,7 +11417,7 @@ label {
     
             .fireflies_jar_wrapper {
                 width: 320px;
-                height: 400px;
+                height: 300px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -11533,7 +11533,7 @@ label {
                     width: 50px;
                     height: 50px;
                     background-image: url('./references/2_firefly_pics/firefly_without_light.svg'); 
-                    margin: 25px 5px 10px 5px;                
+                    margin: 15px 5px 10px 5px;                
                     animation-delay: -2s !important;
                     transform: scale(0.8);
                     animation-name: move_anim;
@@ -11569,7 +11569,7 @@ label {
                     width: 50px;
                     height: 50px;
                     background-image: url('./references/2_firefly_pics/firefly_without_light.svg'); 
-                    margin: 5px 15px 20px 10px;                
+                    margin: 5px 15px 20px 20px;                
                     animation-delay: -3s !important;
                     transform: scale(1);
                     animation-name: move_anim;
@@ -11587,7 +11587,7 @@ label {
                     width: 50px;
                     height: 50px;
                     background-image: url('./references/2_firefly_pics/firefly_without_light.svg');
-                    margin: 30px 15px 0px 15px;                
+                    margin: 15px 15px 0px 15px;                
                     animation-delay: -6s !important;
                     transform: scale(0.6);
                     animation-name: move_anim;
@@ -11605,7 +11605,7 @@ label {
                     width: 50px;
                     height: 50px;
                     background-image: url('./references/2_firefly_pics/firefly_without_light.svg'); 
-                    margin: 20px 15px 0px 10px;                 
+                    margin: 10px 15px 0px 10px;                 
                     animation-delay: -4s !important;
                     transform: scale(0.9);
                     animation-name: move_anim;
@@ -11731,12 +11731,12 @@ label {
                     height: 100px;
                     display: flex;
                     justify-content: center; 
-                    align-items: flex-start;                            
+                    align-items: center;                            
                 }
     
                 .one_more_fly_button {
                     width: 150px;
-                    height: 30px;
+                    height: 40px;
                     cursor: pointer;
                     background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
                     left: calc(50% - 75px);
@@ -11756,10 +11756,10 @@ label {
                         z-index: 2;                        
                         position: absolute;
                         display: block;
-                        width: 50%;
-                        height: 100%;
-                        left: calc(50% - 95px);
-                        top: calc(50% - 55px);
+                        width: 40%;
+                        height: 36%;
+                        left: calc(50% - 75px);
+                        top: calc(50% - 18px);
                         transition: 0.3 opacity ease-in-out;
                         filter: blur(10px);                        
                         opacity: 0;
@@ -11769,7 +11769,7 @@ label {
                     .one_more_fly_button:hover:before {
                         color: #8b669a;
                         background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82),
-                        linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);;                          
+                        linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);                          
                         cursor: pointer;
                         filter: blur(20px);                                                
                         opacity: 1;   
@@ -11780,16 +11780,16 @@ label {
                         content: 'Fly';                        
                         text-align: center;
                         line-height: 40px;
-                        font-size: 30px;
+                        font-size: 20px;
                         color: #e3d961;
                         z-index: 10;
                         position: absolute;
                         display: inline-block;
                         border-radius: 10px;
-                        width: 50%;
-                        height: 100%;
-                        left: calc(50% - 95px);
-                        top: calc(50% - 45px);
+                        width: 40%;
+                        height: 36%;
+                        left: calc(50% - 75px);
+                        top: calc(50% - 18px);
                         background: transparent;
                         background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82), 
                         linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); 
