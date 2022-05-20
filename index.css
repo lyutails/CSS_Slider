@@ -13619,9 +13619,9 @@ label {
         }
     
             .sakura_branch {
-                width: 150px;
-                height: 150px;
-                background-image: url('./references/5_tree/pngwing31.png');
+                width: 225px;
+                height: 271px;
+                background-image: url('./references/5_tree/sakura_mobile.png');
                 animation-name: sakura_anim;
                 animation-duration: 10s;
                 animation-timing-function: linear;
@@ -13633,7 +13633,7 @@ label {
                 width: 36px;
                 height: 36px;
                 background-image: url('./references/5_tree/butterfly-1.svg');
-                margin: 85px 0px 0px 120px;
+                margin: 70px 0px 0px 40px;
                 display: inline-block;
                 animation-name: butterfly_anim;
                 animation-duration: 5s;
@@ -13673,9 +13673,9 @@ label {
             }
             
             .leaf_1 {
-                width: 50px;
-                height: 50px;
-                background-image: url('./references/5_tree/sakura_leaf-1.png'); 
+                width: 30px;
+                height: 30px;
+                background-image: url('./references/5_tree/sakura_leaf-1_mobile.png'); 
                 animation-name: leaf_1_anim;
                 animation-duration: 0s;
                 animation-iteration-count: infinite;
@@ -13722,9 +13722,9 @@ label {
             }        
     
             .leaf_2 {
-                width: 50px;
-                height: 50px;
-                background-image: url('./references/5_tree/sakura_leaf-2.png');  
+                width: 30px;
+                height: 30px;
+                background-image: url('./references/5_tree/sakura_leaf-2_mobile.png');  
                 animation-name: leaf_2_anim;
                 animation-duration: 0s;
                 animation-iteration-count: infinite;
@@ -13771,9 +13771,9 @@ label {
             }  
     
             .leaf_3 {
-                width: 50px;
-                height: 50px;
-                background-image: url('./references/5_tree/sakura_leaf-3.png');
+                width: 30px;
+                height: 30px;
+                background-image: url('./references/5_tree/sakura_leaf-3_mobile.png');
                 animation-name: leaf_3_anim;
                 animation-duration: 0s;
                 animation-iteration-count: infinite;
@@ -13820,9 +13820,9 @@ label {
             } 
     
             .leaf_4 {
-                width: 50px;
-                height: 50px;
-                background-image: url('./references/5_tree/sakura_leaf-4.png'); 
+                width: 30px;
+                height: 30px;
+                background-image: url('./references/5_tree/sakura_leaf-4_mobile.png'); 
                 animation-name: leaf_4_anim;
                 animation-duration: 0s;
                 animation-iteration-count: infinite;
@@ -13869,9 +13869,9 @@ label {
             } 
     
             .leaf_5 {
-                width: 50px;
-                height: 50px;
-                background-image: url('./references/5_tree/sakura_leaf-5.png'); 
+                width: 30px;
+                height: 30px;
+                background-image: url('./references/5_tree/sakura_leaf-5_mobile.png'); 
                 animation-name: leaf_5_anim;
                 animation-duration: 0s;
                 animation-iteration-count: infinite;
@@ -13918,9 +13918,9 @@ label {
             } 
     
             .leaf_6 {
-                width: 50px;
-                height: 50px;
-                background-image: url('./references/5_tree/sakura_leaf-6.png'); 
+                width: 30px;
+                height: 30px;
+                background-image: url('./references/5_tree/sakura_leaf-6_mobile.png'); 
                 animation-name: leaf_6_anim;
                 animation-duration: 0s;
                 animation-iteration-count: infinite;
@@ -13967,9 +13967,9 @@ label {
             } 
     
             .leaf_7 {
-                width: 50px;
-                height: 50px;
-                background-image: url('./references/5_tree/sakura_leaf-7.png'); 
+                width: 30px;
+                height: 30px;
+                background-image: url('./references/5_tree/sakura_leaf-7_mobile.png'); 
                 animation-name: leaf_7_anim;
                 animation-duration: 0s;
                 animation-iteration-count: infinite;
@@ -14017,9 +14017,9 @@ label {
     
     
             .leaf_8 {
-                width: 50px;
-                height: 50px;
-                background-image: url('./references/5_tree/sakura_leaf-8.png'); 
+                width: 30px;
+                height: 30px;
+                background-image: url('./references/5_tree/sakura_leaf-8_mobile.png'); 
                 animation-name: leaf_8_anim;
                 animation-duration: 0s;
                 animation-iteration-count: infinite;
@@ -14066,9 +14066,9 @@ label {
             }
     
             .leaf_9 {
-                width: 50px;
-                height: 50px;
-                background-image: url('./references/5_tree/sakura_leaf-9.png'); 
+                width: 30px;
+                height: 30px;
+                background-image: url('./references/5_tree/sakura_leaf-9_mobile.png'); 
                 animation-name: leaf_9_anim;
                 animation-duration: 0s;
                 animation-iteration-count: infinite;
@@ -14115,9 +14115,9 @@ label {
             }
     
             .leaf_10 {
-                width: 50px;
-                height: 50px;
-                background-image: url('./references/5_tree/sakura_leaf-10.png'); 
+                width: 30px;
+                height: 30px;
+                background-image: url('./references/5_tree/sakura_leaf-10_mobile.png'); 
                 animation-name: leaf_10_anim;
                 animation-duration: 0s;
                 animation-iteration-count: infinite;
@@ -14164,9 +14164,9 @@ label {
             }
     
             .leaf_11 {
-                width: 50px;
-                height: 50px;
-                background-image: url('./references/5_tree/sakura_leaf-11.png'); 
+                width: 30px;
+                height: 30px;
+                background-image: url('./references/5_tree/sakura_leaf-11_mobile.png'); 
                 animation-name: leaf_11_anim;
                 animation-duration: 0s;
                 animation-iteration-count: infinite;
@@ -14213,9 +14213,9 @@ label {
             }
     
             .leaf_12 {
-                width: 50px;
-                height: 50px;
-                background-image: url('./references/5_tree/sakura_leaf-12.png'); 
+                width: 30px;
+                height: 30px;
+                background-image: url('./references/5_tree/sakura_leaf-12_mobile.png'); 
                 animation-name: leaf_12_anim;
                 animation-duration: 0s;
                 animation-iteration-count: infinite;
@@ -14262,9 +14262,9 @@ label {
             }
     
             .leaf_13 {
-                width: 50px;
-                height: 50px;
-                background-image: url('./references/5_tree/sakura_leaf-13.png'); 
+                width: 30px;
+                height: 30px;
+                background-image: url('./references/5_tree/sakura_leaf-13_mobile.png'); 
                 animation-name: leaf_13_anim;
                 animation-duration: 0s;
                 animation-iteration-count: infinite;
@@ -14311,9 +14311,9 @@ label {
             }
     
             .leaf_14 {
-                width: 50px;
-                height: 50px;
-                background-image: url('./references/5_tree/sakura_leaf-14.png'); 
+                width: 30px;
+                height: 30px;
+                background-image: url('./references/5_tree/sakura_leaf-14_mobile.png'); 
                 animation-name: leaf_14_anim;
                 animation-duration: 0s;
                 animation-iteration-count: infinite;
@@ -14360,9 +14360,9 @@ label {
             }
        
         .tree_with_hand {
-            width: 200px;
+            width: 120px;
             height: 500px;
-            background-image: url('./references/5_tree/tree_for_hand_cut_smaller.png');
+            background-image: url('./references/5_tree/tree_for_hand_mobile.png');
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -14370,19 +14370,19 @@ label {
         }    
     
         .hand {
-            width: 100px;
-            height: 116px;
-            background-image: url('./references/5_tree/hand_for_tree_smaller.png');
+            width: 76px;
+            height: 90px;
+            background-image: url('./references/5_tree/hand_for_tree_mobile.png');
             display: inline-block;
             opacity: 0.4;
-            margin: 120px 0px 0px 80px;
+            margin: 46px 0px 0px 46px;
             cursor: pointer;
         }
     
             .radio_hand_style {
-                width: 100px;
-                height: 116px;
-                background-image: url('./references/5_tree/hand_for_tree_smaller.png');
+                width: 76px;
+                height: 90px;
+                background-image: url('./references/5_tree/hand_for_tree_mobile.png');
                 opacity: 0.2;
             }
     
@@ -14564,7 +14564,7 @@ label {
             display: inline-block;
             font-size: 15px;
             font-family: 'Royal Kingdom';
-            margin: 0px 0px 0px 130px;        
+            margin: 0px 0px 0px 0px;        
         }
     
         .name_hedgehog::first-letter {
@@ -14592,8 +14592,8 @@ label {
             }
             
                 .bee_1 {
-                    width: 10px;
-                    height: 10px;
+                    width: 5px;
+                    height: 5px;
                     background-image: url('./references/6_hedgehog/bee_1.svg');
                     display: inline-block;
                     animation-delay: -5s;                
@@ -14605,8 +14605,8 @@ label {
                 }
     
                 .bee_2 {
-                    width: 10px;
-                    height: 10px;
+                    width: 5px;
+                    height: 5px;
                     background-image: url('./references/6_hedgehog/bee_2.svg');
                     display: inline-block;
                     animation-delay: -4s; 
@@ -14617,8 +14617,8 @@ label {
                 }
     
                 .bee_3 {
-                    width: 10px;
-                    height: 10px;
+                    width: 5px;
+                    height: 5px;
                     background-image: url('./references/6_hedgehog/bee_3.svg');
                     display: inline-block;
                     animation-delay: -3s; 
@@ -14629,8 +14629,8 @@ label {
                 }
     
                 .bee_4 {
-                    width: 10px;
-                    height: 10px;
+                    width: 5px;
+                    height: 5px;
                     background-image: url('./references/6_hedgehog/bee_4.svg');
                     display: inline-block;
                     animation-delay: -2s;
@@ -14641,8 +14641,8 @@ label {
                 }
     
                 .bee_5 {
-                    width: 10px;
-                    height: 10px;
+                    width: 5px;
+                    height: 5px;
                     background-image: url('./references/6_hedgehog/bee_5.svg');
                     display: inline-block;
                     animation-delay: -6s;   
@@ -14653,8 +14653,8 @@ label {
                 }
     
                 .bee_6 {
-                    width: 10px;
-                    height: 10px;
+                    width: 5px;
+                    height: 5px;
                     background-image: url('./references/6_hedgehog/bee_6.svg');
                     display: inline-block;
                     animation-delay: 3s;   
@@ -14665,8 +14665,8 @@ label {
                 }
     
                 .bee_7 {
-                    width: 10px;
-                    height: 10px;
+                    width: 5px;
+                    height: 5px;
                     background-image: url('./references/6_hedgehog/bee_7.svg');
                     display: inline-block;
                     animation-delay: 6s; 
@@ -14691,10 +14691,10 @@ label {
                         transform: translate(8vw, -5vh);
                     }
                     80% {
-                        transform: translate(12vw, 4vh);
+                        transform: translate(7vw, 4vh);
                     }
                     90% {
-                        transform: translate(-8vw, 8vh);
+                        transform: translate(-6vw, 6vh);
                     }
                     to {
                         transform: translate(0vw, 0vh);
@@ -14897,7 +14897,7 @@ label {
                     transform: translateX(0px);
                 }          
                 to {
-                    transform: translateX(180px);
+                    transform: translateX(50px);
                     display: none;
                 }                                    
             }
@@ -14948,10 +14948,10 @@ label {
     
             @keyframes hedgehog_anim_mushrooms {
                 from {
-                    transform: translateX(180px);
+                    transform: translateX(50px);
                 }          
                 to {
-                    transform: translateX(360px);
+                    transform: translateX(100px);
                 }                                    
             }
             
@@ -15001,10 +15001,10 @@ label {
     
         @keyframes hedgehog_anim_maple {
             from {
-                transform: translateX(360px);
+                transform: translateX(100px);
             }          
             to {
-                transform: translateX(540px);
+                transform: translateX(140px);
             }                                    
         }
     
@@ -15054,10 +15054,10 @@ label {
     
         @keyframes hedgehog_anim_marshmallow {
             from {
-                transform: translateX(540px);
+                transform: translateX(140px);
             }          
             to {
-                transform: translateX(700px);
+                transform: translateX(190px);
             }                                    
         }
     
@@ -15107,10 +15107,10 @@ label {
     
         @keyframes hedgehog_anim_sock {
             from {
-                transform: translateX(700px);
+                transform: translateX(190px);
             }          
             to {
-                transform: translateX(860px);
+                transform: translateX(240px);
             }                                    
         }
     
@@ -15160,10 +15160,10 @@ label {
     
          @keyframes hedgehog_anim_acorn {
             from {
-                transform: translateX(860px);
+                transform: translateX(240px);
             }          
             to {
-                transform: translateX(1050px);
+                transform: translateX(290px);
             }                                    
         }
     
@@ -15230,7 +15230,7 @@ label {
         .grass {
             width: 320px;
             height: 45px;
-            background-image: url('./references/6_hedgehog/grass_long.svg');
+            background-image: url('./references/6_hedgehog/grass_long_mobile.svg');
             border-radius: 30px;
         }
                     
