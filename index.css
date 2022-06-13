@@ -50,7 +50,7 @@ input[type="radio"] {
     border: 0px;
     width: 50px;
     height: 3em;
-    display: none; 
+    /* display: none;  */
 }
 
 input[type="checkbox"] {
@@ -443,7 +443,7 @@ input[type="checkbox"] {
 
             #moving:checked ~ .view .obstacle_course {
                 animation-name: obstacles_anim; 
-                animation-duration: 10s;
+                animation-duration: 20s;
                 animation-timing-function: linear;
                 animation-iteration-count: forwards; 
             }            
@@ -4492,7 +4492,7 @@ body {
 
         #apple_radio:checked ~ .main_6_wrapper .hedgehog {
             animation-name: hedgehog_anim_apple;
-            animation-duration: 3s;
+            animation-duration: 2s;
             animation-iteration-count: 1;
             animation-timing-function: linear; 
             animation-fill-mode: forwards;           
@@ -4514,7 +4514,7 @@ body {
 
         #apple_radio:checked ~ .main_6_wrapper .apple {
             animation-name: apple_anim;
-            animation-duration: 3s;
+            animation-duration: 2s;
             animation-iteration-count: 1;
             animation-timing-function: linear; 
             animation-fill-mode: forwards; 
@@ -4545,7 +4545,7 @@ body {
         
         #mushrooms_radio:checked ~ .main_6_wrapper .hedgehog {
             animation-name: hedgehog_anim_mushrooms;
-            animation-duration: 3s;
+            animation-duration: 2s;
             animation-iteration-count: 1;
             animation-timing-function: linear; 
             animation-fill-mode: forwards;           
@@ -4567,7 +4567,7 @@ body {
 
         #mushrooms_radio:checked ~ .main_6_wrapper .mushrooms {
             animation-name: mushrooms_anim;
-            animation-duration: 3s;
+            animation-duration: 2s;
             animation-iteration-count: 1;
             animation-timing-function: linear; 
             animation-fill-mode: forwards; 
@@ -4598,7 +4598,7 @@ body {
 
     #maple_radio:checked ~ .main_6_wrapper .hedgehog {
         animation-name: hedgehog_anim_maple;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-iteration-count: 1;
         animation-timing-function: linear; 
         animation-fill-mode: forwards;           
@@ -4620,7 +4620,7 @@ body {
 
     #maple_radio:checked ~ .main_6_wrapper .maple_leaf {
         animation-name: maple_anim;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-iteration-count: 1;
         animation-timing-function: linear; 
         animation-fill-mode: forwards; 
@@ -4651,7 +4651,7 @@ body {
 
     #marshmallow_radio:checked ~ .main_6_wrapper .hedgehog {
         animation-name: hedgehog_anim_marshmallow;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-iteration-count: 1;
         animation-timing-function: linear; 
         animation-fill-mode: forwards;           
@@ -4673,7 +4673,7 @@ body {
 
     #marshmallow_radio:checked ~ .main_6_wrapper .marshmallow {
         animation-name: marshmallow_anim;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-iteration-count: 1;
         animation-timing-function: linear; 
         animation-fill-mode: forwards; 
@@ -4704,7 +4704,7 @@ body {
 
     #sock_radio:checked ~ .main_6_wrapper .hedgehog {
         animation-name: hedgehog_anim_sock;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-iteration-count: 1;
         animation-timing-function: linear; 
         animation-fill-mode: forwards;           
@@ -4726,7 +4726,7 @@ body {
 
     #sock_radio:checked ~ .main_6_wrapper .sock {
         animation-name: sock_anim;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-iteration-count: 1;
         animation-timing-function: linear; 
         animation-fill-mode: forwards; 
@@ -4748,16 +4748,22 @@ body {
 
      @keyframes hedgehog_anim_acorn {
         from {
+            
             transform: translateX(860px);
-        }          
+        } 
+        99% {
+            
+            transform: translateX(1040px);
+        }         
         to {
             transform: translateX(1050px);
+            transform: rotateY(-180deg);
         }                                    
     }
 
     #acorn_radio:checked ~ .main_6_wrapper .hedgehog {
         animation-name: hedgehog_anim_acorn;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-iteration-count: 1;
         animation-timing-function: linear; 
         animation-fill-mode: forwards;           
@@ -4778,8 +4784,8 @@ body {
     }
 
     #acorn_radio:checked ~ .main_6_wrapper .acorn {
-        animation-name: sock_anim;
-        animation-duration: 3s;
+        animation-name: acorn_anim;
+        animation-duration: 2s;
         animation-iteration-count: 1;
         animation-timing-function: linear; 
         animation-fill-mode: forwards; 
@@ -4797,7 +4803,14 @@ body {
         }                                    
     }
 
-#game_six:checked #game_five:checked #game_four:checked #game_three:checked #game_two:checked #game_one:checked ~ .main_6_wrapper .hedgehog {
+/* #game_six:checked #game_five:checked #game_four:checked #game_three:checked #game_two:checked #game_one:checked ~ .main_6_wrapper .hedgehog {
+    animation-name: hedgehog_backwards_anim;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+} */
+
+/* #acorn_radio:checked ~ .main_6_wrapper .hedgehog {
     animation-name: hedgehog_backwards_anim;
     animation-duration: 1s;
     animation-timing-function: linear;
@@ -4808,15 +4821,30 @@ body {
     from {
         transform: scaleX(1);
     }
-    from {
+    to {
         transform: scaleX(-1);
     }
+} */
+
+.gather_wrapper {
+    width: 1200px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
 }
 
+    .gather {
+        width: 100px;
+        height: 25px;
+        font-size: 20px;
+        font-family: 'Royal Kingdom'; 
+    }
 
-
-
-
+    .gather::first-letter {
+        font-size: 30px;
+        font-family: 'Black Chancery';
+        color: red;
+    }
 
     .grass {
         width: 1200px;
@@ -8107,7 +8135,8 @@ body {
                 height: 60px;
                 background-image: url('./references/4_potions/sushi.svg');
                 cursor: pointer;                
-                transition: ease-in-out;                                
+                transition: ease-in-out;  
+                animation-name: sushi_anim;                              
             }
 
             .blueberries {
