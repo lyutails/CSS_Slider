@@ -84,6 +84,7 @@
           <!--Light me up fireflies-->
 
           <div class="game slide_two">
+            <input type="radio" id="fly_radio" name="fly_radio" />
             <header class="title_2_wrapper">
               <div class="star_two"></div>
               <div class="star_four"></div>
@@ -117,18 +118,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="fly_button_placement">
-                  <div class="one_more_fly_button"></div>
-                  <!--<div class="fly_button">
-                        <label for="circle1" class="button_click"><span></span></label>
-                        <label for="circle2" class="button_click"><span></span></label>
-                        <label for="circle3" class="button_click"><span></span></label>
-                        <label for="circle4" class="button_click"><span></span></label>
-                        <label for="circle5" class="button_click"><span></span></label>
-                        <label for="circle6" class="button_click"><span></span></label>
-                        <label for="circle7" class="button_click"><span></span></label>
-                    </div>-->
-                </div>
+                <label for="fly_radio">
+                  <div class="fly_button_placement">
+                    <div class="one_more_fly_button"></div></div
+                ></label>
               </div>
             </div>
           </div>
@@ -314,15 +307,11 @@
               <div class="recipe_scroll_empty">
                 <div class="recipe_wrapper">
                   <p class="recipe">Recipe</p>
-                  <p class="recipe_1">1. two tulip onions</p>
-                  <p class="recipe_2">2. crystal</p>
-                  <p class="recipe_3">3. moon apple</p>
-                  <p class="recipe_4">4. unicorn's horn pollen</p>
-                  <p class="recipe_5">5. star's dust</p>
-                  <p class="recipe_6">6. pink water</p>
-                  <p class="recipe_7">
-                    7. an acorn<span class="caterpillar"></span>
-                  </p>
+                  <p class="recipe_1">1. tulip</p>
+                  <p class="recipe_2">2. mushroom</p>
+                  <p class="recipe_3">3. apple</p>
+                  <p class="recipe_5">4. blueberries</p>
+                  <p class="recipe_6">5. pink water</p>
                 </div>
               </div>
               <div class="game_name_potions">
@@ -352,35 +341,25 @@
                 <div class="fourth_game_potions">
                   <div class="game_stuff">
                     <div class="inventory">
-                      <div class="beer"></div>
-                      <div class="eggplant"></div>
-                      <div class="shard"></div>
-                      <div class="mushroom"></div>
-                      <div class="broccoli"></div>
-                      <div class="star"></div>
-                      <div class="pumpkin"></div>
-                      <div class="cookies"></div>
-                      <div class="steak"></div>
-                      <div class="potions_apple"></div>
-                      <div class="carrot"></div>
-                      <div class="sushi">
-                        <label for="eat_sushi" class="sushi_label">
-                          <div class="sushi_label_style"></div>
-                        </label>
-                      </div>
-                      <div class="blueberries"></div>
-                      <div class="pink_water"></div>
-                      <div class="grapes"></div>
-                      <div class="unicorn"></div>
-                      <div class="garlic"></div>
-                      <div class="salad"></div>
-                      <div class="tulip"></div>
-                      <div class="love_potion"></div>
-                      <div class="potions_acorn"></div>
+                      <div id="beer" class="beer"></div>
+                      <div id="eggplant" class="eggplant"></div>
+                      <div id="mushroom" class="mushroom"></div>
+                      <div id="broccoli" class="broccoli"></div>
+                      <div id="pumpkin" class="pumpkin"></div>
+                      <div id="cookies" class="cookies"></div>
+                      <div id="apple" class="apple"></div>
+                      <div id="carrot" class="carrot"></div>
+                      <div id="blueberries" class="blueberries"></div>
+                      <div id="pink_water" class="pink_water"></div>
+                      <div id="grapes" class="grapes"></div>
+                      <div id="garlic" class="garlic"></div>
+                      <div id="salad" class="salad"></div>
+                      <div id="tulip" class="tulip"></div>
+                      <div id="acorn" class="acorn"></div>
                     </div>
                     <div class="shelf_cauldron_cat">
                       <div class="upper_shelf">
-                        <div class="potion"></div>
+                        <div id="potion" class="potion"></div>
                         <div class="candle">
                           <div class="candle_light"></div>
                         </div>
@@ -392,7 +371,7 @@
                         <div class="cauldron">
                           <div class="flame"></div>
                         </div>
-                        <div class="cat">
+                        <div class="cat" id="cat">
                           <label for="eat_sushi" class="cat_label">
                             <div class="cat_label_style"></div>
                           </label>
@@ -583,4 +562,5 @@
       </div>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>

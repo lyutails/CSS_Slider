@@ -1272,38 +1272,46 @@ input[type="checkbox"] {
   }
 }
 
+@keyframes move_anim1 {
+  0% {
+    transform: translate(60vw, 6vh);
+  }
+  20% {
+    transform: translate(20vw, 10vh);
+  }
+  40% {
+    transform: translate(0vw, 1vh);
+  }
+  60% {
+    transform: translate(40vw, 12vh);
+  }
+  80% {
+    transform: translate(30vw, 2vh);
+  }
+  100% {
+    top: 30%;
+    left: 20%;
+  }
+}
+
 body {
   counter-reset: flying;
 }
 
-.input_circle ~ .firefly {
-  opacity: 0;
+#fly_radio:checked
+  > .main_second_wrapper
+  > .second_game_firefly
+  > .fireflies_jar_wrapper
+  > .fireflies
+  ~ .firefly
+  .firefly_five {
   transition: 0.3s cubic-bezier(0, 0.43, 1, 0);
-  animation: move_anim 10s infinite alternate;
+  animation: move_anim1 10s infinite alternate;
+  animation-play-state: running;
 }
 
 .input_circle:checked {
   counter-increment: flying;
-}
-
-.input_circle1:not(:checked) ~ .firefly_one,
-.input_circle2:not(:checked) ~ .firefly_two,
-.input_circle3:not(:checked) ~ .firefly_three,
-.input_circle4:not(:checked) ~ .firefly_four,
-.input_circle5:not(:checked) ~ .firefly_five,
-.input_circle6:not(:checked) ~ .firefly_six,
-.input_circle7:not(:checked) ~ .firefly_seven {
-  opacity: 1;
-}
-
-.input_circle1:checked ~ .firefly span,
-.input_circle2:checked ~ .firefly span,
-.input_circle3:checked ~ .firefly span,
-.input_circle4:checked ~ .firefly span,
-.input_circle5:checked ~ .firefly span,
-.input_circle6:checked ~ .firefly span,
-.input_circle7:checked ~ .firefly span {
-  display: block;
 }
 
 .firefly > span {
@@ -2528,82 +2536,45 @@ body {
 }
 
 .recipe_1 {
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Blackadder";
   color: #9f0040;
 }
 
 .recipe_2 {
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Blackadder";
   color: #e95100;
 }
 
 .recipe_3 {
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Blackadder";
   color: #dc9d00;
 }
 
 .recipe_4 {
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Blackadder";
   color: #009f03;
 }
 
 .recipe_5 {
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Blackadder";
   color: #007f9f;
 }
 
 .recipe_6 {
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Blackadder";
   color: #0d009f;
 }
 
 .recipe_7 {
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Blackadder";
   color: #9d00af;
-}
-
-.caterpillar {
-  width: 30px;
-  height: 30px;
-  background-image: url("./references/4_potions/caterpillar_to_right.svg");
-  z-index: 10;
-  position: absolute;
-  display: inline-block;
-  animation-name: caterpillar_anim;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  transform: translateX(0);
-}
-
-@keyframes caterpillar_anim {
-  0% {
-    transform: translateX(0);
-    background-image: url("./references/4_potions/caterpillar_to_right.svg");
-  }
-  1% {
-    transform: translateX(10);
-    background-image: url("./references/4_potions/caterpillar_to_right.svg");
-  }
-  50% {
-    transform: translateX(150);
-    background-image: url("./references/4_potions/caterpillar_to_right.svg");
-  }
-  99% {
-    transform: translateX(10);
-    background-image: url("./references/4_potions/caterpillar_to_left.svg");
-  }
-  100% {
-    transform: translateX(0);
-    background-image: url("./references/4_potions/caterpillar_to_left.svg");
-  }
 }
 
 .game_name_potions {
@@ -2867,50 +2838,36 @@ body {
 }
 
 .beer {
-  width: 80px;
-  height: 80px;
+  width: 110px;
+  height: 110px;
   background-image: url("./references/4_potions/beer_pint.svg");
   cursor: pointer;
 }
 
 .eggplant {
-  width: 80px;
-  height: 80px;
+  width: 110px;
+  height: 110px;
   background-image: url("./references/4_potions/aubergine.svg");
   cursor: pointer;
 }
 
-.shard {
-  width: 80px;
-  height: 80px;
-  background-image: url("./references/4_potions/crystal-shard.svg");
-  cursor: pointer;
-}
-
 .mushroom {
-  width: 80px;
-  height: 80px;
+  width: 110px;
+  height: 110px;
   background-image: url("./references/4_potions/mushroom2.svg");
   cursor: pointer;
 }
 
 .broccoli {
-  width: 80px;
-  height: 80px;
+  width: 110px;
+  height: 110px;
   background-image: url("./references/4_potions/broccoli.svg");
   cursor: pointer;
 }
 
-.star {
-  width: 80px;
-  height: 80px;
-  background-image: url("./references/4_potions/star_dust.svg");
-  cursor: pointer;
-}
-
 .pumpkin {
-  width: 80px;
-  height: 80px;
+  width: 110px;
+  height: 110px;
   background-image: url("./references/4_potions/pumpkin_yellow.svg");
   animation-name: pumpkin_anim;
   animation-duration: 10s;
@@ -2931,106 +2888,77 @@ body {
 }
 
 .cookies {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-image: url("./references/4_potions/cookies.svg");
   cursor: pointer;
 }
 
-.steak {
-  width: 80px;
-  height: 80px;
-  background-image: url("./references/4_potions/steak.svg");
-  cursor: pointer;
-}
-
-.potions_apple {
-  width: 80px;
-  height: 80px;
+.apple {
+  width: 100px;
+  height: 100px;
   background-image: url("./references/4_potions/apple.svg");
   cursor: pointer;
 }
 
 .carrot {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-image: url("./references/4_potions/carrot.svg");
   cursor: pointer;
 }
 
-.sushi {
-  width: 80px;
-  height: 80px;
-  background-image: url("./references/4_potions/sushi.svg");
-  cursor: pointer;
-  transition: ease-in-out;
-}
-
 .blueberries {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-image: url("./references/4_potions/blueberries.svg");
   cursor: pointer;
 }
 
 .pink_water {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-image: url("./references/4_potions/water_pink.svg");
 }
 
 .grapes {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-image: url("./references/4_potions/grapes.svg");
   cursor: pointer;
 }
 
 .pink_water {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-image: url("./references/4_potions/water_pink.svg");
   cursor: pointer;
 }
 
-.unicorn {
-  width: 80px;
-  height: 80px;
-  background-image: url("./references/4_potions/unicorn2.svg");
-  cursor: pointer;
-}
-
 .garlic {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-image: url("./references/4_potions/garlic1_smaller.svg");
   cursor: pointer;
 }
 
 .salad {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-image: url("./references/4_potions/salad.svg");
   cursor: pointer;
 }
 
 .tulip {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-image: url("./references/4_potions/tulip2.svg");
   cursor: pointer;
 }
 
-.love_potion {
-  width: 80px;
-  height: 80px;
-  background-image: url("./references/4_potions/love_potion.svg");
-  cursor: pointer;
-}
-
-.potions_acorn {
-  width: 80px;
-  height: 80px;
+.acorn {
+  width: 100px;
+  height: 100px;
   background-image: url("./references/4_potions/acorn1.svg");
   cursor: pointer;
 }
@@ -3055,6 +2983,7 @@ body {
   height: 150px;
   background-image: url("./references/4_potions/potion_green.svg");
   margin: 0px 0px 10px 0px;
+  visibility: hidden;
 }
 
 .candle {
@@ -3169,24 +3098,8 @@ body {
   width: 200px;
   height: 200px;
   background-image: url("./references/4_potions/black-cat_mouth.svg");
-  animation-name: cat_anim_1;
 }
 
-.sushi_label {
-  width: 80px;
-  height: 80px;
-  background-color: #07b39b;
-  opacity: 0;
-  display: inline-block;
-}
-
-.sushi_label_style {
-  width: 80px;
-  height: 80px;
-  opacity: 0;
-  display: inline-block;
-  background-image: url("./references/4_potions/sushi.svg");
-}
 
 .cat_label {
   width: 200px;
@@ -3202,42 +3115,6 @@ body {
   background-image: url("./references/4_potions/black-cat_after_sushi.svg");
   opacity: 0;
   display: inline-block;
-}
-
-#eat_sushi:checked ~ .title_4_wrapper .sushi {
-  animation-name: sushi_anim;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-duration: 1s;
-}
-
-@keyframes sushi_anim {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-#eat_sushi:checked ~ .title_4_wrapper .cat {
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-name: cat_anim_1;
-}
-
-@keyframes cat_anim_1 {
-  from {
-    background-image: url("./references/4_potions/black-cat_mouth.svg");
-  }
-  to {
-    background-image: url("./references/4_potions/black-cat_after_sushi.svg");
-  }
-}
-
-.sushi:hover {
-  box-shadow: 0 0 30px #e3d961;
-  transition: ease-in-out 0.1s;
 }
 
 /*tree*/
@@ -7849,43 +7726,6 @@ label {
     font-size: 10px;
     font-family: "Blackadder";
     color: #9d00af;
-  }
-
-  .caterpillar {
-    width: 20px;
-    height: 20px;
-    background-image: url("./references/4_potions/caterpillar_to_right.svg");
-    z-index: 10;
-    position: absolute;
-    display: inline-block;
-    animation-name: caterpillar_anim;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    transform: translateX(0);
-  }
-
-  @keyframes caterpillar_anim {
-    0% {
-      transform: translateX(0);
-      background-image: url("./references/4_potions/caterpillar_to_right.svg");
-    }
-    1% {
-      transform: translateX(10);
-      background-image: url("./references/4_potions/caterpillar_to_right.svg");
-    }
-    50% {
-      transform: translateX(100);
-      background-image: url("./references/4_potions/caterpillar_to_right.svg");
-    }
-    99% {
-      transform: translateX(10);
-      background-image: url("./references/4_potions/caterpillar_to_left.svg");
-    }
-    100% {
-      transform: translateX(0);
-      background-image: url("./references/4_potions/caterpillar_to_left.svg");
-    }
   }
 
   .game_name_potions {
