@@ -278,6 +278,8 @@ input[type="checkbox"] {
 .slide_one {
   width: 1200px;
   height: 900px;
+  background-color: rgb(207, 244, 244);
+  border-radius: 30px 30px 30px 30px;
 }
 
 .title_wrapper {
@@ -285,8 +287,6 @@ input[type="checkbox"] {
   height: 300px;
   display: flex;
   justify-content: center;
-  background-color: rgb(207, 244, 244);
-  border-radius: 30px 30px 0px 0px;
 }
 
 .cloud_one {
@@ -464,7 +464,7 @@ input[type="checkbox"] {
   transform: translate(-100%);
   flex-shrink: 0;
   background-image: url("./references/1_dino_pics/pics_obstacles/cacti.svg");
-  margin: 0px 600px 0px 0px;
+  margin: 0px 300px 0px 0px;
 }
 
 .obstacle_two {
@@ -473,7 +473,7 @@ input[type="checkbox"] {
   transform: translate(-100%);
   flex-shrink: 0;
   background-image: url("./references/1_dino_pics/pics_obstacles/bonfire.svg");
-  margin: 0px 600px 0px 0px;
+  margin: 0px 300px 0px 0px;
 }
 
 .obstacle_three {
@@ -482,7 +482,7 @@ input[type="checkbox"] {
   transform: translate(-100%);
   flex-shrink: 0;
   background-image: url("./references/1_dino_pics/pics_obstacles/dinosaur_purple_stegosaurus.svg");
-  margin: 0px 600px 0px 0px;
+  margin: 0px 300px 0px 0px;
 }
 
 .obstacle_four {
@@ -491,7 +491,7 @@ input[type="checkbox"] {
   transform: translate(-100%);
   flex-shrink: 0;
   background-image: url("./references/1_dino_pics/pics_obstacles/dinosaur_in_egg.svg");
-  margin: 0px 600px 0px 0px;
+  margin: 0px 300px 0px 0px;
 }
 
 .obstacle_five {
@@ -500,7 +500,7 @@ input[type="checkbox"] {
   transform: translate(-100%);
   flex-shrink: 0;
   background-image: url("./references/1_dino_pics/pics_obstacles/dinosaur_tyrannosaurus-rex.svg");
-  margin: 0px 600px 0px 0px;
+  margin: 0px 300px 0px 0px;
 }
 
 .obstacle_six {
@@ -509,7 +509,7 @@ input[type="checkbox"] {
   transform: translate(-100%);
   flex-shrink: 0;
   background-image: url("./references/1_dino_pics/pics_obstacles/ancient_man.svg");
-  margin: 0px 600px 0px 0px;
+  margin: 0px 300px 0px 0px;
 }
 
 .obstacle_seven {
@@ -518,7 +518,7 @@ input[type="checkbox"] {
   transform: translate(-100%);
   flex-shrink: 0;
   background-image: url("./references/1_dino_pics/pics_obstacles/rock-art.svg");
-  margin: 0px 600px 0px 0px;
+  margin: 0px 300px 0px 0px;
 }
 
 @keyframes player_anim {
@@ -577,6 +577,7 @@ input[type="checkbox"] {
   height: 120px;
   width: 120px;
   background-image: url("./references/1_dino_pics/dino.svg");
+  mask: url("./references/1_dino_pics/dino.svg");
   cursor: pointer;
 }
 
