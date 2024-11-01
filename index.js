@@ -72,9 +72,15 @@ itemsToGather.forEach((item) => {
 // fireflies
 
 const fireflies = document.querySelectorAll(".firefly");
-console.log(fireflies);
 const flyButton = document.getElementById("fly_radio");
-console.log(flyButton);
+const fireflyOne = document.getElementById("firefly_one");
+const fireflyTwo = document.getElementById("firefly_two");
+const fireflyThree = document.getElementById("firefly_three");
+const fireflyFour = document.getElementById("firefly_four");
+const fireflyFive = document.getElementById("firefly_five");
+const fireflySix = document.getElementById("firefly_six");
+const fireflySeven = document.getElementById("firefly_seven");
+const jar = document.getElementById("jar");
 
 flyButton.addEventListener("change", () => {
   if (flyButton.checked) {
@@ -84,4 +90,41 @@ flyButton.addEventListener("change", () => {
       element.style.animationIterationCount = "1";
     });
   }
+});
+
+const firefliesArray = [
+  fireflyOne,
+  fireflyTwo,
+  fireflyThree,
+  fireflyFour,
+  fireflyFive,
+  fireflySix,
+  fireflySeven,
+];
+
+const firefliesRainbowArray = [
+  fireflyThree,
+  fireflyTwo,
+  fireflyOne,
+  fireflySeven,
+  fireflySix,
+  fireflyFive,
+  fireflyFour,
+];
+
+const firefliesEmptyArray = [];
+
+firefliesArray.forEach((element) => {
+  element?.addEventListener("click", () => {
+    firefliesEmptyArray.push(element);
+    console.log(firefliesEmptyArray);
+    if (
+      firefliesEmptyArray.length === firefliesRainbowArray.length &&
+      firefliesEmptyArray.every((elem, i) => elem === firefliesRainbowArray[i])
+    ) {
+      jar.style.animationName = "jar_anim_still";
+      jar.style.backgroundImage = `url("./references/2_firefly_pics/jar_rainbow.png")`;
+      console.log("equal");
+    }
+  });
 });
