@@ -1,3 +1,20 @@
+// dino
+
+const dinoCake = document.getElementById("dino_cake");
+const moveButton = document.getElementById("moving");
+const obstacles = document.getElementById("obstacle_wrapper");
+
+moveButton.addEventListener("change", () => {
+    console.log('checked');
+  if (moveButton.checked) {
+    console.log('checked');
+    setTimeout(() => {
+      obstacles.style.display = "none";
+      dinoCake.classList.add('show');
+    }, 5000);
+  }
+});
+
 // potions
 
 const beer = document.getElementById("beer");
