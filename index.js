@@ -80,7 +80,8 @@ flyButton.addEventListener("change", () => {
   if (flyButton.checked) {
     console.log("fly");
     fireflies.forEach((element) => {
-      element.style.animation = "move_anim1 10s infinite alternate";
+      element.style.animation = "move_anim1 10s alternate";
+      element.style.animationIterationCount = "1";
     });
   }
 });
