@@ -3100,7 +3100,6 @@ body {
   background-image: url("./references/4_potions/black-cat_mouth.svg");
 }
 
-
 .cat_label {
   width: 200px;
   height: 200px;
@@ -4339,7 +4338,7 @@ body {
   z-index: 100;
 }
 
-.apple {
+.appleGather {
   width: 100px;
   height: 100px;
   background-image: url("./references/6_hedgehog/apple-svgrepo-com.svg");
@@ -4369,7 +4368,7 @@ body {
   background-image: url("./references/6_hedgehog/sock-svgrepo-com.svg");
 }
 
-.acorn {
+.acornGather {
   width: 100px;
   height: 100px;
   background-image: url("./references/6_hedgehog/acorn-svgrepo-com.svg");
@@ -4382,37 +4381,9 @@ body {
   display: none;
 }
 
-.oak_leaf {
-  width: 100px;
-  height: 100px;
-  background-image: url("./references/6_hedgehog/oak_leaf.svg");
-  display: none;
-}
-
-.pear {
-  width: 100px;
-  height: 100px;
-  background-image: url("./references/6_hedgehog/pear-svgrepo-com.svg");
-  display: none;
-}
-
-.umbrella {
-  width: 100px;
-  height: 100px;
-  background-image: url("./references/6_hedgehog/umbrella-svgrepo-com.svg");
-  display: none;
-}
-
-.broom {
-  width: 100px;
-  height: 100px;
-  background-image: url("./references/6_hedgehog/broom-svgrepo-com.svg");
-  display: none;
-}
-
 .house {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-image: url("./references/6_hedgehog/house.svg");
   display: none;
 }
@@ -4425,7 +4396,6 @@ body {
   }
   to {
     transform: translateX(180px);
-    display: none;
   }
 }
 
@@ -4448,10 +4418,9 @@ body {
   height: 100px;
   background-image: url("./references/6_hedgehog/apple-svgrepo-com.svg");
   display: inline-block;
-  display: hidden;
 }
 
-#apple_radio:checked ~ .main_6_wrapper .apple {
+#apple_radio:checked ~ .main_6_wrapper .appleGather {
   animation-name: apple_anim;
   animation-duration: 2s;
   animation-iteration-count: 1;
@@ -4501,7 +4470,6 @@ body {
   height: 100px;
   background-image: url("./references/6_hedgehog/mushrooms-mushroom-svgrepo-com.svg");
   display: inline-block;
-  display: hidden;
 }
 
 #mushrooms_radio:checked ~ .main_6_wrapper .mushrooms {
@@ -4554,7 +4522,6 @@ body {
   height: 100px;
   background-image: url("./references/6_hedgehog/maple-leaf_smaller.svg");
   display: inline-block;
-  display: hidden;
 }
 
 #maple_radio:checked ~ .main_6_wrapper .maple_leaf {
@@ -4607,7 +4574,6 @@ body {
   height: 100px;
   background-image: url("./references/6_hedgehog/marshmallow-svgrepo-com.svg");
   display: inline-block;
-  display: hidden;
 }
 
 #marshmallow_radio:checked ~ .main_6_wrapper .marshmallow {
@@ -4660,7 +4626,6 @@ body {
   height: 100px;
   background-image: url("./references/6_hedgehog/sock-svgrepo-com.svg");
   display: inline-block;
-  display: hidden;
 }
 
 #sock_radio:checked ~ .main_6_wrapper .sock {
@@ -4694,7 +4659,6 @@ body {
   }
   to {
     transform: translateX(1050px);
-    transform: rotateY(-180deg);
   }
 }
 
@@ -4717,10 +4681,9 @@ body {
   height: 100px;
   background-image: url("./references/6_hedgehog/acorn-svgrepo-com.svg");
   display: inline-block;
-  display: hidden;
 }
 
-#acorn_radio:checked ~ .main_6_wrapper .acorn {
+#acorn_radio:checked ~ .main_6_wrapper .acornGather {
   animation-name: acorn_anim;
   animation-duration: 2s;
   animation-iteration-count: 1;
@@ -4739,29 +4702,6 @@ body {
     opacity: 0;
   }
 }
-
-/* #game_six:checked #game_five:checked #game_four:checked #game_three:checked #game_two:checked #game_one:checked ~ .main_6_wrapper .hedgehog {
-    animation-name: hedgehog_backwards_anim;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-} */
-
-/* #acorn_radio:checked ~ .main_6_wrapper .hedgehog {
-    animation-name: hedgehog_backwards_anim;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-}
-
-@keyframes hedgehog_backwards_anim {
-    from {
-        transform: scaleX(1);
-    }
-    to {
-        transform: scaleX(-1);
-    }
-} */
 
 .gather_wrapper {
   width: 1200px;
@@ -9692,7 +9632,6 @@ label {
     height: 50px;
     background-image: url("./references/6_hedgehog/apple-svgrepo-com.svg");
     display: inline-block;
-    display: hidden;
   }
 
   #apple_radio:checked ~ .main_6_wrapper .apple {
@@ -9745,7 +9684,6 @@ label {
     height: 50px;
     background-image: url("./references/6_hedgehog/mushrooms-mushroom-svgrepo-com.svg");
     display: inline-block;
-    display: hidden;
   }
 
   #mushrooms_radio:checked ~ .main_6_wrapper .mushrooms {
@@ -9798,7 +9736,6 @@ label {
     height: 50px;
     background-image: url("./references/6_hedgehog/maple-leaf_smaller.svg");
     display: inline-block;
-    display: hidden;
   }
 
   #maple_radio:checked ~ .main_6_wrapper .maple_leaf {
@@ -9851,7 +9788,6 @@ label {
     height: 50px;
     background-image: url("./references/6_hedgehog/marshmallow-svgrepo-com.svg");
     display: inline-block;
-    display: hidden;
   }
 
   #marshmallow_radio:checked ~ .main_6_wrapper .marshmallow {
@@ -9904,7 +9840,6 @@ label {
     height: 50px;
     background-image: url("./references/6_hedgehog/sock-svgrepo-com.svg");
     display: inline-block;
-    display: hidden;
   }
 
   #sock_radio:checked ~ .main_6_wrapper .sock {
@@ -9957,7 +9892,6 @@ label {
     height: 50px;
     background-image: url("./references/6_hedgehog/acorn-svgrepo-com.svg");
     display: inline-block;
-    display: hidden;
   }
 
   #acorn_radio:checked ~ .main_6_wrapper .acorn {
@@ -14841,40 +14775,46 @@ label {
     z-index: 100;
   }
 
-  .apple {
+  .appleGather {
     width: 30px;
     height: 30px;
     background-image: url("./references/6_hedgehog/apple-svgrepo-com.svg");
+    opacity: 1;
   }
 
   .mushrooms {
     width: 30px;
     height: 30px;
     background-image: url("./references/6_hedgehog/mushrooms-mushroom-svgrepo-com.svg");
+    opacity: 1;
   }
 
   .maple_leaf {
     width: 30px;
     height: 30px;
     background-image: url("./references/6_hedgehog/maple-leaf_smaller.svg");
+    opacity: 1;
   }
 
   .marshmallow {
     width: 30px;
     height: 30px;
     background-image: url("./references/6_hedgehog/marshmallow-svgrepo-com.svg");
+    opacity: 1;
   }
 
   .sock {
     width: 30px;
     height: 30px;
     background-image: url("./references/6_hedgehog/sock-svgrepo-com.svg");
+    opacity: 1;
   }
 
-  .acorn {
+  .acornGather {
     width: 30px;
     height: 30px;
     background-image: url("./references/6_hedgehog/acorn-svgrepo-com.svg");
+    opacity: 1;
   }
 
   .muhomor {
@@ -14950,10 +14890,9 @@ label {
     height: 30px;
     background-image: url("./references/6_hedgehog/apple-svgrepo-com.svg");
     display: inline-block;
-    display: hidden;
   }
 
-  #apple_radio:checked ~ .main_6_wrapper .apple {
+  #apple_radio:checked ~ .main_6_wrapper .appleGather {
     animation-name: apple_anim;
     animation-duration: 3s;
     animation-iteration-count: 1;
@@ -15003,7 +14942,6 @@ label {
     height: 30px;
     background-image: url("./references/6_hedgehog/mushrooms-mushroom-svgrepo-com.svg");
     display: inline-block;
-    display: hidden;
   }
 
   #mushrooms_radio:checked ~ .main_6_wrapper .mushrooms {
@@ -15056,7 +14994,6 @@ label {
     height: 30px;
     background-image: url("./references/6_hedgehog/maple-leaf_smaller.svg");
     display: inline-block;
-    display: hidden;
   }
 
   #maple_radio:checked ~ .main_6_wrapper .maple_leaf {
@@ -15109,7 +15046,6 @@ label {
     height: 30px;
     background-image: url("./references/6_hedgehog/marshmallow-svgrepo-com.svg");
     display: inline-block;
-    display: hidden;
   }
 
   #marshmallow_radio:checked ~ .main_6_wrapper .marshmallow {
@@ -15162,7 +15098,6 @@ label {
     height: 30px;
     background-image: url("./references/6_hedgehog/sock-svgrepo-com.svg");
     display: inline-block;
-    display: hidden;
   }
 
   #sock_radio:checked ~ .main_6_wrapper .sock {
@@ -15215,10 +15150,9 @@ label {
     height: 30px;
     background-image: url("./references/6_hedgehog/acorn-svgrepo-com.svg");
     display: inline-block;
-    display: hidden;
   }
 
-  #acorn_radio:checked ~ .main_6_wrapper .acorn {
+  #acorn_radio:checked ~ .main_6_wrapper .acornGather {
     animation-name: sock_anim;
     animation-duration: 3s;
     animation-iteration-count: 1;

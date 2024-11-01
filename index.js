@@ -32,3 +32,36 @@ fruitsForPotion.forEach((item) => {
     }
   });
 });
+
+// gathering
+
+const hedgehog = document.getElementById("hedgehog");
+const appleGather = document.getElementById("appleGather");
+const mushrooms = document.getElementById("mushrooms");
+const maple_leaf = document.getElementById("maple_leaf");
+const marshmallow = document.getElementById("marshmallow");
+const sock = document.getElementById("sock");
+const acornGather = document.getElementById("acornGather");
+const house = document.getElementById("house");
+
+const itemsToGather = [
+  appleGather,
+  mushrooms,
+  maple_leaf,
+  marshmallow,
+  sock,
+  acornGather,
+];
+
+itemsToGather.forEach((item) => {
+  item.addEventListener("click", () => {
+    if (item?.style.opacity === 0) {
+      itemsToGather.pop();
+      console.log(item);
+
+      itemsToGather.length === 0
+        ? house.style.opacity === 1
+        : house.style.opacity === 0;
+    }
+  });
+});
