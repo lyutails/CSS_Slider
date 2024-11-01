@@ -55,13 +55,16 @@ const itemsToGather = [
 
 itemsToGather.forEach((item) => {
   item.addEventListener("click", () => {
-    if (item?.style.opacity === 0) {
-      itemsToGather.pop();
-      console.log(item);
+    itemsToGather.pop();
 
-      itemsToGather.length === 0
-        ? house.style.opacity === 1
-        : house.style.opacity === 0;
+    itemsToGather.length === 0
+      ? (house.style.display = "block")
+      : (house.style.display = "none");
+
+    if (itemsToGather.length === 0) {
+      setTimeout(() => {
+        hedgehog.style.visibility = "hidden";
+      }, '3000');
     }
   });
 });

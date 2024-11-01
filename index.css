@@ -4342,36 +4342,42 @@ body {
   width: 100px;
   height: 100px;
   background-image: url("./references/6_hedgehog/apple-svgrepo-com.svg");
+  opacity: 1;
 }
 
 .mushrooms {
   width: 100px;
   height: 100px;
   background-image: url("./references/6_hedgehog/mushrooms-mushroom-svgrepo-com.svg");
+  opacity: 1;
 }
 
 .maple_leaf {
   width: 100px;
   height: 100px;
   background-image: url("./references/6_hedgehog/maple-leaf_smaller.svg");
+  opacity: 1;
 }
 
 .marshmallow {
   width: 100px;
   height: 100px;
   background-image: url("./references/6_hedgehog/marshmallow-svgrepo-com.svg");
+  opacity: 1;
 }
 
 .sock {
   width: 100px;
   height: 100px;
   background-image: url("./references/6_hedgehog/sock-svgrepo-com.svg");
+  opacity: 1;
 }
 
 .acornGather {
   width: 100px;
   height: 100px;
   background-image: url("./references/6_hedgehog/acorn-svgrepo-com.svg");
+  opacity: 1;
 }
 
 .muhomor {
@@ -4385,6 +4391,7 @@ body {
   width: 200px;
   height: 200px;
   background-image: url("./references/6_hedgehog/house.svg");
+  transform: translate(0px, -50px);
   display: none;
 }
 
