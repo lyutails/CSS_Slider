@@ -1,137 +1,135 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS_Game_Slider</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image" href="./fox_favicon.svg">
-</head>
-<body class="wrapper">
-
-    <input type="radio" id="game_one" name="radio_button" checked>
-    <input type="radio" id="game_two" name="radio_button">
-    <input type="radio" id="game_three" name="radio_button">
-    <input type="radio" id="game_four" name="radio_button">
-    <input type="radio" id="game_five" name="radio_button">
-    <input type="radio" id="game_six" name="radio_button">
-    <input type="radio" id="game_seven" name="radio_button">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image" href="./fox_favicon.svg" />
+  </head>
+  <body class="wrapper">
+    <input type="radio" id="game_one" name="radio_button" checked />
+    <input type="radio" id="game_two" name="radio_button" />
+    <input type="radio" id="game_three" name="radio_button" />
+    <input type="radio" id="game_four" name="radio_button" />
+    <input type="radio" id="game_five" name="radio_button" />
+    <input type="radio" id="game_six" name="radio_button" />
+    <input type="radio" id="game_seven" name="radio_button" />
 
     <div class="pagination_logic">
+      <!--<img class="boom" src="./references/boom.png">-->
 
-    <!--<img class="boom" src="./references/boom.png">--> 
-    
-    <div class="games">
-    <div class="for_move">
+      <div class="games">
+        <div class="for_move">
+          <!--Dino-->
 
-<!--Dino-->  
+          <div class="game slide_one">
+            <header class="title_wrapper">
+              <div class="cloud_three"></div>
+              <div class="cloud_one"><p class="name">Play me</p></div>
+              <div class="bird"></div>
+              <div class="cloud_two"></div>
+            </header>
+            <div class="main_wrapper">
+              <div class="first_game_dino">
+                <input type="radio" id="jumping" name="jump" />
+                <input type="radio" id="jumping1" name="jump" />
+                <input type="radio" id="moving" />
+                <input type="checkbox" id="placeholder" name="placeholder" />
 
-    <div class="game slide_one">
-        <header class="title_wrapper">
-            <div class="cloud_three"></div> 
-            <div class="cloud_one"><p class="name">Play me</p></div>
-            <div class="bird"></div>
-            <div class="cloud_two"></div>                         
-        </header>            
-        <div class="main_wrapper">                 
-        <div class="first_game_dino">       
-
-        <input type="checkbox" id="jumping" name="jump">
-        <input type="checkbox" id="jumping1" name="jump">
-        <input type="radio" id="moving">
-
-        <div class="view">
-        
-        <div class="dino_game_items">
-            <div class="player">
-                <div class="dino_pic"></div>                              
-            </div>
-            <div class="obstacle_wrapper">
-                <div class="obstacle_course">
-                    <div class="obstacle_one"></div>           
-                    <div class="obstacle_two"></div>           
-                    <div class="obstacle_three"></div>           
-                    <div class="obstacle_four"></div>           
-                    <div class="obstacle_five"></div>           
-                    <div class="obstacle_six"></div>
-                    <div class="obstacle_seven"></div>
+                <div class="view">
+                  <div class="dino_game_items">
+                    <div class="player">
+                      <div class="dino_pic"></div>
+                    </div>
+                    <div class="obstacle_wrapper">
+                      <div class="obstacle_course">
+                        <div class="obstacle_one"></div>
+                        <div class="obstacle_two"></div>
+                        <div class="obstacle_three"></div>
+                        <div class="obstacle_four"></div>
+                        <div class="obstacle_five"></div>
+                        <div class="obstacle_six"></div>
+                        <div class="obstacle_seven"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="wavy"></div>
+                  <div class="button_placement">
+                    <div class="both_buttons">
+                      <div class="move_obstacles">
+                        <label for="moving" class="obstacles_click"
+                          >Move<span class="cacti"></span
+                        ></label>
+                      </div>
+                      <div class="jump_buttons">
+                        <div class="jump_button1">
+                          <label for="jumping" class="button_click_1">
+                            <span class="dino_footprint"></span>
+                          </label>
+                        </div>
+                        <div class="jump_button2">
+                          <label for="jumping1" class="button_click_2">
+                            <span class="dino_footprint"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div> 
-        <div class="wavy"></div> 
-        <div class="button_placement">
-            <div class="both_buttons">
-                <div class="move_obstacles">
-                    <label for="moving" class="obstacles_click">Move<span class="cacti"></span></label> 
-                </div>               
-                <div class="jump_button">                                           
-                    <label for="jumping" class="button_click_1">
-                        <label for="jumping1" class="button_click_2">Jump<span class="dino_footprint"></span></label> 
-                    </label>                                                                                                                              
-                </div>                               
-            </div>
-        </div>                      
-    </div>         
-    </div>            
-    </div>
-</div> 
+          </div>
 
-<!--Light me up fireflies-->
+          <!--Light me up fireflies-->
 
-    <div class="game slide_two">        
-        
-        <header class="title_2_wrapper">
-            <div class="star_two"></div>
-            <div class="star_four"></div>
-            <div class="cloud_3"></div>
-            <div class="star_five"></div> 
-            <div class="cloud_1"><p class="name_second_game">Light me up</p></div>
-            <div class="star_six"></div>
-            <div class="star_seven"></div> 
-            <div class="cloud_2"></div>
-            <div class="star_one"></div>        
-            <div class="star_three"></div>                               
-        </header>
-        <div class="main_second_wrapper">        
-        <div class="second_game_firefly"> 
-            <div class="fireflies_jar_wrapper">
-                <div class="fireflies" id="random">
-                    <div class="firefly firefly_one"></div>
-                    <div class="firefly firefly_two"></div>
-                    <div class="firefly firefly_three"></div>
-                    <div class="firefly firefly_four"></div>
-                    <div class="firefly firefly_five"></div>
-                    <div class="firefly firefly_six"></div>
-                    <div class="firefly firefly_seven"></div>
-                </div>      
-                <div class="branch_jar">
+          <div class="game slide_two">
+            <input type="radio" id="fly_radio" name="fly_radio" />
+            <header class="title_2_wrapper">
+              <div class="star_two"></div>
+              <div class="star_four"></div>
+              <div class="cloud_3"></div>
+              <div class="star_five"></div>
+              <div class="cloud_1">
+                <p class="name_second_game">Light me up</p>
+              </div>
+              <div class="star_six"></div>
+              <div class="star_seven"></div>
+              <div class="cloud_2"></div>
+              <div class="star_one"></div>
+              <div class="star_three"></div>
+            </header>
+            <div class="main_second_wrapper">
+              <div class="second_game_firefly">
+                <div class="fireflies_jar_wrapper">
+                  <div class="fireflies" id="random">
+                    <div class="firefly firefly_one" id="firefly_one"></div>
+                    <div class="firefly firefly_two" id="firefly_two"></div>
+                    <div class="firefly firefly_three" id="firefly_three"></div>
+                    <div class="firefly firefly_four" id="firefly_four"></div>
+                    <div class="firefly firefly_five" id="firefly_five"></div>
+                    <div class="firefly firefly_six" id="firefly_six"></div>
+                    <div class="firefly firefly_seven" id="firefly_seven"></div>
+                  </div>
+                  <div class="branch_jar">
                     <div class="branch_jar_wrapper">
-                    <div class="branch"></div>
-                    <div class="jar"></div>
-                </div>                                   
-            </div>            
-            </div>            
-                <div class="fly_button_placement">
-                    <div class="one_more_fly_button"></div>
-                    <!--<div class="fly_button">
-                        <label for="circle1" class="button_click"><span></span></label>
-                        <label for="circle2" class="button_click"><span></span></label>
-                        <label for="circle3" class="button_click"><span></span></label>
-                        <label for="circle4" class="button_click"><span></span></label>
-                        <label for="circle5" class="button_click"><span></span></label>
-                        <label for="circle6" class="button_click"><span></span></label>
-                        <label for="circle7" class="button_click"><span></span></label>
-                    </div>-->                             
-                </div>     
-            </div>            
-        </div> 
-    </div> 
-    
-<!--Gems-->
+                      <div class="branch"></div>
+                      <div class="jar" id="jar"></div>
+                    </div>
+                  </div>
+                </div>
+                <label for="fly_radio">
+                  <div class="fly_button_placement">
+                    <div class="one_more_fly_button"></div></div
+                ></label>
+              </div>
+            </div>
+          </div>
 
-    <div class="game slide_three">
+          <!--Gems-->
 
-        <!-- <input type="checkbox" id="match_card_1"/>
+          <div class="game slide_three">
+            <!-- <input type="checkbox" id="match_card_1"/>
         <input type="checkbox" id="match_card_2"/>
         <input type="checkbox" id="match_card_3"/>
         <input type="checkbox" id="match_card_4"/>
@@ -144,432 +142,402 @@
         <input type="checkbox" id="match_card_12"/>
         <input type="checkbox" id="match_card_13"/>
         <input type="checkbox" id="match_card_14"/> -->
- 
-        <header class="title_3_wrapper"> 
-            <div class="gems_chest"></div>       
-            <p class="name_game_gems">Match me</p>
-            <div class="jewels"></div>                                       
-        </header>
-        <div class="main_3_wrapper">        
-        <div class="third_game_gems">         
-            <div class="gems">
-                <div class="gem_card">
+
+            <header class="title_3_wrapper">
+              <div class="gems_chest"></div>
+              <p class="name_game_gems">Match me</p>
+              <div class="jewels"></div>
+            </header>
+            <div class="main_3_wrapper">
+              <div class="third_game_gems">
+                <div class="gems">
+                  <div class="gem_card">
                     <div class="gem_one_backface">
-                        <div class="gem_one_front"></div>
-                    </div>                                        
-                </div>
-                <div class="gem_card">
+                      <div class="gem_one_front"></div>
+                    </div>
+                  </div>
+                  <div class="gem_card">
                     <div class="gem_two_backface">
-                        <div class="gem_two_front"></div>
-                    </div>                                        
-                </div>   
-                <div class="gem_card">
+                      <div class="gem_two_front"></div>
+                    </div>
+                  </div>
+                  <div class="gem_card">
                     <div class="gem_three_backface">
-                        <div class="gem_three_front"></div>
-                    </div>                                        
-                </div>  
-                <div class="gem_card">
+                      <div class="gem_three_front"></div>
+                    </div>
+                  </div>
+                  <div class="gem_card">
                     <div class="gem_four_backface">
-                        <div class="gem_four_front"></div>
-                    </div>                                        
-                </div>                  
-                <div class="gem_card">
+                      <div class="gem_four_front"></div>
+                    </div>
+                  </div>
+                  <div class="gem_card">
                     <div class="gem_five_backface">
-                        <div class="gem_five_front"></div>
-                    </div>                                        
-                </div>    
-                <div class="gem_card">
+                      <div class="gem_five_front"></div>
+                    </div>
+                  </div>
+                  <div class="gem_card">
                     <div class="gem_six_backface">
-                        <div class="gem_six_front"></div>
-                    </div>                                        
-                </div>      
-                <div class="gem_card">
+                      <div class="gem_six_front"></div>
+                    </div>
+                  </div>
+                  <div class="gem_card">
                     <div class="gem_seven_backface">
-                        <div class="gem_seven_front"></div>
-                    </div>                                        
-                </div>   
-                <div class="gem_card">
+                      <div class="gem_seven_front"></div>
+                    </div>
+                  </div>
+                  <div class="gem_card">
                     <div class="gem_eight_backface">
-                        <div class="gem_eight_front"></div>
-                    </div>                                        
-                </div> 
-                <div class="gem_card">
+                      <div class="gem_eight_front"></div>
+                    </div>
+                  </div>
+                  <div class="gem_card">
                     <div class="gem_nine_backface">
-                        <div class="gem_nine_front"></div>
-                    </div>                                        
-                </div>   
-                <div class="gem_card">
+                      <div class="gem_nine_front"></div>
+                    </div>
+                  </div>
+                  <div class="gem_card">
                     <div class="gem_ten_backface">
-                        <div class="gem_ten_front"></div>
-                    </div>                                        
-                </div>    
-                <div class="gem_card">
+                      <div class="gem_ten_front"></div>
+                    </div>
+                  </div>
+                  <div class="gem_card">
                     <div class="gem_eleven_backface">
-                        <div class="gem_eleven_front"></div>
-                    </div>                                        
-                </div>  
-                <div class="gem_card">
+                      <div class="gem_eleven_front"></div>
+                    </div>
+                  </div>
+                  <div class="gem_card">
                     <div class="gem_twelve_backface">
-                        <div class="gem_twelve_front"></div>
-                    </div>                                        
-                </div>
-                <div class="gem_card">
+                      <div class="gem_twelve_front"></div>
+                    </div>
+                  </div>
+                  <div class="gem_card">
                     <div class="gem_thirteen_backface">
-                        <div class="gem_thirteen_front"></div>
-                    </div>                                        
-                </div>
-                <div class="gem_card">
+                      <div class="gem_thirteen_front"></div>
+                    </div>
+                  </div>
+                  <div class="gem_card">
                     <div class="gem_fourteen_backface">
-                        <div class="gem_fourteen_front"></div>
-                    </div>                                        
-                </div>                                             
-            </div>            
-                <div class="shapes">
-                    <div class="shape_card">
-                        <div class="shape_one_backface">
-                            <div class="shape_one_front"></div>
-                        </div>                                        
+                      <div class="gem_fourteen_front"></div>
                     </div>
-                    <div class="shape_card">
-                        <div class="shape_two_backface">
-                            <div class="shape_two_front"></div>
-                        </div>                                        
-                    </div>
-                    <div class="shape_card">
-                        <div class="shape_three_backface">
-                            <div class="shape_three_front"></div>
-                        </div>                                        
-                    </div>
-                    <div class="shape_card">
-                        <div class="shape_four_backface">
-                            <div class="shape_four_front"></div>
-                        </div>                                        
-                    </div> 
-                    <div class="shape_card">
-                        <div class="shape_five_backface">
-                            <div class="shape_five_front"></div>
-                        </div>                                        
-                    </div> 
-                    <div class="shape_card">
-                        <div class="shape_six_backface">
-                            <div class="shape_six_front"></div>
-                        </div>                                        
-                    </div> 
-                    <div class="shape_card">
-                        <div class="shape_seven_backface">
-                            <div class="shape_seven_front"></div>
-                        </div>                                        
-                    </div>
-                    <div class="shape_card">
-                        <div class="shape_eight_backface">
-                            <div class="shape_eight_front"></div>
-                        </div>                                        
-                    </div>
-                    <div class="shape_card">
-                        <div class="shape_nine_backface">
-                            <div class="shape_nine_front"></div>
-                        </div>                                        
-                    </div> 
-                    <div class="shape_card">
-                        <div class="shape_ten_backface">
-                            <div class="shape_ten_front"></div>
-                        </div>                                        
-                    </div>
-                    <div class="shape_card">
-                        <div class="shape_eleven_backface">
-                            <div class="shape_eleven_front"></div>
-                        </div>                                        
-                    </div>  
-                    <div class="shape_card">
-                        <div class="shape_twelve_backface">
-                            <div class="shape_twelve_front"></div>
-                        </div>                                        
-                    </div> 
-                    <div class="shape_card">
-                        <div class="shape_thirteen_backface">
-                            <div class="shape_thirteen_front"></div>
-                        </div>                                        
-                    </div> 
-                    <div class="shape_card">
-                        <div class="shape_fourteen_backface">
-                            <div class="shape_fourteen_front"></div>
-                        </div>                                        
-                    </div>              
-                </div>     
-            </div>            
-        </div> 
-    </div>
-
-<!--Potions-->
-
-<div class="game slide_four">
-
-    <input type="radio" id="eat_sushi">
-
-    <div class="title_4_wrapper">                
-        <div class="recipe_scroll_empty">            
-            <div class="recipe_wrapper">
-                <p class="recipe">Recipe</p>
-                <p class="recipe_1">1. two tulip onions</p>
-                <p class="recipe_2">2. crystal</p>
-                <p class="recipe_3">3. moon apple</p>
-                <p class="recipe_4">4. unicorn's horn pollen</p>
-                <p class="recipe_5">5. star's dust</p>
-                <p class="recipe_6">6. pink water</p>
-                <p class="recipe_7">7. an acorn<span class="caterpillar"></span></p>                               
-            </div>            
-        </div>
-        <div class="game_name_potions">       
-            <div class="potion_label"><p class="name_potions">Drink me
-                <span class="klyaksa"></span>
-            </p>
-            </div>
-        </div>        
-        <div class="window">
-            <div class="web_wrapper">
-                <div class="spider_web"></div>
-                <div class="spider"></div>
-            </div> 
-            <div class="behind_window">          
-                <div class="ufo"></div>            
-                <div class="window_background">                          
-                    <div class="moon"></div>
-                    <div class="apple_tree"></div>                                
+                  </div>
                 </div>
-            </div> 
-        </div>                                               
-    </div>
-    <div class="main_potions_wrapper">
-        <div class="everything">                 
-            <div class="fourth_game_potions">
-                <div class="game_stuff">                    
+                <div class="shapes">
+                  <div class="shape_card">
+                    <div class="shape_one_backface">
+                      <div class="shape_one_front"></div>
+                    </div>
+                  </div>
+                  <div class="shape_card">
+                    <div class="shape_two_backface">
+                      <div class="shape_two_front"></div>
+                    </div>
+                  </div>
+                  <div class="shape_card">
+                    <div class="shape_three_backface">
+                      <div class="shape_three_front"></div>
+                    </div>
+                  </div>
+                  <div class="shape_card">
+                    <div class="shape_four_backface">
+                      <div class="shape_four_front"></div>
+                    </div>
+                  </div>
+                  <div class="shape_card">
+                    <div class="shape_five_backface">
+                      <div class="shape_five_front"></div>
+                    </div>
+                  </div>
+                  <div class="shape_card">
+                    <div class="shape_six_backface">
+                      <div class="shape_six_front"></div>
+                    </div>
+                  </div>
+                  <div class="shape_card">
+                    <div class="shape_seven_backface">
+                      <div class="shape_seven_front"></div>
+                    </div>
+                  </div>
+                  <div class="shape_card">
+                    <div class="shape_eight_backface">
+                      <div class="shape_eight_front"></div>
+                    </div>
+                  </div>
+                  <div class="shape_card">
+                    <div class="shape_nine_backface">
+                      <div class="shape_nine_front"></div>
+                    </div>
+                  </div>
+                  <div class="shape_card">
+                    <div class="shape_ten_backface">
+                      <div class="shape_ten_front"></div>
+                    </div>
+                  </div>
+                  <div class="shape_card">
+                    <div class="shape_eleven_backface">
+                      <div class="shape_eleven_front"></div>
+                    </div>
+                  </div>
+                  <div class="shape_card">
+                    <div class="shape_twelve_backface">
+                      <div class="shape_twelve_front"></div>
+                    </div>
+                  </div>
+                  <div class="shape_card">
+                    <div class="shape_thirteen_backface">
+                      <div class="shape_thirteen_front"></div>
+                    </div>
+                  </div>
+                  <div class="shape_card">
+                    <div class="shape_fourteen_backface">
+                      <div class="shape_fourteen_front"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Potions-->
+
+          <div class="game slide_four">
+            <input type="radio" id="eat_sushi" />
+
+            <div class="title_4_wrapper">
+              <div class="recipe_scroll_empty">
+                <div class="recipe_wrapper">
+                  <p class="recipe">Recipe</p>
+                  <p class="recipe_1">1. tulip</p>
+                  <p class="recipe_2">2. mushroom</p>
+                  <p class="recipe_3">3. apple</p>
+                  <p class="recipe_5">4. blueberries</p>
+                  <p class="recipe_6">5. pink water</p>
+                </div>
+              </div>
+              <div class="game_name_potions">
+                <div class="potion_label">
+                  <p class="name_potions">
+                    Drink me
+                    <span class="klyaksa"></span>
+                  </p>
+                </div>
+              </div>
+              <div class="window">
+                <div class="web_wrapper">
+                  <div class="spider_web"></div>
+                  <div class="spider"></div>
+                </div>
+                <div class="behind_window">
+                  <div class="ufo"></div>
+                  <div class="window_background">
+                    <div class="moon"></div>
+                    <div class="apple_tree"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main_potions_wrapper">
+              <div class="everything">
+                <div class="fourth_game_potions">
+                  <div class="game_stuff">
                     <div class="inventory">
-                        <div class="beer"></div>
-                        <div class="eggplant"></div>    
-                        <div class="shard"></div>                  
-                        <div class="mushroom"></div>    
-                        <div class="broccoli"></div>
-                        <div class="star"></div>                    
-                        <div class="pumpkin"></div>    
-                        <div class="cookies"></div>    
-                        <div class="steak"></div>
-                        <div class="potions_apple"></div>
-                        <div class="carrot"></div>
-                        <div class="sushi">
-                            <label for="eat_sushi" class="sushi_label">
-                                <div class="sushi_label_style"></div>
-                            </label>
-                        </div> 
-                        <div class="blueberries"></div>
-                        <div class="pink_water"></div>
-                        <div class="grapes"></div>
-                        <div class="unicorn"></div> 
-                        <div class="garlic"></div>
-                        <div class="salad"></div>
-                        <div class="tulip"></div>
-                        <div class="love_potion"></div>
-                        <div class="potions_acorn"></div>                                                           
+                      <div id="beer" class="beer"></div>
+                      <div id="eggplant" class="eggplant"></div>
+                      <div id="mushroom" class="mushroom"></div>
+                      <div id="broccoli" class="broccoli"></div>
+                      <div id="pumpkin" class="pumpkin"></div>
+                      <div id="cookies" class="cookies"></div>
+                      <div id="apple" class="apple"></div>
+                      <div id="carrot" class="carrot"></div>
+                      <div id="blueberries" class="blueberries"></div>
+                      <div id="pink_water" class="pink_water"></div>
+                      <div id="grapes" class="grapes"></div>
+                      <div id="garlic" class="garlic"></div>
+                      <div id="salad" class="salad"></div>
+                      <div id="tulip" class="tulip"></div>
+                      <div id="acorn" class="acorn"></div>
                     </div>
                     <div class="shelf_cauldron_cat">
-                        <div class="upper_shelf">
-                            <div class="potion"></div> 
-                            <div class="candle">
-                                <div class="candle_light"></div>
-                            </div>
-                            <div class="witch_hat"></div>                           
-                            <div class="magic_wand"></div>
-                            <div class="crystal_ball"></div>
+                      <div class="upper_shelf">
+                        <div id="potion" class="potion"></div>
+                        <div class="candle">
+                          <div class="candle_light"></div>
                         </div>
-                        <div class="cauldron_cat">            
-                            <div class="cauldron">
-                                <div class="flame"></div>                           
-                            </div>
-                            <div class="cat">
-                                <label for="eat_sushi" class="cat_label">
-                                    <div class="cat_label_style"></div>
-                                </label>
-                            </div>
-                        </div> 
+                        <div class="witch_hat"></div>
+                        <div class="magic_wand"></div>
+                        <div class="crystal_ball"></div>
+                      </div>
+                      <div class="cauldron_cat">
+                        <div class="cauldron">
+                          <div class="flame"></div>
+                        </div>
+                        <div class="cat" id="cat">
+                          <label for="eat_sushi" class="cat_label">
+                            <div class="cat_label_style"></div>
+                          </label>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                  <!--<div class="broom"></div>-->
                 </div>
-                <!--<div class="broom"></div>-->                                 
-            </div>              
-        </div>       
-    </div>
-</div>
-
-<!--Tree-->
-
-<div class="game slide_five">
-     
-    <input type="radio" id="radio_hand">
-
-    <div class="trees_wrapper">
-        <div class="moving_branch">
-            <div class="sakura_branch">
-                <div class="butterfly"></div>
+              </div>
             </div>
-            <div class="leaves">
-                <div class="leaf_1"></div>
-                <div class="leaf_2"></div>
-                <div class="leaf_3"></div>
-                <div class="leaf_4"></div>
-                <div class="leaf_5"></div>
-                <div class="leaf_6"></div>
-                <div class="leaf_7"></div>
-                <div class="leaf_8"></div>
-                <div class="leaf_9"></div>
-                <div class="leaf_10"></div>
-                <div class="leaf_11"></div>
-                <div class="leaf_12"></div>
-                <div class="leaf_13"></div>
-                <div class="leaf_14"></div>
-            </div>
-        </div>                                 
-        <div class="tree_with_hand">
-            <div class="hand">
-                <label for="radio_hand" class="hand_print">
+          </div>
+
+          <!--Tree-->
+
+          <div class="game slide_five">
+            <input type="radio" id="radio_hand" />
+
+            <div class="trees_wrapper">
+              <div class="moving_branch">
+                <div class="sakura_branch">
+                  <div class="butterfly"></div>
+                </div>
+                <div class="leaves">
+                  <div class="leaf_1"></div>
+                  <div class="leaf_2"></div>
+                  <div class="leaf_3"></div>
+                  <div class="leaf_4"></div>
+                  <div class="leaf_5"></div>
+                  <div class="leaf_6"></div>
+                  <div class="leaf_7"></div>
+                  <div class="leaf_8"></div>
+                  <div class="leaf_9"></div>
+                  <div class="leaf_10"></div>
+                  <div class="leaf_11"></div>
+                  <div class="leaf_12"></div>
+                  <div class="leaf_13"></div>
+                  <div class="leaf_14"></div>
+                </div>
+              </div>
+              <div class="tree_with_hand">
+                <div class="hand">
+                  <label for="radio_hand" class="hand_print">
                     <div class="radio_hand_style"></div>
-                </label>
+                  </label>
+                </div>
+                <div class="name_tree">Touch me</div>
+              </div>
             </div>
-            <div class="name_tree">Touch me</div>
-        </div>
-    </div>
-</div>
+          </div>
 
-<!--Hedgehog-->    
-     
-    <div class="game slide_six">
-        <input type="radio" id="apple_radio">
-        <input type="radio" id="mushrooms_radio">
-        <input type="radio" id="maple_radio">
-        <input type="radio" id="marshmallow_radio">
-        <input type="radio" id="sock_radio">
-        <input type="radio" id="acorn_radio"> 
-        <div class="main_6_wrapper">
-            <div class="top_wrapper">
+          <!--Hedgehog-->
+
+          <div class="game slide_six">
+            <input type="radio" id="apple_radio" />
+            <input type="radio" id="mushrooms_radio" />
+            <input type="radio" id="maple_radio" />
+            <input type="radio" id="marshmallow_radio" />
+            <input type="radio" id="sock_radio" />
+            <input type="radio" id="acorn_radio" />
+            <div class="main_6_wrapper">
+              <div class="top_wrapper">
                 <div class="kite"></div>
-                <div class="name_hedgehog">Find me</div> 
+                <div class="name_hedgehog">Find me</div>
                 <div class="hive">
-                    <div class="bees">
-                        <div class="bee_1"></div>
-                        <div class="bee_2"></div>
-                        <div class="bee_3"></div>
-                        <div class="bee_4"></div>
-                        <div class="bee_5"></div>
-                        <div class="bee_6"></div>
-                        <div class="bee_7"></div>
-                    </div>
+                  <div class="bees">
+                    <div class="bee_1"></div>
+                    <div class="bee_2"></div>
+                    <div class="bee_3"></div>
+                    <div class="bee_4"></div>
+                    <div class="bee_5"></div>
+                    <div class="bee_6"></div>
+                    <div class="bee_7"></div>
+                  </div>
                 </div>
-            </div>                  
-            <div class="puzzle">
-                <div class="details_left">
-                    <div class="detail_l1"></div>
-                    <div class="detail_l2"></div>
-                    <div class="detail_l3"></div>
-                    <div class="detail_l4"></div>
-                    <div class="detail_l5"></div>
+              </div>
+              <div class="hedgehog_wrapper">
+                <div class="hedgehog" id="hedgehog"></div>
+                <div class="appleGather" id="appleGather">
+                  <label for="apple_radio" class="radio_for_apple">
+                    <div class="apple_label_style"></div>
+                  </label>
                 </div>
-                <div class="puzzle_pic"></div>
-                <div class="details_right">
-                    <div class="detail_r1"></div>
-                    <div class="detail_r2"></div>
-                    <div class="detail_r3"></div>
-                    <div class="detail_r4"></div>
-                    <div class="detail_r5"></div>
-                </div>                
+                <div class="mushrooms" id="mushrooms">
+                  <label for="mushrooms_radio" class="radio_for_mushrooms">
+                    <div class="mushrooms_label_style"></div>
+                  </label>
+                </div>
+                <div class="maple_leaf" id="maple_leaf">
+                  <label for="maple_radio" class="radio_for_maple_leaf">
+                    <div class="maple_label_style"></div>
+                  </label>
+                </div>
+                <div class="marshmallow" id="marshmallow">
+                  <label for="marshmallow_radio" class="radio_for_marshmallow">
+                    <div class="marshmallow_label_style"></div>
+                  </label>
+                </div>
+                <div class="sock" id="sock">
+                  <label for="sock_radio" class="radio_for_sock">
+                    <div class="sock_label_style"></div>
+                  </label>
+                </div>
+                <div class="acornGather" id="acornGather">
+                  <label for="acorn_radio" class="radio_for_acorn">
+                    <div class="acorn_label_style"></div>
+                  </label>
+                </div>
+                <div class="house" id="house"></div>
+              </div>
+              <div class="gather_wrapper">
+                <div class="gather">Gather us</div>
+              </div>
+              <div class="grass"></div>
             </div>
-            <div class="hedgehog_wrapper">
-                <div class="hedgehog"></div>
-                <div class="apple">
-                    <label for="apple_radio" class="radio_for_apple">
-                        <div class="apple_label_style"></div>
-                    </label>
-                </div>
-                <div class="mushrooms">
-                    <label for="mushrooms_radio" class="radio_for_mushrooms">
-                        <div class="mushrooms_label_style"></div>
-                    </label>
-                </div>
-                <div class="maple_leaf">
-                    <label for="maple_radio" class="radio_for_maple_leaf">
-                        <div class="maple_label_style"></div>
-                    </label>
-                </div>
-                <div class="marshmallow">
-                    <label for="marshmallow_radio" class="radio_for_marshmallow">
-                        <div class="marshmallow_label_style"></div>
-                    </label>
-                </div>
-                <div class="sock">
-                    <label for="sock_radio" class="radio_for_sock">
-                        <div class="sock_label_style"></div>
-                    </label>
-                </div>
-                <div class="acorn">
-                    <label for="acorn_radio" class="radio_for_acorn">
-                        <div class="acorn_label_style"></div>
-                    </label>
-                </div>
-                
-                <div class="muhomor"></div>
-                <div class="oak_leaf"></div>
-                <div class="pear"></div>
-                <div class="umbrella"></div>
-                <div class="broom"></div>
-                <div class="house"></div>
-            </div>
-            <div class="grass"></div>  
-        </div>
-    </div>      
+          </div>
 
-    <!--Heart-->
+          <!--Heart-->
 
-    <div class="game slide_seven">
-                 
-        <div class="main_7_wrapper">
-            <div class="top_7_wrapper">
+          <div class="game slide_seven">
+            <div class="main_7_wrapper">
+              <div class="top_7_wrapper">
                 <audio controls loop class="heartbeat_sound">
-                    <source src="./references/7_heart/heartbeat_sound.mp3" type="audio/mp3">
-                </audio>            
-                <div class="name_heart">Just love</div>             
-            </div>                              
-            <div class="labyrinth">
+                  <source
+                    src="./references/7_heart/heartbeat_sound.mp3"
+                    type="audio/mp3"
+                  />
+                </audio>
+                <div class="name_heart">Just love</div>
+              </div>
+              <div class="labyrinth">
                 <div class="heart_shape"></div>
-                <p class="name_in_heart">Labyrinth</p>                                
-            </div>                   
-        </div>    
-    </div>  
-</div>
-</div>
+                <p class="name_in_heart">Labyrinth</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="about">
-    <div class="creator">@lyutails</div>
-    <div class="pagination_circles">   
-        <label for="game_one" class="circle_one">
+      <div class="about">
+        <a href="https://github.com/lyutails" class="creator">@lyutails</a>
+        <div class="pagination_circles">
+          <label for="game_one" class="circle_one">
             <div class="circle_1"></div>
-        </label>
-        <label for="game_two" class="circle_two">
+          </label>
+          <label for="game_two" class="circle_two">
             <div class="circle_2"></div>
-        </label>
-        <label for="game_three" class="circle_three">
+          </label>
+          <label for="game_three" class="circle_three">
             <div class="circle_3"></div>
-        </label>
-        <label for="game_four" class="circle_four">
+          </label>
+          <label for="game_four" class="circle_four">
             <div class="circle_4"></div>
-        </label>
-        <label for="game_five" class="circle_five">
+          </label>
+          <label for="game_five" class="circle_five">
             <div class="circle_5"></div>
-        </label>
-        <label for="game_six" class="circle_six">
+          </label>
+          <label for="game_six" class="circle_six">
             <div class="circle_6"></div>
-        </label>
-        <label for="game_seven" class="circle_seven">
+          </label>
+          <label for="game_seven" class="circle_seven">
             <div class="circle_7"></div>
-        </label>        
-    </div> 
-</div>
-
-</div>
-</body>
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
 </html>
