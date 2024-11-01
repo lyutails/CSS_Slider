@@ -64,7 +64,23 @@ itemsToGather.forEach((item) => {
     if (itemsToGather.length === 0) {
       setTimeout(() => {
         hedgehog.style.visibility = "hidden";
-      }, '3000');
+      }, "3000");
     }
   });
+});
+
+// fireflies
+
+const fireflies = document.querySelectorAll(".firefly");
+console.log(fireflies);
+const flyButton = document.getElementById("fly_radio");
+console.log(flyButton);
+
+flyButton.addEventListener("change", () => {
+  if (flyButton.checked) {
+    console.log("fly");
+    fireflies.forEach((element) => {
+      element.style.animation = "move_anim1 10s infinite alternate";
+    });
+  }
 });

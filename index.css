@@ -53,7 +53,7 @@ input[type="radio"] {
   border: 0px;
   width: 50px;
   height: 3em;
-  display: none;
+  /* display: none; */
 }
 
 input[type="checkbox"] {
@@ -1296,18 +1296,6 @@ input[type="checkbox"] {
 
 body {
   counter-reset: flying;
-}
-
-#fly_radio:checked
-  > .main_second_wrapper
-  > .second_game_firefly
-  > .fireflies_jar_wrapper
-  > .fireflies
-  ~ .firefly
-  .firefly_five {
-  transition: 0.3s cubic-bezier(0, 0.43, 1, 0);
-  animation: move_anim1 10s infinite alternate;
-  animation-play-state: running;
 }
 
 .input_circle:checked {
