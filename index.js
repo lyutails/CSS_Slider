@@ -5,13 +5,13 @@ const moveButton = document.getElementById("moving");
 const obstacles = document.getElementById("obstacle_wrapper");
 
 moveButton.addEventListener("change", () => {
-    console.log('checked');
+  console.log("checked");
   if (moveButton.checked) {
-    console.log('checked');
+    console.log("checked");
     setTimeout(() => {
       obstacles.style.display = "none";
-      dinoCake.classList.add('show');
-    }, 5000);
+      dinoCake.classList.add("show");
+    }, 40000);
   }
 });
 
@@ -144,4 +144,93 @@ firefliesArray.forEach((element) => {
       console.log("equal");
     }
   });
+});
+
+// gems
+
+const gems = document.getElementsByClassName("gem_card");
+const shapes = document.getElementsByClassName("shape_card");
+console.log(gems);
+console.log(shapes);
+const gemAmethyst = document.getElementById("gem_amethyst");
+const gemSapphire = document.getElementById("gem_sapphire");
+const gemDiamond = document.getElementById("gem_diamond");
+const gemEmerald = document.getElementById("gem_emerald");
+const gemRuby = document.getElementById("gem_ruby");
+const gemAmetrin = document.getElementById("gem_ametrin");
+const shapeAmethyst = document.getElementById("shape_amethyst");
+const shapeRuby = document.getElementById("shape_ruby");
+const shapeEmerald = document.getElementById("shape_emerald");
+const shapeAmetrin = document.getElementById("shape_ametrin");
+const shapeSapphire = document.getElementById("shape_sapphire");
+const shapeDiamond = document.getElementById("shape_diamond");
+
+const pairs = [];
+
+const gemsPairs = [
+  [gemAmethyst, shapeAmethyst],
+  [gemSapphire, shapeSapphire],
+  [gemDiamond, shapeDiamond],
+  [gemEmerald, shapeEmerald],
+  [gemRuby, shapeRuby],
+  [gemAmetrin, shapeAmetrin],
+];
+
+const gemsArray = [
+  gemAmethyst,
+  gemSapphire,
+  gemDiamond,
+  gemEmerald,
+  gemRuby,
+  gemAmetrin,
+];
+
+const shapesArray = [
+  shapeAmethyst,
+  shapeSapphire,
+  shapeDiamond,
+  shapeEmerald,
+  shapeRuby,
+  shapeAmetrin,
+];
+
+gemsArray.forEach((gem) => {
+  gem.setAttribute("draggable", "true");
+});
+
+shapeAmethyst.addEventListener("dragover", (e) => {
+  e.preventDefault();
+});
+
+function dragEvent(e) {
+  e.dataTransfer.setData(
+    "text/uri-list",
+    `url("./references/3_gems/gem_amethyst.svg")`
+  );
+}
+
+gemAmethyst.addEventListener("dragstart", dragEvent);
+
+function dropEvent(e) {
+  e.preventDefault();
+  shapeAmethyst.appendChild(gemAmethyst);
+  console.log("dropped");
+  gemAmethyst.style.position = 'absolute';
+  gemAmethyst.style.width = '100%';
+}
+
+shapeAmethyst.addEventListener("drop", dropEvent);
+
+// heart
+
+const yarnString = document.getElementById("yarn_string");
+const yarn = document.getElementById("yarn");
+const heart = document.getElementById("heart_shape");
+const heartBeat = new Audio("./references/7_heart/heartbeat_sound.mp3");
+
+yarnString.addEventListener("click", () => {
+  yarn.style.visibility = "visible";
+  yarnString.style.display = "none";
+  heart.style.animationPlayState = "running";
+  heartBeat.play();
 });
