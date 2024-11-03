@@ -148,6 +148,8 @@ firefliesArray.forEach((element) => {
 
 // gems
 
+const matchCounter = 0;
+
 const gems = document.getElementsByClassName("gem_card");
 const shapes = document.getElementsByClassName("shape_card");
 console.log(gems);
@@ -164,8 +166,6 @@ const shapeEmerald = document.getElementById("shape_emerald");
 const shapeAmetrin = document.getElementById("shape_ametrin");
 const shapeSapphire = document.getElementById("shape_sapphire");
 const shapeDiamond = document.getElementById("shape_diamond");
-
-const pairs = [];
 
 const gemsPairs = [
   [gemAmethyst, shapeAmethyst],
@@ -194,32 +194,49 @@ const shapesArray = [
   shapeAmetrin,
 ];
 
+const urlsArray = [
+  `url("./references/3_gems/gem_amethyst.svg")`,
+  `url("./references/3_gems/gem_dark_blue_circle.svg")`,
+  `url("./references/3_gems/gem_diamond.svg")`,
+  `url("./references/3_gems/gem_green_round_emerald.svg")`,
+  `url("./references/3_gems/gem_red.svg")`,
+  `url("./references/3_gems/gem_yellow_curvy_triangle.svg")`,
+];
+
 gemsArray.forEach((gem) => {
   gem.setAttribute("draggable", "true");
 });
 
-shapeAmethyst.addEventListener("dragover", (e) => {
-  e.preventDefault();
+shapesArray.forEach((shape) => {
+  shape.addEventListener("dragover", (e) => {
+    e.preventDefault();
+  });
 });
 
 function dragEvent(e) {
-  e.dataTransfer.setData(
-    "text/uri-list",
-    `url("./references/3_gems/gem_amethyst.svg")`
-  );
+  gemsArray.forEach((item, i) => {
+    item.addEventListener(
+      "dragstart",
+      e.dataTransfer.setData("text/uri-list", urlsArray[i])
+    );
+  });
 }
 
-gemAmethyst.addEventListener("dragstart", dragEvent);
-
-function dropEvent(e) {
+function dropEvent(e, gemData, shapeData) {
   e.preventDefault();
-  shapeAmethyst.appendChild(gemAmethyst);
+  shapeData.appendChild(gemData);
   console.log("dropped");
-  gemAmethyst.style.position = 'absolute';
-  gemAmethyst.style.width = '100%';
+  gemData.style.position = "absolute";
+  gemData.style.width = "100%";
 }
 
-shapeAmethyst.addEventListener("drop", dropEvent);
+shapesArray.forEach((item, i) => {
+  item.addEventListener("drop", (e) => {
+    dropEvent(e, gemsArray[i], item);
+  });
+});
+
+// shapeAmethyst.addEventListener("drop", dropEvent);
 
 // heart
 
