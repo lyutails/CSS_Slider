@@ -1482,6 +1482,10 @@ body {
   z-index: 215;
 }
 
+.gems_overlay:hover {
+  cursor: pointer;
+}
+
 .gems_dialog {
   width: 280px;
   height: 300px;
@@ -1507,6 +1511,21 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 20px;
+}
+
+.gems_cross {
+  width: 30px;
+  aspect-ratio: 1 / 1;
+  background-image: url('./references/3_gems/cross.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(170px, -310px);
+  background-color: white;
+  border-radius: 50%;
+}
+
+.gems_cross:hover {
+  cursor: pointer;
 }
 
 .slide_three {
