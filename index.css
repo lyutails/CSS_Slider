@@ -1474,6 +1474,41 @@ body {
 
 /*gems*/
 
+.gems_overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 215;
+}
+
+.gems_dialog {
+  width: 280px;
+  height: 300px;
+  position: absolute;
+  z-index: 225;
+  top: 50%;
+  transform: translate(calc(50vw - 160px), -50%);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gem_dialog_pic {
+  width: 80%;
+  aspect-ratio: 1 / 1;
+  background-image: url('./references/3_gems/toast.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+
 .slide_three {
   width: 1200px;
   height: 900px;

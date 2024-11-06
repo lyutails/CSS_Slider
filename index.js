@@ -143,7 +143,7 @@ firefliesArray.forEach((element) => {
 
 // gems
 
-const matchCounter = 0;
+let matchCounter = 0;
 
 const gems = document.getElementsByClassName("gem_card");
 const shapes = document.getElementsByClassName("shape_card");
@@ -209,6 +209,24 @@ function dropEvent(e, shapeData) {
     shape.appendChild(gem);
     gem.style.position = "absolute";
     gem.style.width = "100%";
+    matchCounter++;
+  }
+  if (matchCounter === 6) {
+    const gemsOverlay = document.createElement('div');
+    gemsOverlay.classList.add('gems_overlay');
+    document.body.appendChild(gemsOverlay);
+    const dialog = document.createElement("dialog");
+    dialog.setAttribute("open", "true");
+    dialog.textContent = "match === win win ^^";
+    document.body.appendChild(dialog);
+    dialog.classList.add('gems_dialog');
+    const dialogPic = document.createElement('div');
+    dialogPic.classList.add('gem_dialog_pic');
+    dialog.appendChild(dialogPic);
+    gemsOverlay.addEventListener('click', () => {
+      gemsOverlay.remove();
+      dialog.remove();
+    })
   }
 }
 
