@@ -5,9 +5,7 @@ const moveButton = document.getElementById("moving");
 const obstacles = document.getElementById("obstacle_wrapper");
 
 moveButton.addEventListener("change", () => {
-  console.log("checked");
   if (moveButton.checked) {
-    console.log("checked");
     setTimeout(() => {
       obstacles.style.display = "none";
       dinoCake.classList.add("show");
@@ -101,7 +99,6 @@ const jar = document.getElementById("jar");
 
 flyButton.addEventListener("change", () => {
   if (flyButton.checked) {
-    console.log("fly");
     fireflies.forEach((element) => {
       element.style.animation = "move_anim1 10s alternate";
       element.style.animationIterationCount = "1";
@@ -134,14 +131,12 @@ const firefliesEmptyArray = [];
 firefliesArray.forEach((element) => {
   element?.addEventListener("click", () => {
     firefliesEmptyArray.push(element);
-    console.log(firefliesEmptyArray);
     if (
       firefliesEmptyArray.length === firefliesRainbowArray.length &&
       firefliesEmptyArray.every((elem, i) => elem === firefliesRainbowArray[i])
     ) {
       jar.style.animationName = "jar_anim_still";
       jar.style.backgroundImage = `url("./references/2_firefly_pics/jar_rainbow.png")`;
-      console.log("equal");
     }
   });
 });
@@ -152,8 +147,6 @@ const matchCounter = 0;
 
 const gems = document.getElementsByClassName("gem_card");
 const shapes = document.getElementsByClassName("shape_card");
-console.log(gems);
-console.log(shapes);
 const gemAmethyst = document.getElementById("gem_amethyst");
 const gemSapphire = document.getElementById("gem_sapphire");
 const gemDiamond = document.getElementById("gem_diamond");
@@ -166,15 +159,6 @@ const shapeEmerald = document.getElementById("shape_emerald");
 const shapeAmetrin = document.getElementById("shape_ametrin");
 const shapeSapphire = document.getElementById("shape_sapphire");
 const shapeDiamond = document.getElementById("shape_diamond");
-
-const gemsPairs = [
-  [gemAmethyst, shapeAmethyst],
-  [gemSapphire, shapeSapphire],
-  [gemDiamond, shapeDiamond],
-  [gemEmerald, shapeEmerald],
-  [gemRuby, shapeRuby],
-  [gemAmetrin, shapeAmetrin],
-];
 
 const gemsArray = [
   gemAmethyst,
@@ -194,15 +178,6 @@ const shapesArray = [
   shapeAmetrin,
 ];
 
-const urlsArray = [
-  `url("./references/3_gems/gem_amethyst.svg")`,
-  `url("./references/3_gems/gem_dark_blue_circle.svg")`,
-  `url("./references/3_gems/gem_diamond.svg")`,
-  `url("./references/3_gems/gem_green_round_emerald.svg")`,
-  `url("./references/3_gems/gem_red.svg")`,
-  `url("./references/3_gems/gem_yellow_curvy_triangle.svg")`,
-];
-
 gemsArray.forEach((gem) => {
   gem.setAttribute("draggable", "true");
 });
@@ -214,29 +189,39 @@ shapesArray.forEach((shape) => {
 });
 
 function dragEvent(e) {
-  gemsArray.forEach((item, i) => {
-    item.addEventListener(
-      "dragstart",
-      e.dataTransfer.setData("text/uri-list", urlsArray[i])
-    );
-  });
+  e.dataTransfer.setData("text", e.target.id);
+  console.log(e.target.id);
 }
 
-function dropEvent(e, gemData, shapeData) {
+gemsArray.forEach((item) => {
+  item.addEventListener("dragstart", (e) => {
+    dragEvent(e);
+  });
+});
+
+function dropEvent(e, shapeData) {
   e.preventDefault();
-  shapeData.appendChild(gemData);
-  console.log("dropped");
-  gemData.style.position = "absolute";
-  gemData.style.width = "100%";
+  console.log(e.target);
+  const gemData = e.dataTransfer.getData("text");
+  console.log(gemData.slice(4));
+  console.log(shapeData.slice(6));
+  const gemName = gemData.slice(4);
+  const shapeName = shapeData.slice(6);
+  if (gemName === shapeName) {
+    console.log("append");
+    const gem = document.getElementById(gemData);
+    const shape = document.getElementById(shapeData);
+    shape.appendChild(gem);
+    gem.style.position = "absolute";
+    gem.style.width = "100%";
+  }
 }
 
 shapesArray.forEach((item, i) => {
   item.addEventListener("drop", (e) => {
-    dropEvent(e, gemsArray[i], item);
+    dropEvent(e, item.id);
   });
 });
-
-// shapeAmethyst.addEventListener("drop", dropEvent);
 
 // heart
 
