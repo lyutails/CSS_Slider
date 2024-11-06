@@ -190,7 +190,6 @@ shapesArray.forEach((shape) => {
 
 function dragEvent(e) {
   e.dataTransfer.setData("text", e.target.id);
-  console.log(e.target.id);
 }
 
 gemsArray.forEach((item) => {
@@ -201,14 +200,10 @@ gemsArray.forEach((item) => {
 
 function dropEvent(e, shapeData) {
   e.preventDefault();
-  console.log(e.target);
   const gemData = e.dataTransfer.getData("text");
-  console.log(gemData.slice(4));
-  console.log(shapeData.slice(6));
   const gemName = gemData.slice(4);
   const shapeName = shapeData.slice(6);
   if (gemName === shapeName) {
-    console.log("append");
     const gem = document.getElementById(gemData);
     const shape = document.getElementById(shapeData);
     shape.appendChild(gem);
