@@ -223,7 +223,14 @@ function dropEvent(e, shapeData) {
     const dialogPic = document.createElement('div');
     dialogPic.classList.add('gem_dialog_pic');
     dialog.appendChild(dialogPic);
+    const gemsCross = document.createElement('div');
+    gemsCross.classList.add('gems_cross');
+    dialog.appendChild(gemsCross)
     gemsOverlay.addEventListener('click', () => {
+      gemsOverlay.remove();
+      dialog.remove();
+    })
+    gemsCross.addEventListener('click', () => {
       gemsOverlay.remove();
       dialog.remove();
     })
