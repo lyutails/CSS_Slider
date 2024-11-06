@@ -143,7 +143,7 @@ firefliesArray.forEach((element) => {
 
 // gems
 
-const matchCounter = 0;
+let matchCounter = 0;
 
 const gems = document.getElementsByClassName("gem_card");
 const shapes = document.getElementsByClassName("shape_card");
@@ -190,7 +190,6 @@ shapesArray.forEach((shape) => {
 
 function dragEvent(e) {
   e.dataTransfer.setData("text", e.target.id);
-  console.log(e.target.id);
 }
 
 gemsArray.forEach((item) => {
@@ -201,19 +200,33 @@ gemsArray.forEach((item) => {
 
 function dropEvent(e, shapeData) {
   e.preventDefault();
-  console.log(e.target);
   const gemData = e.dataTransfer.getData("text");
-  console.log(gemData.slice(4));
-  console.log(shapeData.slice(6));
   const gemName = gemData.slice(4);
   const shapeName = shapeData.slice(6);
   if (gemName === shapeName) {
-    console.log("append");
     const gem = document.getElementById(gemData);
     const shape = document.getElementById(shapeData);
     shape.appendChild(gem);
     gem.style.position = "absolute";
     gem.style.width = "100%";
+    matchCounter++;
+  }
+  if (matchCounter === 6) {
+    const gemsOverlay = document.createElement('div');
+    gemsOverlay.classList.add('gems_overlay');
+    document.body.appendChild(gemsOverlay);
+    const dialog = document.createElement("dialog");
+    dialog.setAttribute("open", "true");
+    dialog.textContent = "match === win win ^^";
+    document.body.appendChild(dialog);
+    dialog.classList.add('gems_dialog');
+    const dialogPic = document.createElement('div');
+    dialogPic.classList.add('gem_dialog_pic');
+    dialog.appendChild(dialogPic);
+    gemsOverlay.addEventListener('click', () => {
+      gemsOverlay.remove();
+      dialog.remove();
+    })
   }
 }
 
