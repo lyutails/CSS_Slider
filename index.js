@@ -9,8 +9,16 @@ moveButton.addEventListener("change", () => {
     setTimeout(() => {
       obstacles.style.display = "none";
       dinoCake.classList.add("show");
+      moveButton.setAttribute('disabled', 'true');
     }, 40000);
   }
+});
+
+dinoCake.addEventListener("click", () => {
+  setTimeout(() => {
+    dinoCake.classList.remove("show");
+    dinoCake.classList.add("yum");
+  }, 1000);
 });
 
 // potions
@@ -212,28 +220,28 @@ function dropEvent(e, shapeData) {
     matchCounter++;
   }
   if (matchCounter === 6) {
-    const gemsOverlay = document.createElement('div');
-    gemsOverlay.classList.add('gems_overlay');
+    const gemsOverlay = document.createElement("div");
+    gemsOverlay.classList.add("gems_overlay");
     document.body.appendChild(gemsOverlay);
     const dialog = document.createElement("dialog");
     dialog.setAttribute("open", "true");
     dialog.textContent = "match === win win ^^";
     document.body.appendChild(dialog);
-    dialog.classList.add('gems_dialog');
-    const dialogPic = document.createElement('div');
-    dialogPic.classList.add('gem_dialog_pic');
+    dialog.classList.add("gems_dialog");
+    const dialogPic = document.createElement("div");
+    dialogPic.classList.add("gem_dialog_pic");
     dialog.appendChild(dialogPic);
-    const gemsCross = document.createElement('div');
-    gemsCross.classList.add('gems_cross');
-    dialog.appendChild(gemsCross)
-    gemsOverlay.addEventListener('click', () => {
+    const gemsCross = document.createElement("div");
+    gemsCross.classList.add("gems_cross");
+    dialog.appendChild(gemsCross);
+    gemsOverlay.addEventListener("click", () => {
       gemsOverlay.remove();
       dialog.remove();
-    })
-    gemsCross.addEventListener('click', () => {
+    });
+    gemsCross.addEventListener("click", () => {
       gemsOverlay.remove();
       dialog.remove();
-    })
+    });
   }
 }
 

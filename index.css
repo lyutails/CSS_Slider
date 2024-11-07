@@ -579,7 +579,6 @@ input[type="checkbox"] {
   width: 120px;
   background-image: url("./references/1_dino_pics/dino.svg");
   mask: url("./references/1_dino_pics/dino.svg");
-  cursor: pointer;
 }
 
 .dino_cake {
@@ -591,10 +590,22 @@ input[type="checkbox"] {
   margin-left: 120px;
 }
 
+.dino_cake:hover {
+  cursor: pointer;
+}
+
 .dino_cake.show {
   height: 50px;
   width: 50px;
   background-image: url("./references/1_dino_pics/cupcake.svg");
+  background-size: contain;
+  display: block;
+}
+
+.dino_cake.yum {
+  height: 50px;
+  width: 50px;
+  background-image: url("./references/1_dino_pics/yum.png");
   background-size: contain;
   display: block;
 }
@@ -1507,7 +1518,7 @@ body {
 .gem_dialog_pic {
   width: 80%;
   aspect-ratio: 1 / 1;
-  background-image: url('./references/3_gems/toast.svg');
+  background-image: url("./references/3_gems/toast.svg");
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 20px;
@@ -1516,7 +1527,7 @@ body {
 .gems_cross {
   width: 30px;
   aspect-ratio: 1 / 1;
-  background-image: url('./references/3_gems/cross.svg');
+  background-image: url("./references/3_gems/cross.svg");
   background-size: contain;
   background-repeat: no-repeat;
   transform: translate(170px, -310px);
@@ -2080,7 +2091,7 @@ body {
 }
 
 .shape_card {
-    width: 15%;
+  width: 15%;
   aspect-ratio: 1 / 1;
   display: flex;
   flex-shrink: 0;
@@ -5721,7 +5732,6 @@ label {
     height: 100px;
     width: 100px;
     background-image: url("./references/1_dino_pics/dino.svg");
-    cursor: pointer;
   }
 
   .dino_cake {
@@ -5732,10 +5742,22 @@ label {
     display: none;
   }
 
+  .dino_cake:hover {
+    cursor: pointer;
+  }
+
   .dino_cake.show {
     height: 50px;
     width: 50px;
     background-image: url("./references/1_dino_pics/cupcake.svg");
+    background-size: contain;
+    display: block;
+  }
+
+  .dino_cake.yum {
+    height: 50px;
+    width: 50px;
+    background-image: url("./references/1_dino_pics/yum.png");
     background-size: contain;
     display: block;
   }
