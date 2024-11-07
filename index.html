@@ -39,19 +39,19 @@
 
                 <div class="view">
                   <div class="dino_game_items">
-                    <div class="player">
+                    <div class="player" id="dino">
                       <div class="dino_pic"></div>
                     </div>
                     <div class="dino_cake" id="dino_cake"></div>
                     <div class="obstacle_wrapper" id="obstacle_wrapper">
                       <div class="obstacle_course">
-                        <div class="obstacle_one"></div>
-                        <div class="obstacle_two"></div>
-                        <div class="obstacle_three"></div>
-                        <div class="obstacle_four"></div>
-                        <div class="obstacle_five"></div>
-                        <div class="obstacle_six"></div>
-                        <div class="obstacle_seven"></div>
+                        <div class="obstacle_one" id="obstacle_one"></div>
+                        <div class="obstacle_two" id="obstacle_two"></div>
+                        <div class="obstacle_three" id="obstacle_three"></div>
+                        <div class="obstacle_four" id="obstacle_four"></div>
+                        <div class="obstacle_five" id="obstacle_five"></div>
+                        <div class="obstacle_six" id="obstacle_six"></div>
+                        <div class="obstacle_seven" id="obstacle_seven"></div>
                       </div>
                     </div>
                   </div>
@@ -59,18 +59,21 @@
                   <div class="button_placement">
                     <div class="both_buttons">
                       <div class="move_obstacles" id="move_button">
-                        <label for="moving" class="obstacles_click"
+                        <label
+                          for="moving"
+                          class="obstacles_click"
+                          id="moving_label"
                           >Move<span class="cacti"></span
                         ></label>
                       </div>
                       <div class="jump_buttons">
                         <div class="jump_button1">
-                          <label for="jumping" class="button_click_1">
+                          <label for="jumping" class="button_click_1" id="jump_left">
                             <span class="dino_footprint"></span>
                           </label>
                         </div>
                         <div class="jump_button2">
-                          <label for="jumping1" class="button_click_2">
+                          <label for="jumping1" class="button_click_2" id="jump_right">
                             <span class="dino_footprint"></span>
                           </label>
                         </div>

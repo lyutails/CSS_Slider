@@ -3,13 +3,37 @@
 const dinoCake = document.getElementById("dino_cake");
 const moveButton = document.getElementById("moving");
 const obstacles = document.getElementById("obstacle_wrapper");
+const moveButtonLabel = document.getElementById("moving_label");
+const jumpButtonLeft = document.getElementById("jump_left");
+const jumpButtonRight = document.getElementById("jump_right");
+const obstacleOne = document.getElementById("obstacle_one");
+const obstacleTwo = document.getElementById("obstacle_two");
+const obstacleThree = document.getElementById("obstacle_three");
+const obstacleFour = document.getElementById("obstacle_four");
+const obstacleFive = document.getElementById("obstacle_five");
+const obstacleSix = document.getElementById("obstacle_six");
+const obstacleSeven = document.getElementById("obstacle_seven");
+const dino = document.getElementById("dino");
+
+let timesJumped = 0;
 
 moveButton.addEventListener("change", () => {
+  jumpButtonLeft.addEventListener("click", () => {
+    timesJumped++;
+  });
+  jumpButtonRight.addEventListener("click", () => {
+    timesJumped++;
+  });
   if (moveButton.checked) {
     setTimeout(() => {
-      obstacles.style.display = "none";
-      dinoCake.classList.add("show");
-      moveButton.setAttribute('disabled', 'true');
+      if (timesJumped === 7) {
+        obstacles.style.display = "none";
+        dinoCake.classList.add("show");
+        moveButton.setAttribute("disabled", "true");
+        moveButtonLabel.style.backgroundColor = "lightgrey";
+        moveButtonLabel.style.borderRadius = "10px";
+        moveButtonLabel.style.userSelect = "none";
+      }
     }, 40000);
   }
 });
